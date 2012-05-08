@@ -12,7 +12,7 @@ object ParserTests {
     println(ParserImpl.parseAll(ParserImpl.literalOrSymbol, "{Something Great}"))
     println(ParserImpl.parseAll(ParserImpl.value, "{Something Great}"))
 
-    println(ParserImpl.parseAll(ParserImpl.braceDelimitedStringLiteral, "\"Something Great\""))
+    println(ParserImpl.parseAll(ParserImpl.quoteDelimitedStringLiteral, "\"Something Great\""))
     println(ParserImpl.parseAll(ParserImpl.literal, "\"Something Great\""))
     println(ParserImpl.parseAll(ParserImpl.literalOrSymbol, "\"Something Great\""))
     println(ParserImpl.parseAll(ParserImpl.value, "\"Something Great\""))

@@ -33,12 +33,12 @@ object Parser {
       (freeComment ~! anyEntry ~! freeComment +) ^^
       (_ flatMap { case x ~ y ~ z => List(x, y, z): List[Entry] })
 
-    def freeComment = r("[^@]*") ^^ (CommentEntry(_))
+    def freeComment = "[^@]*" ^^ (CommentEntry(_))
 
     def anyEntry = AT ~> (commentEntry | stringEntry | preambleEntry | regularEntry)
 
     def commentEntry =
-      COMMENT ~> ((c('{') ~> r("[^}]*") <~ c('}')) | (c('(') ~> r("[^\\)]*") <~ c(')'))) ^^
+      COMMENT ~> (('{' ~> "[^}]*" <~ '}') | ('(' ~> "[^\\)]*" <~ ')')) ^^
       (CommentEntry(_))
 
     def stringEntry = STRING ~> entryBody { tag } ^^ (StringEntry(_, _)).tupled
@@ -52,15 +52,15 @@ object Parser {
 
     def entryBody[T](parser: => Parser[T]): Parser[T] = {
       lazy val p = parser
-      r("\\{\\s*") ~> p <~ r("\\s*\\}") |
-      r("\\(\\s*") ~> p <~ r("\\s*\\)")
+      ("\\{\\s*" ~> p <~ "\\s*\\}") |
+      ("\\(\\s*" ~> p <~ "\\s*\\)")
     }
 
-    def tag = (SYMBOL <~ r("\\s*=\\s*")) ~ value ^^ {
+    def tag = (SYMBOL <~ "\\s*=\\s*") ~ value ^^ {
       case sym ~ value => (sym, value)
     }
 
-    def value: Parser[Value] = literalOrSymbol ~ (r("\\s*#\\s*") ~> value ?) ^^ {
+    def value: Parser[Value] = literalOrSymbol ~ ("\\s*#\\s*" ~> value ?) ^^ {
       case left ~ Some(right) => Concat(left, right)
       case left ~ _ => left
     }
@@ -69,9 +69,9 @@ object Parser {
 
     def literal = (numericLiteral | braceDelimitedStringLiteral | quoteDelimitedStringLiteral)
 
-    def numericLiteral = r("""\d+(\.\d+)?""") ^^ (Literal(_))
-    def braceDelimitedStringLiteral = c('{') ~> r("[^}]*") <~ c('}') ^^ (Literal(_))
-    def quoteDelimitedStringLiteral = c('"') ~> r("[^\"]*") <~ c('"') ^^ (Literal(_))
+    def numericLiteral = "\\d+(\\.\\d+)?" ^^ (Literal(_))
+    def braceDelimitedStringLiteral = '{' ~> "[^}]*" <~ '}' ^^ (Literal(_))
+    def quoteDelimitedStringLiteral = '"' ~> "[^\"]*" <~ '"' ^^ (Literal(_))
 
     def AT = c('@')
     def WS = r("\\s*")
@@ -81,7 +81,10 @@ object Parser {
     def PREAMBLE = r("(p|P)(r|R)(e|E)(a|A)(m|M)(b|B)(l|L)(e|E)")
     def SYMBOL = r("[A-Za-z]\\w*")
 
-    def c(x: Char) = accept(x)
-    def r(reg: String) = regex(reg.r)
+    // do this with type classes instead? would require
+    // reworking a bunch of the ~-type methods :(
+    // might be nice to make a version of Parser that overloads those
+    implicit def c(x: Char): Parser[Char] = accept(x)
+    implicit def r(reg: String): Parser[String] = regex(reg.r)
   }
 }
