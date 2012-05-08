@@ -1,0 +1,133 @@
+package bib
+
+object ParserTests {
+
+  import Parser.ParserImpl
+
+  def main(args: Array[String]): Unit = {
+
+    // I know, I know - these aren't real unit tests. Soon!
+    println(ParserImpl.parseAll(ParserImpl.braceDelimitedStringLiteral, "{Something Great}"))
+    println(ParserImpl.parseAll(ParserImpl.literal, "{Something Great}"))
+    println(ParserImpl.parseAll(ParserImpl.literalOrSymbol, "{Something Great}"))
+    println(ParserImpl.parseAll(ParserImpl.value, "{Something Great}"))
+
+    println(ParserImpl.parseAll(ParserImpl.braceDelimitedStringLiteral, "\"Something Great\""))
+    println(ParserImpl.parseAll(ParserImpl.literal, "\"Something Great\""))
+    println(ParserImpl.parseAll(ParserImpl.literalOrSymbol, "\"Something Great\""))
+    println(ParserImpl.parseAll(ParserImpl.value, "\"Something Great\""))
+
+    println(ParserImpl.parseAll(ParserImpl.numericLiteral, "123"))
+    println(ParserImpl.parseAll(ParserImpl.literal, "123"))
+    println(ParserImpl.parseAll(ParserImpl.literalOrSymbol, "123"))
+    println(ParserImpl.parseAll(ParserImpl.value, "123"))
+
+    println(ParserImpl.parseAll(ParserImpl.SYMBOL, "asda5"))
+    println(ParserImpl.parseAll(ParserImpl.literalOrSymbol, "asda5"))
+    println(ParserImpl.parseAll(ParserImpl.value, "asda5"))
+
+    println(ParserImpl.parseAll(ParserImpl.tag, "asda5 = { 132 as qwe  asd }"))
+
+    println(ParserImpl.parseAll(ParserImpl.value, "asda5 # asda5"))
+
+    println(ParserImpl.parseAll(ParserImpl.commentEntry, "comment{wooooo!}"))
+
+    println(ParserImpl.parseAll(ParserImpl.preambleEntry, "preamble{wooooo}"))
+
+    println(ParserImpl.parseAll(ParserImpl.stringEntry, "string{wooooo = 1231}"))
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@string{wooooo = 1231}"))
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@string{  wooooo  = {asd} }"))
+
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@string{  wooooo  = {asd} }"))
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@preamble{  wooooo}"))
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@comment{  wooooo }"))
+
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@florb{  wooooo }"))
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@florb{  wooooo, x = {y}, fg = sdf13, z = 123 }"))
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@florb{  wooooo, x = {y}, fg = sdf13, z = 123, }"))
+    println(ParserImpl.parseAll(ParserImpl.anyEntry, "@florb{  wooooo, x = {y}, fg =\"sdf13\", z = 123, }"))
+    println(ParserImpl.parseAll(ParserImpl.anyEntry,
+      """@florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }"""))
+
+    println(ParserImpl.parseAll(ParserImpl.freeComment, "i am the king of the owrld!!"))
+    println(ParserImpl.parseAll(ParserImpl.freeComment, """i am the king of the
+
+    owrld!!"""))
+
+    println(ParserImpl.parseAll(ParserImpl.WS ~> ParserImpl.anyEntry,
+      """ @florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }"""))
+
+    println(ParserImpl.parseAll((ParserImpl.WS ~> ParserImpl.anyEntry) +,
+      """ @florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }"""))
+
+    println(ParserImpl.parseAll(ParserImpl.bibTex,
+      """ @florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }"""))
+
+    println(ParserImpl.parseAll(ParserImpl.bibTex,
+      """ @florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }
+
+      """
+    ))
+
+    println(ParserImpl.parseAll(ParserImpl.bibTex,
+      """
+       Hi, everybody!
+
+       @florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }
+ @florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }
+ @florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }
+
+ free comments are coool
+ @florb{  wooooo,
+        x = {y},
+        fg ="sdf13",
+        z = 123 #  asd,
+      }
+
+
+      """))
+
+
+    println(ParserImpl.parseAll(ParserImpl.bibTex,
+      """
+          @article{mrx05,
+          auTHor = "Mr. X",
+          Title = {Something Great},
+          publisher = "nob" # "ody",
+          YEAR = 2005
+          }
+      """))
+  }
+}
