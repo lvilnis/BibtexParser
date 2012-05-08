@@ -30,7 +30,7 @@ object Parser {
     override val skipWhitespace = false
 
     def bibTex =
-      (freeComment ~! anyEntry ~! freeComment +) ^^
+      (freeComment ~! anyEntry ~! freeComment).+ ^^
       (_ flatMap { case x ~ y ~ z => List(x, y, z): List[Entry] })
 
     def freeComment = "[^@]*" ^^ (CommentEntry(_))
@@ -60,7 +60,7 @@ object Parser {
       case sym ~ value => (sym, value)
     }
 
-    def value: Parser[Value] = literalOrSymbol ~ ("\\s*#\\s*" ~> value ?) ^^ {
+    def value: Parser[Value] = literalOrSymbol ~ ("\\s*#\\s*" ~> value).? ^^ {
       case left ~ Some(right) => Concat(left, right)
       case left ~ _ => left
     }
@@ -70,7 +70,9 @@ object Parser {
     def literal = (numericLiteral | braceDelimitedStringLiteral | quoteDelimitedStringLiteral)
 
     def numericLiteral = "\\d+(\\.\\d+)?" ^^ (Literal(_))
-    def braceDelimitedStringLiteral = '{' ~> "[^}]*" <~ '}' ^^ (Literal(_))
+    def braceDelimitedString: Parser[String] =
+      '{' ~> (((braceDelimitedString ^^ ("{" + _ + "}")) | "[^}{]+").* ^^ (_.fold("")(_ + _))) <~ '}'
+    def braceDelimitedStringLiteral = braceDelimitedString ^^ (Literal(_))
     def quoteDelimitedStringLiteral = '"' ~> "[^\"]*" <~ '"' ^^ (Literal(_))
 
     def AT = c('@')
@@ -79,11 +81,8 @@ object Parser {
     def COMMENT = r("(c|C)(o|O)(m|M)(m|M)(e|E)(n|N)(t|T)")
     def STRING = r("(s|S)(t|T)(r|R)(i|I)(n|N)(g|G)")
     def PREAMBLE = r("(p|P)(r|R)(e|E)(a|A)(m|M)(b|B)(l|L)(e|E)")
-    def SYMBOL = r("[A-Za-z]\\w*")
+    def SYMBOL = r("[A-Za-z][A-Za-z0-9_:]*") // FIXME: figure out what other characters are allowed in symbols
 
-    // do this with type classes instead? would require
-    // reworking a bunch of the ~-type methods :(
-    // might be nice to make a version of Parser that overloads those
     implicit def c(x: Char): Parser[Char] = accept(x)
     implicit def r(reg: String): Parser[String] = regex(reg.r)
   }
