@@ -243,5 +243,6 @@ object ParserTests {
     println(Names.stringToNames("{Barnes} {and} {Noble,} {Inc.}"))
 
     println(Names.stringToNames("Ralph Alpher and Bethe, Hans and George Gamow"))
+    println(Names.stringToNames("K.S.Narendra"))
   }
 }

@@ -3,10 +3,10 @@ package bib
 object Names {
 
   final case class Name(
-    first: List[String],
-    von: List[String],
-    last: List[String],
-    jr: List[String])
+    first: String,
+    von: String,
+    last: String,
+    jr: String)
 
   private sealed trait Token
   private case object AND extends Token
@@ -20,25 +20,33 @@ object Names {
     splitOn(fragments)(AND ==).map(fragmentsToName(_))
 
   private def fragmentsToName(fragments: List[Token]): Name = {
-    val sections = splitOn(fragments)(COMMA ==).map(_.map({ case FRAGMENT(f) => f }))
+    val sectionTokens = splitOn(fragments)(COMMA ==)
+    val sections = sectionTokens.map(_ map {
+      case FRAGMENT(f) => f
+      case _ => sys.error("Only fragments should be left over after processing!")
+    })
     val isVon: String => Boolean = _.charAt(0).isLower
     sections match {
       case firstVonLast :: Nil if firstVonLast.exists(isVon) =>
         val (first, vonLast) = partitionTakeWhile(firstVonLast)(!isVon(_))
         val (von, last) = partitionTakeWhile(vonLast)(isVon)
-        Name(first, von, last, Nil)
+        segmentListsToName(first, von, last, Nil)
       case firstLast :: Nil =>
         val (first, last) = partitionTakeRight(firstLast)(1)
-        Name(first, Nil, last, Nil)
+        segmentListsToName(first, Nil, last, Nil)
       case vonLast :: first :: Nil =>
         val (von, last) = partitionTakeWhile(vonLast)(isVon)
-        Name(first, von, last, Nil)
+        segmentListsToName(first, von, last, Nil)
       case vonLast :: jr :: first :: Nil =>
         val (von, last) = partitionTakeWhile(vonLast)(isVon)
-        Name(first, von, last, jr)
+        segmentListsToName(first, von, last, jr)
       case _ => sys.error("too many commas in name!")
     }
   }
+
+  def segmentListsToName(
+    first: List[String], von: List[String], last: List[String], jr: List[String]) =
+    Name(first.mkString(" "), von.mkString(" "), last.mkString(" "), jr.mkString(" "))
 
   import annotation.tailrec
 
@@ -64,10 +72,19 @@ object Names {
   private def lexNameFragments(namesString: String): List[Names.Token] =
     NameLexer.parseAll(NameLexer.nameLexer, namesString).getOrElse(Nil)
 
+  // FIXME: this is still not quite right - check out http://www.tug.org/TUGboat/tb27-2/tb87hufflen.pdf
+  // I should write a prose description of the rules of how it parses names, as they are extremely complicated
+  // also, handle hyphens as separators
   private object NameLexer extends Parser.BibtexParser {
-    def nameLexer = WS ~> ((and | comma | fragment) <~ WS) +
+    def nameLexer = WS ~> ((and | comma | initial | fragment) <~ WS) +
     def and = "and" ^^ (_ => AND)
     def comma = "," ^^ (_ => COMMA)
-    def fragment = (BRACE_DELIMITED_STRING | "[^\\s,}{]+") ^^ (FRAGMENT(_))
+    def fragment = (BRACE_DELIMITED_STRING | fragmentWithCurlyBracesInside)  ^^ (FRAGMENT(_))
+    def initial = "[A-Za-z]\\." ^^ (FRAGMENT(_))
+    def fragmentWithCurlyBracesInside =
+      ("[^\\s,}{]+" ~ (BRACE_DELIMITED_STRING ?)).+ ^^ (_ map {
+        case a ~ Some(b) => a + "{" + b + "}"
+        case a ~ _ => a
+      }) ^^ (_.mkString)
   }
 }
