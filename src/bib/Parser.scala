@@ -43,10 +43,10 @@ object Parser {
 
     def stringEntry = STRING ~> WS ~> entryBody { tag } ^^ (StringEntry(_, _)).tupled
 
-    def preambleEntry = PREAMBLE ~>  WS ~> entryBody { value } ^^ (PreambleEntry(_))
+    def preambleEntry = PREAMBLE ~> WS ~> entryBody { value } ^^ (PreambleEntry(_))
 
     def regularEntry =
-      (SYMBOL <~  WS) ~ entryBody { SYMBOL ~ rep(COMMA_WS ~> tag) <~ (COMMA_WS ?) } ^^ {
+      (SYMBOL <~ WS) ~ entryBody { SYMBOL ~ rep(COMMA_WS ~> tag) <~ (COMMA_WS ?) } ^^ {
         case ty ~ (key ~ tags) => RegularEntry(ty, key, tags)
       }
 
@@ -70,10 +70,12 @@ object Parser {
     def literal = (numericLiteral | braceDelimitedStringLiteral | quoteDelimitedStringLiteral)
 
     def numericLiteral = "\\d+(\\.\\d+)?" ^^ (Literal(_))
-    def braceDelimitedString: Parser[String] =
-      '{' ~> (((braceDelimitedString ^^ ("{" + _ + "}")) | "[^}{]+").* ^^ (_.fold("")(_ + _))) <~ '}'
-    def braceDelimitedStringLiteral = braceDelimitedString ^^ (Literal(_))
     def quoteDelimitedStringLiteral = '"' ~> "[^\"]*" <~ '"' ^^ (Literal(_))
+    def braceDelimitedStringLiteral = braceDelimitedString ^^ (Literal(_))
+
+    def braceDelimitedString: Parser[String] =
+      '{' ~> (braceDelimitedString ^^ ("{" + _ + "}") | "[^}{]+").* <~ '}' ^^
+      (concatStrings(_))
 
     def AT = c('@')
     def WS = r("\\s*")
@@ -81,7 +83,10 @@ object Parser {
     def COMMENT = r("(c|C)(o|O)(m|M)(m|M)(e|E)(n|N)(t|T)")
     def STRING = r("(s|S)(t|T)(r|R)(i|I)(n|N)(g|G)")
     def PREAMBLE = r("(p|P)(r|R)(e|E)(a|A)(m|M)(b|B)(l|L)(e|E)")
-    def SYMBOL = r("[A-Za-z][A-Za-z0-9_:]*") // FIXME: figure out what other characters are allowed in symbols
+    // can't start with a number, and no quotes, braces/parens, '#', commas, whitespace, or '='
+    def SYMBOL = r("[^0-9\"}{)(,\\s#=][^\"}{)(,\\s#=]*")
+
+    def concatStrings(strs: Seq[String]): String = strs.fold("")(_ + _)
 
     implicit def c(x: Char): Parser[Char] = accept(x)
     implicit def r(reg: String): Parser[String] = regex(reg.r)
