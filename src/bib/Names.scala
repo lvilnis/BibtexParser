@@ -9,13 +9,11 @@ object Names {
     jr: String)
 
   private[bib] sealed trait Token
-  private[bib] sealed trait Separator extends Token
-  private[bib] case object AND extends Separator
-  private[bib] case object COMMA extends Separator
-  private[bib] case object DOT extends Separator
-  private[bib] case object HYPHEN extends Separator
+  private[bib] case object AND extends Token
+  private[bib] case object COMMA extends Token
+  private[bib] case object HYPHEN extends Token
+  private[bib] case class TOKENLIST(ts: List[Token]) extends Token
   private[bib] final case class FRAGMENT(text: String) extends Token
-  private[bib] final case class INITIAL(text: Char) extends Token
 
   def stringToNames(names: String): List[Name] =
     fragmentsToNames(lexNameFragments(names))
@@ -76,37 +74,42 @@ object Names {
   private def lexNameFragments(namesString: String): List[Names.Token] =
     NameLexer.parseAll(NameLexer.nameLexer, namesString).getOrElse(Nil)
 
-  // FIXME: this is still not quite right - check out http://www.tug.org/TUGboat/tb27-2/tb87hufflen.pdf
+  private def flattenTokenLists(ts: List[Token]): List[Token] = ts flatMap {
+    case TOKENLIST(inner) => flattenTokenLists(inner)
+    case other => List(other)
+  }
+
+  // check out http://www.tug.org/TUGboat/tb27-2/tb87hufflen.pdf
   // I should write a prose description of the rules of how it parses names, as they are extremely complicated
-  // also, handle hyphens as separators
+  // TODO: handle hyphens as separators
   object NameLexer extends Parser.BibtexParser {
 
     def nameLexer =
-      (WS ~> (fragmentFollowedByCommaOrWhitespace | initial ^^ (List(_))).? <~ WS) ~
-      (((andFollowedByWhitespace | (initial <~ WS)) ^^ (List(_))) | fragmentFollowedByCommaOrWhitespace).* ~
+      WS ~> ((fragment_comma_or_ws | initial) <~ WS).? ~
+      ((and_ws | initial | fragment_comma_or_ws) <~ WS).* ~
       (fragment | initial).? ^^ {
-        case pre ~ xs ~ post => pre.flatten.toList ++ xs.flatten ++ post.toList
+        case pre ~ xs ~ post => flattenTokenLists(pre.toList ++ xs ++ post.toList)
       }
 
-    def andFollowedByWhitespace =
-      and <~ "\\s+"
+    def fragment_comma_or_ws =
+      fragment ~ ((WS ~> comma <~ WS) | "\\s+") ^^ {
+        case frag ~ COMMA => TOKENLIST(List(frag, COMMA))
+        case frag ~ _ => frag
+      }
 
-    def fragmentFollowedByCommaOrWhitespace =
-      (fragment ~ ((WS ~> comma <~ WS) | "\\s+") ^^ {
-        case frag ~ COMMA => List(frag, COMMA)
-        case frag ~ _ => List(frag)
-      })
-
+    def and_ws = and <~ "\\s+"
     def and = "and" ^^ (_ => AND)
     def comma = "," ^^ (_ => COMMA)
     def hyphen = ("-" | "~") ^^ (_ => HYPHEN)
-    def dot = "\\." ^^ (_ => DOT)
-    def fragment = (BRACE_DELIMITED_STRING | fragmentWithCurlyBracesInside) ^^ (FRAGMENT(_))
     def initial = "[A-Za-z]\\." ^^ (FRAGMENT(_))
-    def fragmentWithCurlyBracesInside =
-      ("[^\\s,}{-]+" ~ (BRACE_DELIMITED_STRING ?)).+ ^^ (_ map {
-        case a ~ Some(b) => a + "{" + b + "}"
-        case a ~ _ => a
-      }) ^^ (_.mkString)
+
+    // if its just one fragment with curly braces, its a literal, so leave out the braces
+    def fragment =
+      (BRACE_DELIMITED_STRING ?) ~ ("[^\\s,}{-~]+" | (BRACE_DELIMITED_STRING ^^ ("{" + _ + "}"))).* ^^ {
+        case Some(bds) ~ Nil => bds
+        case Some(bds) ~ rest => (("{" + bds + "}") :: rest).mkString
+        case None ~ rest => rest.mkString
+      } ^^ (FRAGMENT(_))
+
   }
 }

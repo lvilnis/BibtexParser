@@ -247,9 +247,13 @@ object ParserTests {
 
     println(Names.stringToNames("{\\e'}cole"))
 
-    println(Names.NameLexer.parseAll(Names.NameLexer.fragmentFollowedByCommaOrWhitespace+, "Bethe, Hans "))
+    println(Names.stringToNames("John-Paul Jones and Bill Thompson"))
+
+    println(Names.NameLexer.parseAll(Names.NameLexer.fragment_comma_or_ws+, "Bethe, Hans "))
 
     // here's a really tricky one (not a french word, i know)
     println(Names.stringToNames("{\\e'}col{\\e'}"))
+
+    println(Names.NameLexer.parseAll(Names.NameLexer.fragment, "{\\e'}col{\\e'}"))
   }
 }
