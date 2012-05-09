@@ -11,7 +11,9 @@ object Dom {
     ty: String,
     citationKey: String,
     crossReference: Option[Entry],
-    fields: Map[String, String])
+    authors: List[Names.Name],
+    editors: List[Names.Name],
+    otherFields: Map[String, String])
 
   import annotation.tailrec
 
@@ -44,7 +46,7 @@ object Dom {
       case entry :: rest => entry match {
 
         case AST.StringEntry(name, value) =>
-          loop(currentDoc, rest, env.updated(name, evalValue(value, env)))
+          loop(currentDoc, rest, env + (name -> evalValue(value, env)))
 
         case AST.CommentEntry(comment) =>
           val newComments =
@@ -57,12 +59,17 @@ object Dom {
 
         case AST.RegularEntry(ty, citationKey, tags) =>
           val evaldTags = tags.toMap.mapValues(evalValue(_, env))
+          // FIXME: should "crossref"/"author"/"editor" all be case-insensitive?
           val crossRefEntry = for {
             referenceName <- evaldTags.get("crossref")
             referenceEntry <- currentDoc.entries.get(referenceName)
           } yield referenceEntry
-          val entry = Entry(ty, citationKey, crossRefEntry, evaldTags.filterNot(_._1 == "crossref"))
-          loop(currentDoc.copy(entries = currentDoc.entries.updated(entry.citationKey, entry)), rest, env)
+          def namesForField(fieldName: String) =
+            evaldTags.get(fieldName).map(Names.stringToNames(_)).toList.flatten
+          val remainingTags = evaldTags - "crossref" - "author" - "editor"
+          val entry = Entry(
+            ty, citationKey, crossRefEntry, namesForField("author"), namesForField("editor"), remainingTags)
+          loop(currentDoc.copy(entries = currentDoc.entries + (entry.citationKey -> entry)), rest, env)
       }
     }
     loop()

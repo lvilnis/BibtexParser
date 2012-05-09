@@ -229,5 +229,19 @@ object ParserTests {
       """)
     println(coloradoSample)
     println(Dom.astToDom(coloradoSample.get))
+
+    println(Names.stringToNames("Ludwig von Beethoven"))
+    println(Names.stringToNames("von Beethoven, Ludwig"))
+    println(Names.stringToNames("Jones, John Paul"))
+    println(Names.stringToNames("John Paul Jones"))
+
+    println(Names.stringToNames("John Paul Jones and Jones, John Paul"))
+    println(Names.stringToNames("John Paul Jones and Ludwig von Beethoven"))
+
+    println(Names.stringToNames("Charles Louis Xavier Joseph de la Vallee Poussin"))
+
+    println(Names.stringToNames("{Barnes} {and} {Noble,} {Inc.}"))
+
+    println(Names.stringToNames("Ralph Alpher and Bethe, Hans and George Gamow"))
   }
 }

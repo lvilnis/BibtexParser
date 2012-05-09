@@ -28,6 +28,9 @@ object Parser {
     res.map(r => Some(Document(r))).getOrElse(None)
   }
 
+  def lexNameFragments(namesString: String): List[Names.Token] =
+    ParserImpl.parseAll(ParserImpl.NameLexer.nameLexer, namesString).getOrElse(Nil)
+
   import scala.util.parsing.combinator._
 
   private[bib] object ParserImpl extends RegexParsers {
@@ -79,8 +82,7 @@ object Parser {
     def braceDelimitedStringLiteral = braceDelimitedString ^^ (Literal(_))
 
     def braceDelimitedString: Parser[String] =
-      '{' ~> (braceDelimitedString ^^ ("{" + _ + "}") | "[^}{]+").* <~ '}' ^^
-      (concatStrings(_))
+      '{' ~> (braceDelimitedString ^^ ("{" + _ + "}") | "[^}{]+").* <~ '}' ^^ (_.mkString)
 
     def AT = c('@')
     def WS = r("\\s*")
@@ -91,7 +93,16 @@ object Parser {
     // can't start with a number, and no quotes, braces/parens, '#', commas, whitespace, or '='
     def SYMBOL = r("[^0-9\"}{)(,\\s#=][^\"}{)(,\\s#=]*")
 
-    def concatStrings(strs: Seq[String]): String = strs.fold("")(_ + _)
+    object NameLexer {
+
+      import Names._
+
+      def nameLexer = WS ~> ((and | comma | fragment) <~ WS) +
+      def and = "and" ^^ (_ => AND)
+      def comma = "," ^^ (_ => COMMA)
+      def fragment = (braceDelimitedString | "[^\\s,}{]+") ^^ (FRAGMENT(_))
+
+    }
 
     implicit def c(x: Char): Parser[Char] = accept(x)
     implicit def r(reg: String): Parser[String] = regex(reg.r)
