@@ -244,5 +244,12 @@ object ParserTests {
 
     println(Names.stringToNames("Ralph Alpher and Bethe, Hans and George Gamow"))
     println(Names.stringToNames("K.S.Narendra"))
+
+    println(Names.stringToNames("{\\e'}cole"))
+
+    println(Names.NameLexer.parseAll(Names.NameLexer.fragmentFollowedByCommaOrWhitespace+, "Bethe, Hans "))
+
+    // here's a really tricky one (not a french word, i know)
+    println(Names.stringToNames("{\\e'}col{\\e'}"))
   }
 }
