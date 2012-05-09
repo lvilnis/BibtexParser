@@ -11,8 +11,8 @@ object Dom {
     ty: String,
     citationKey: String,
     crossReference: Option[Entry],
-    authors: List[Names.Name],
-    editors: List[Names.Name],
+    authors: Option[List[Names.Name]],
+    editors: Option[List[Names.Name]],
     otherFields: Map[String, String])
 
   import annotation.tailrec
@@ -67,8 +67,9 @@ object Dom {
           def namesForField(fieldName: String) =
             evaldTags.get(fieldName).map(Names.stringToNames(_)).toList.flatten
           val remainingTags = evaldTags - "crossref" - "author" - "editor"
-          val entry = Entry(
-            ty, citationKey, crossRefEntry, namesForField("author"), namesForField("editor"), remainingTags)
+          val authorNames = Some(namesForField("author"))
+          val editorNames = Some(namesForField("editor"))
+          val entry = Entry(ty, citationKey, crossRefEntry, authorNames, editorNames, remainingTags)
           loop(currentDoc.copy(entries = currentDoc.entries + (entry.citationKey -> entry)), rest, env)
       }
     }
