@@ -122,7 +122,7 @@ object ParserTests {
 
     println(ParserImpl.parseAll(ParserImpl.bibTex,
       """
-          @article{mrx05,
+          @article {mrx05,
           auTHor = "Mr. X",
           Title = {Something Great},
           publisher = "nob" # "ody",

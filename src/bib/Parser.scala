@@ -38,15 +38,15 @@ object Parser {
     def anyEntry = AT ~> (commentEntry | stringEntry | preambleEntry | regularEntry)
 
     def commentEntry =
-      COMMENT ~> (('{' ~> "[^}]*" <~ '}') | ('(' ~> "[^\\)]*" <~ ')')) ^^
+      COMMENT ~> WS ~> (('{' ~> "[^}]*" <~ '}') | ('(' ~> "[^\\)]*" <~ ')')) ^^
       (CommentEntry(_))
 
-    def stringEntry = STRING ~> entryBody { tag } ^^ (StringEntry(_, _)).tupled
+    def stringEntry = STRING ~> WS ~> entryBody { tag } ^^ (StringEntry(_, _)).tupled
 
-    def preambleEntry = PREAMBLE ~> entryBody { value } ^^ (PreambleEntry(_))
+    def preambleEntry = PREAMBLE ~>  WS ~> entryBody { value } ^^ (PreambleEntry(_))
 
     def regularEntry =
-      SYMBOL ~ entryBody { SYMBOL ~ rep(COMMA_WS ~> tag) <~ (COMMA_WS ?) } ^^ {
+      (SYMBOL <~  WS) ~ entryBody { SYMBOL ~ rep(COMMA_WS ~> tag) <~ (COMMA_WS ?) } ^^ {
         case ty ~ (key ~ tags) => RegularEntry(ty, key, tags)
       }
 
