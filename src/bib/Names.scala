@@ -9,9 +9,9 @@ object Names {
     jr: List[String])
 
   private sealed trait Token
-  case object AND extends Token
-  case object COMMA extends Token
-  final case class FRAGMENT(text: String) extends Token
+  private case object AND extends Token
+  private case object COMMA extends Token
+  private final case class FRAGMENT(text: String) extends Token
 
   def stringToNames(names: String): List[Name] =
     fragmentsToNames(lexNameFragments(names))
@@ -21,37 +21,22 @@ object Names {
 
   private def fragmentsToName(fragments: List[Token]): Name = {
     val sections = splitOn(fragments)(COMMA ==).map(_.map({ case FRAGMENT(f) => f }))
-    if (sections.length > 3) sys.error("too many commas in name!")
     val isVon: String => Boolean = _.charAt(0).isLower
-    if (sections.length == 1) {
-      // firstVonLast
-      val fragments = sections(0)
-      val hasVon = fragments.exists(isVon)
-      if (!hasVon) {
-        val firstFrags = fragments.dropRight(1)
-        val last = fragments.drop(1).lastOption
-        Name(firstFrags, Nil, last.toList, Nil)
-      } else {
-        val firstFrags = fragments.takeWhile(!isVon(_))
-        val von = fragments.drop(firstFrags.length).takeWhile(isVon)
-        val last = fragments.drop(firstFrags.length + von.length)
-        Name(firstFrags, von, last, Nil)
-      }
-    } else if (sections.length == 2) {
-      // vonLastFirst
-      val vonLast = sections(0)
-      val von = vonLast.takeWhile(isVon)
-      val last = vonLast.drop(von.length)
-      val first = sections(1)
-      Name(first, von, last, Nil)
-    } else {
-      // vonLastJrFirst
-      val vonLast = sections(0)
-      val von = vonLast.takeWhile(isVon)
-      val last = vonLast.drop(von.length)
-      val jr = sections(1)
-      val first = sections(2)
-      Name(first, von, last, jr)
+    sections match {
+      case firstVonLast :: Nil if firstVonLast.exists(isVon) =>
+        val (first, vonLast) = partitionTakeWhile(firstVonLast)(!isVon(_))
+        val (von, last) = partitionTakeWhile(vonLast)(isVon)
+        Name(first, von, last, Nil)
+      case firstLast :: Nil =>
+        val (first, last) = partitionTakeRight(firstLast)(1)
+        Name(first, Nil, last, Nil)
+      case vonLast :: first :: Nil =>
+        val (von, last) = partitionTakeWhile(vonLast)(isVon)
+        Name(first, von, last, Nil)
+      case vonLast :: jr :: first :: Nil =>
+        val (von, last) = partitionTakeWhile(vonLast)(isVon)
+        Name(first, von, last, jr)
+      case _ => sys.error("too many commas in name!")
     }
   }
 
@@ -70,10 +55,16 @@ object Names {
     loop().map(_.reverse).reverse
   }
 
+  private def partitionTakeWhile[T](xs: List[T])(pred: T => Boolean): (List[T], List[T]) =
+    (xs.takeWhile(pred), xs.dropWhile(pred))
+
+  private def partitionTakeRight[T](xs: List[T])(toTake: Int): (List[T], List[T]) =
+    (xs.dropRight(toTake), xs.takeRight(toTake))
+
   private def lexNameFragments(namesString: String): List[Names.Token] =
     NameLexer.parseAll(NameLexer.nameLexer, namesString).getOrElse(Nil)
 
-  object NameLexer extends Parser.BibtexParser {
+  private object NameLexer extends Parser.BibtexParser {
     def nameLexer = WS ~> ((and | comma | fragment) <~ WS) +
     def and = "and" ^^ (_ => AND)
     def comma = "," ^^ (_ => COMMA)
