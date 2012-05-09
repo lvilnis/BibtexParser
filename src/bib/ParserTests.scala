@@ -135,7 +135,7 @@ object ParserTests {
       "{Interannual Variability of planet-encircling dust activity on {M}ars}"))
 
     // this sample is from: http://amath.colorado.edu/documentation/LaTeX/reference/faq/bibstyles.html
-    println(ParserImpl.parseAll(ParserImpl.bibTex,
+    val coloradoSample = Parser.parseString(
       """
 
 @string{jgr = "J.~Geophys.~Res."}
@@ -226,6 +226,8 @@ object ParserTests {
 }
 
 
-      """))
+      """)
+    println(coloradoSample)
+    println(Dom.astToDom(coloradoSample.get))
   }
 }

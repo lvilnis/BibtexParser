@@ -1,22 +1,27 @@
 package bib
 
-private[bib] sealed trait ASTNode
+object AST {
 
-sealed trait Entry extends ASTNode
-sealed trait Value extends ASTNode
+  private[bib] sealed trait Entry
+  private[bib] sealed trait Value
 
-case class Document(entries: List[Entry]) extends ASTNode
+  final case class Document(entries: List[Entry])
 
-case class StringEntry(abbrev: String, value: Value) extends Entry
-case class PreambleEntry(content: Value) extends Entry
-case class CommentEntry(comment: String) extends Entry
-case class RegularEntry(ty: String, citationKey: String, tags: List[(String, Value)]) extends Entry
+  final case class StringEntry(abbrev: String, value: Value) extends Entry
+  final case class PreambleEntry(content: Value) extends Entry
+  final case class CommentEntry(comment: String) extends Entry
+  final case class RegularEntry(
+    ty: String, citationKey: String, tags: List[(String, Value)]) extends Entry
 
-case class Literal(content: String) extends Value
-case class Abbrev(name: String) extends Value
-case class Concat(left: Value, right: Value) extends Value
+  final case class Literal(content: String) extends Value
+  final case class Abbrev(name: String) extends Value
+  final case class Concat(left: Value, right: Value) extends Value
+
+}
 
 object Parser {
+
+  import AST._
 
   def parseString(input: String): Option[Document] = {
     val res = ParserImpl.parseAll(ParserImpl.bibTex, input)
