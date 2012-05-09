@@ -28,14 +28,20 @@ object Parser {
     res.map(r => Some(Document(r))).getOrElse(None)
   }
 
-  def lexNameFragments(namesString: String): List[Names.Token] =
-    ParserImpl.parseAll(ParserImpl.NameLexer.nameLexer, namesString).getOrElse(Nil)
-
   import scala.util.parsing.combinator._
 
-  private[bib] object ParserImpl extends RegexParsers {
-
+  trait BibtexParser extends RegexParsers {
     override val skipWhitespace = false
+
+    def WS = r("\\s*")
+    def BRACE_DELIMITED_STRING: Parser[String] =
+      '{' ~> (BRACE_DELIMITED_STRING ^^ ("{" + _ + "}") | "[^}{]+").* <~ '}' ^^ (_.mkString)
+
+    implicit def c(x: Char): Parser[Char] = accept(x)
+    implicit def r(reg: String): Parser[String] = regex(reg.r)
+  }
+
+  private[bib] object ParserImpl extends BibtexParser {
 
     def bibTex =
       (freeComment ~! anyEntry ~! freeComment).+ ^^
@@ -79,32 +85,14 @@ object Parser {
 
     def numericLiteral = "\\d+(\\.\\d+)?" ^^ (Literal(_))
     def quoteDelimitedStringLiteral = '"' ~> "[^\"]*" <~ '"' ^^ (Literal(_))
-    def braceDelimitedStringLiteral = braceDelimitedString ^^ (Literal(_))
-
-    def braceDelimitedString: Parser[String] =
-      '{' ~> (braceDelimitedString ^^ ("{" + _ + "}") | "[^}{]+").* <~ '}' ^^ (_.mkString)
+    def braceDelimitedStringLiteral = BRACE_DELIMITED_STRING ^^ (Literal(_))
 
     def AT = c('@')
-    def WS = r("\\s*")
     def COMMA_WS = r("\\s*,\\s*")
     def COMMENT = r("(c|C)(o|O)(m|M)(m|M)(e|E)(n|N)(t|T)")
     def STRING = r("(s|S)(t|T)(r|R)(i|I)(n|N)(g|G)")
     def PREAMBLE = r("(p|P)(r|R)(e|E)(a|A)(m|M)(b|B)(l|L)(e|E)")
     // can't start with a number, and no quotes, braces/parens, '#', commas, whitespace, or '='
     def SYMBOL = r("[^0-9\"}{)(,\\s#=][^\"}{)(,\\s#=]*")
-
-    object NameLexer {
-
-      import Names._
-
-      def nameLexer = WS ~> ((and | comma | fragment) <~ WS) +
-      def and = "and" ^^ (_ => AND)
-      def comma = "," ^^ (_ => COMMA)
-      def fragment = (braceDelimitedString | "[^\\s,}{]+") ^^ (FRAGMENT(_))
-
-    }
-
-    implicit def c(x: Char): Parser[Char] = accept(x)
-    implicit def r(reg: String): Parser[String] = regex(reg.r)
   }
 }

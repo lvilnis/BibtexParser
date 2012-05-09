@@ -1,14 +1,6 @@
 package bib
 
-import annotation.tailrec
-
 object Names {
-  // handle the funky way bibtex formats names...
-  // this will require an extra little parsing step, because braces inside string literals are significant!
-
-  // look at http://nwalsh.com/tex/texhelp/bibtx-23.html and
-  // http://www.tug.org/TUGboat/tb27-2/tb87hufflen.pdf
-  // include this in the parser or do after?
 
   final case class Name(
     first: List[String],
@@ -16,15 +8,13 @@ object Names {
     last: List[String],
     jr: List[String])
 
-  // FIXME: have to do this annoying token thing just to differentiate between
-  // "{and}" and "and". Where should this stuff live?
-  sealed trait Token
+  private sealed trait Token
   case object AND extends Token
   case object COMMA extends Token
   final case class FRAGMENT(text: String) extends Token
 
   def stringToNames(names: String): List[Name] =
-    fragmentsToNames(Parser.lexNameFragments(names))
+    fragmentsToNames(lexNameFragments(names))
 
   private def fragmentsToNames(fragments: List[Token]): List[Name] =
     splitOn(fragments)(AND ==).map(fragmentsToName(_))
@@ -65,6 +55,8 @@ object Names {
     }
   }
 
+  import annotation.tailrec
+
   private def splitOn[T](xs: List[T])(pred: T => Boolean): List[List[T]] = {
     @tailrec def loop(
       segments: List[List[T]] = List(Nil),
@@ -76,5 +68,15 @@ object Names {
         else loop((current :: segments.head) :: segments.tail, rest)
     }
     loop().map(_.reverse).reverse
+  }
+
+  private def lexNameFragments(namesString: String): List[Names.Token] =
+    NameLexer.parseAll(NameLexer.nameLexer, namesString).getOrElse(Nil)
+
+  object NameLexer extends Parser.BibtexParser {
+    def nameLexer = WS ~> ((and | comma | fragment) <~ WS) +
+    def and = "and" ^^ (_ => AND)
+    def comma = "," ^^ (_ => COMMA)
+    def fragment = (BRACE_DELIMITED_STRING | "[^\\s,}{]+") ^^ (FRAGMENT(_))
   }
 }
