@@ -251,7 +251,7 @@ object ParserTests {
 
     println(Names.stringToNames("John-Paul Jones and Bill Thompson"))
 
-    println(Names.NameLexer.parseAll(Names.NameLexer.fragment_comma_or_ws+, "Bethe, Hans "))
+    println(Names.NameLexer.parseAll(Names.NameLexer.fragment_comma_or_ws +, "Bethe, Hans "))
 
     // here's a really tricky one (not a french word, i know)
     println(Names.stringToNames("{\\e'}col{\\e'}"))
@@ -259,9 +259,35 @@ object ParserTests {
     println(Names.NameLexer.parseAll(Names.NameLexer.fragment, "{\\e'}col{\\e'}"))
 
     println(Names.stringToNames("{hey ho lotsa stu\\}ff}"))
+    println(Names.stringToNames("\"{hey ho lotsa stu\\}ff\""))
 
     val fileText = scala.io.Source.fromFile("inputs/case-based-reasoning.bib.txt").mkString
+    val res = Dom.stringToDom(fileText, false)
+    //println(res)
 
-    println(Dom.stringToDom(fileText, false))
+    def timed[T](showTime: Long => String)(body: => T) = {
+      val start = System.currentTimeMillis
+      val result = body
+      val time = showTime(System.currentTimeMillis - start)
+      println(time)
+      (result, time)
+    }
+
+    val filePath2 = "inputs/domain-decomp.bib.txt"
+    val file2 = scala.io.Source.fromFile(filePath2).toArray
+    val fileText2 = file2.mkString
+
+    val numLines = file2.length
+    val numMb = new java.io.File(filePath2).length / 1024.0 / 1024.0
+
+    val (result, time) =
+      timed(t =>
+        "domain-decomp.bib (%f MB, %d lines) parsed and dom-ified in %d ms (%f MB/sec, %f lines/sec)" format
+        (numMb, numLines, t, (1000.0 * numMb) / t, (1000.0 * numLines) / t)) {
+        Dom.stringToDom(fileText2, false)
+      }
+
+    //    println(result)
+    println(time)
   }
 }

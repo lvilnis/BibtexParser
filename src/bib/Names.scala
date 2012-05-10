@@ -36,6 +36,8 @@ object Names {
       case firstLast :: Nil =>
         val (first, last) = partitionTakeRight(firstLast)(1)
         segmentListsToName(first, Nil, last, Nil)
+      // fixme: von is greedy - default parse is "{Jean} {de la Fontaine du} {Bois Joli}"
+      // fixme: non-letter characters are skipped when determining von-ness
       case vonLast :: first :: Nil =>
         val (von, last) = partitionTakeWhile(vonLast)(isVon)
         segmentListsToName(first, von, last, Nil)

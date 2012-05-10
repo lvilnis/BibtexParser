@@ -23,6 +23,7 @@ object Parser {
 
   import AST._
 
+  // this should return an Either or a custom error object instead of a useless "None"
   def parseString(input: String): Option[Document] = {
     val res = ParserImpl.parseAll(ParserImpl.bibTex, input)
     res.map(r => Some(Document(r))).getOrElse(None)
@@ -35,7 +36,7 @@ object Parser {
     // FIXME: this should be '+' not '*' - go find places that rely on it being '+' and add a '?'
     def WS = r("\\s*")
     def BRACE_DELIMITED_STRING: Parser[String] =
-      '{' ~> (BRACE_DELIMITED_STRING ^^ ("{" + _ + "}") | """[^}{\\]+""" | """\\.""").* <~ '}' ^^
+      '{' ~> (BRACE_DELIMITED_STRING ^^ ("{" + _ + "}") | """\\.""" | """[^}{]""").* <~ '}' ^^
       (_.mkString)
 
     implicit def c(x: Char): Parser[Char] = accept(x)
@@ -86,7 +87,8 @@ object Parser {
     def literal = (numericLiteral | braceDelimitedStringLiteral | quoteDelimitedStringLiteral)
 
     def numericLiteral = "\\d+(\\.\\d+)?" ^^ (Literal(_))
-    def quoteDelimitedStringLiteral = '"' ~> """[^"\\]*(?:\\.[^"\\]*)*""" <~ '"' ^^ (Literal(_))
+    def quoteDelimitedStringLiteral =
+      '"' ~> (BRACE_DELIMITED_STRING | """[^"]""" | """\\.""").* <~ '"' ^^ (xs => Literal(xs.mkString))
     def braceDelimitedStringLiteral = BRACE_DELIMITED_STRING ^^ (Literal(_))
 
     def AT = c('@')
