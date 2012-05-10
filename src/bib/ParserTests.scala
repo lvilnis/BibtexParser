@@ -9,12 +9,12 @@ object ParserTests {
   def main(args: Array[String]): Unit = {
 
     // I know, I know - these aren't real unit tests. Soon!
-    println(ParserImpl.parseAll(ParserImpl.braceDelimitedStringLiteral, "{Something Great}"))
+    println(ParserImpl.parseAll(ParserImpl.braceDelimitedNoOuterLiteral, "{Something Great}"))
     println(ParserImpl.parseAll(ParserImpl.literal, "{Something Great}"))
     println(ParserImpl.parseAll(ParserImpl.literalOrSymbol, "{Something Great}"))
     println(ParserImpl.parseAll(ParserImpl.value, "{Something Great}"))
 
-    println(ParserImpl.parseAll(ParserImpl.quoteDelimitedStringLiteral, "\"Something Great\""))
+    println(ParserImpl.parseAll(ParserImpl.quoteDelimitedLiteral, "\"Something Great\""))
     println(ParserImpl.parseAll(ParserImpl.literal, "\"Something Great\""))
     println(ParserImpl.parseAll(ParserImpl.literalOrSymbol, "\"Something Great\""))
     println(ParserImpl.parseAll(ParserImpl.value, "\"Something Great\""))
@@ -133,7 +133,7 @@ object ParserTests {
       """))
 
     println(ParserImpl.parseAll(
-      ParserImpl.braceDelimitedStringLiteral,
+      ParserImpl.braceDelimitedNoOuterLiteral,
       "{Interannual Variability of planet-encircling dust activity on {M}ars}"))
 
     // this sample is from: http://amath.colorado.edu/documentation/LaTeX/reference/faq/bibstyles.html
@@ -214,7 +214,7 @@ object ParserTests {
 }
 
 @Article{Narendra_1990,
-  author =       {K.S.Narendra and K.Parthsarathy},
+  author =       {K.S.Narendra and K.S.Parthsarathy},
   title =        {Identification and Control of Dynamical System
                   using Neural Networks},
   journal =      "IEENN",
@@ -259,7 +259,34 @@ object ParserTests {
     println(Names.NameLexer.parseAll(Names.NameLexer.fragment, "{\\e'}col{\\e'}"))
 
     println(Names.stringToNames("{hey ho lotsa stu\\}ff}"))
-    println(Names.stringToNames("\"{hey ho lotsa stu\\}ff\""))
+    println(Names.stringToNames("{Jean} {de la Fontaine du} {Bois Joli}"))
+    println(Names.stringToNames("Jean de la Fontaine du Bois Joli"))
+
+
+    val clx1 = Names.stringToNames("Charles Louis Xavier Joseph de la Vall{\\'e}e Poussin")
+    println(clx1)
+    val clx2 = Dom.stringToDom("@thing{asdf, author = \"Charles Louis Xavier Joseph de la Vall{\\'e}e Poussin\"}")
+      .get.entries.head._2.authors.get.head
+    println(clx2)
+    val clx3 = Dom.stringToDom("@thing{asdf, author = {Charles Louis Xavier Joseph de la Vall{\\'e}e Poussin}}")
+      .get.entries.head._2.authors.get.head
+    println(clx3)
+
+    println((clx1 eq clx2) && (clx2 eq clx3))
+
+    val ksn1 = Names.stringToNames("K.S.Narendra")
+    println(ksn1)
+    val ksn2 = Dom.stringToDom("@thing{asdf, author = \"K.S.Narendra\"}")
+      .get.entries.head._2.authors.get.head
+    println(ksn2)
+    val ksn3 = Dom.stringToDom("@thing{asdf, author = {K.S.Narendra}}")
+      .get.entries.head._2.authors.get.head
+    println(ksn3)
+    val ksn4 = Dom.stringToDom("@thing{asdf, author = {K.S.Narendra and Hugh Jass}}")
+      .get.entries.head._2.authors.get.head
+    println(ksn4)
+
+    println((ksn1 eq ksn2) && (ksn2 eq ksn3) && (ksn3 eq ksn4))
 
     val fileText = scala.io.Source.fromFile("inputs/case-based-reasoning.bib.txt").mkString
     val res = Dom.stringToDom(fileText, false)

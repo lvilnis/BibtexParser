@@ -23,27 +23,26 @@ object Names {
 
   private def fragmentsToName(fragments: List[Token]): Name = {
     val sectionTokens = splitOn(fragments)(COMMA ==)
+    if (sectionTokens.flatten.length == 0) sys.error("Name must have at least one fragment!")
     val sections = sectionTokens.map(_ map {
       case FRAGMENT(f) => f
       case _ => sys.error("Only fragments should be left over after processing!")
     })
-    val isVon: String => Boolean = _.charAt(0).isLower
+    val isVon: String => Boolean = _.filter(_.isLetter).headOption.map(_.isLower).getOrElse(false)
     sections match {
-      case firstVonLast :: Nil if firstVonLast.exists(isVon) =>
-        val (first, vonLast) = partitionTakeWhile(firstVonLast)(!isVon(_))
-        val (von, last) = partitionTakeWhile(vonLast)(isVon)
-        segmentListsToName(first, von, last, Nil)
-      case firstLast :: Nil =>
-        val (first, last) = partitionTakeRight(firstLast)(1)
+      case List(firstVonLast) if firstVonLast.exists(isVon) =>
+        val (tsal, noVtsrif) = partitionTakeWhile(firstVonLast.reverse, 1)(!isVon(_))
+        val (first, von) = partitionTakeWhile(noVtsrif.reverse)(!isVon(_))
+        segmentListsToName(first, von, tsal.reverse, Nil)
+      case List(firstLast) =>
+        val (first, last) = partitionTakeRight(firstLast, 1)
         segmentListsToName(first, Nil, last, Nil)
-      // fixme: von is greedy - default parse is "{Jean} {de la Fontaine du} {Bois Joli}"
-      // fixme: non-letter characters are skipped when determining von-ness
-      case vonLast :: first :: Nil =>
-        val (von, last) = partitionTakeWhile(vonLast)(isVon)
-        segmentListsToName(first, von, last, Nil)
-      case vonLast :: jr :: first :: Nil =>
-        val (von, last) = partitionTakeWhile(vonLast)(isVon)
-        segmentListsToName(first, von, last, jr)
+      case List(vonLast, first) =>
+        val (tsal, nov) = partitionTakeWhile(vonLast.reverse, 1)(!isVon(_))
+        segmentListsToName(first, nov.reverse, tsal.reverse, Nil)
+      case List(vonLast, jr, first) =>
+        val (tsal, nov) = partitionTakeWhile(vonLast.reverse, 1)(!isVon(_))
+        segmentListsToName(first, nov.reverse, tsal.reverse, jr)
       case _ => sys.error("too many commas in name!")
     }
   }
@@ -67,10 +66,15 @@ object Names {
     loop().map(_.reverse).reverse
   }
 
-  private def partitionTakeWhile[T](xs: List[T])(pred: T => Boolean): (List[T], List[T]) =
-    (xs.takeWhile(pred), xs.dropWhile(pred))
+  private def partitionTakeWhile[T](
+    xs: List[T], minToTake: Int = 0)(pred: T => Boolean): (List[T], List[T]) = {
+    if (minToTake > xs.length) sys.error("minToTake is greater than length of list!")
+    val segment = xs.takeWhile(pred)
+    val left = if (segment.length < minToTake) xs.take(minToTake) else segment
+    (left, xs.drop(math.max(segment.length, minToTake)))
+  }
 
-  private def partitionTakeRight[T](xs: List[T])(toTake: Int): (List[T], List[T]) =
+  private def partitionTakeRight[T](xs: List[T], toTake: Int): (List[T], List[T]) =
     (xs.dropRight(toTake), xs.takeRight(toTake))
 
   private def lexNameFragments(namesString: String): List[Names.Token] =
@@ -107,7 +111,7 @@ object Names {
 
     // if its just one fragment with curly braces, its a literal, so leave out the braces
     def fragment =
-      (BRACE_DELIMITED_STRING ?) ~ ("[^\\s,}{-~]+" | (BRACE_DELIMITED_STRING ^^ ("{" + _ + "}"))).* ^^ {
+      (BRACE_DELIMITED_STRING_NO_OUTER ?) ~ ("[^\\s,}{-~]+" | BRACE_DELIMITED_STRING).* ^^ {
         case Some(bds) ~ Nil => bds
         case Some(bds) ~ rest => (("{" + bds + "}") :: rest).mkString
         case None ~ rest => rest.mkString

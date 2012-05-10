@@ -35,9 +35,11 @@ object Parser {
     override val skipWhitespace = false
     // FIXME: this should be '+' not '*' - go find places that rely on it being '+' and add a '?'
     def WS = r("\\s*")
+    def BRACE_DELIMITED_STRING_NO_OUTER: Parser[String] =
+      BRACE_DELIMITED_STRING ^^ (s => s.substring(1, s.length - 1))
     def BRACE_DELIMITED_STRING: Parser[String] =
-      '{' ~> (BRACE_DELIMITED_STRING ^^ ("{" + _ + "}") | """\\.""" | """[^}{]""").* <~ '}' ^^
-      (_.mkString)
+      '{' ~> (BRACE_DELIMITED_STRING | """\\.""" | """[^}{]""").* <~ '}' ^^
+      ("{" + _.mkString + "}")
 
     implicit def c(x: Char): Parser[Char] = accept(x)
     implicit def r(reg: String): Parser[String] = regex(reg.r)
@@ -84,12 +86,12 @@ object Parser {
 
     def literalOrSymbol = (SYMBOL ^^ (Abbrev(_))) | literal
 
-    def literal = (numericLiteral | braceDelimitedStringLiteral | quoteDelimitedStringLiteral)
+    def literal = (numericLiteral | braceDelimitedNoOuterLiteral | quoteDelimitedLiteral)
 
     def numericLiteral = "\\d+(\\.\\d+)?" ^^ (Literal(_))
-    def quoteDelimitedStringLiteral =
+    def quoteDelimitedLiteral =
       '"' ~> (BRACE_DELIMITED_STRING | """[^"]""" | """\\.""").* <~ '"' ^^ (xs => Literal(xs.mkString))
-    def braceDelimitedStringLiteral = BRACE_DELIMITED_STRING ^^ (Literal(_))
+    def braceDelimitedNoOuterLiteral = BRACE_DELIMITED_STRING_NO_OUTER ^^ (Literal(_))
 
     def AT = c('@')
     def COMMA_WS = r("\\s*,\\s*")
