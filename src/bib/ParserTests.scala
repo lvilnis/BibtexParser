@@ -263,7 +263,7 @@ object ParserTests {
     println(Names.stringToNames("Jean de la Fontaine du Bois Joli"))
 
 
-    val clx1 = Names.stringToNames("Charles Louis Xavier Joseph de la Vall{\\'e}e Poussin")
+    val clx1 = Names.stringToNames("Charles Louis Xavier Joseph de la Vall{\\'e}e Poussin").head
     println(clx1)
     val clx2 = Dom.stringToDom("@thing{asdf, author = \"Charles Louis Xavier Joseph de la Vall{\\'e}e Poussin\"}")
       .get.entries.head._2.authors.get.head
@@ -272,9 +272,9 @@ object ParserTests {
       .get.entries.head._2.authors.get.head
     println(clx3)
 
-    println((clx1 eq clx2) && (clx2 eq clx3))
+    println(clx1 == clx2 && clx2 == clx3)
 
-    val ksn1 = Names.stringToNames("K.S.Narendra")
+    val ksn1 = Names.stringToNames("K.S.Narendra").head
     println(ksn1)
     val ksn2 = Dom.stringToDom("@thing{asdf, author = \"K.S.Narendra\"}")
       .get.entries.head._2.authors.get.head
@@ -286,7 +286,7 @@ object ParserTests {
       .get.entries.head._2.authors.get.head
     println(ksn4)
 
-    println((ksn1 eq ksn2) && (ksn2 eq ksn3) && (ksn3 eq ksn4))
+    println(ksn1 == ksn2 && ksn2 == ksn3 && ksn3 == ksn4)
 
     val fileText = scala.io.Source.fromFile("inputs/case-based-reasoning.bib.txt").mkString
     val res = Dom.stringToDom(fileText, false)
@@ -316,5 +316,13 @@ object ParserTests {
 
     //    println(result)
     println(time)
+    val sizeMult = 10
+    val bigtext = List.range(0, sizeMult).map(_ => fileText2).mkString
+    val (bigresult, bigtime) =
+      timed(t =>
+        "%d times domain-decomp.bib (%f MB, %d lines) parsed and dom-ified in %d ms (%f MB/sec, %f lines/sec)" format
+        (sizeMult, numMb * sizeMult, numLines * sizeMult, t, (1000.0 * numMb * sizeMult) / t, (1000.0 * numLines * sizeMult) / t)) {
+        Dom.stringToDom(bigtext, false)
+      }
   }
 }
