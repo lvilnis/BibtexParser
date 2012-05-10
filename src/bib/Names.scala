@@ -91,7 +91,7 @@ object Names {
   object NameLexer extends Parser.BibtexParser {
 
     def nameLexer =
-      WS ~> ((fragment_comma_or_ws | initial) <~ WS).? ~
+      WS ~> ((initial | fragment_comma_or_ws) <~ WS).? ~
       ((and_ws | initial | hyphen | fragment_comma_or_ws) <~ WS).* ~
       (fragment | initial).? ^^ {
         case pre ~ xs ~ post => flattenTokenLists(pre.toList ++ xs ++ post.toList).filterNot(HYPHEN ==)
