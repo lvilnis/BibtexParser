@@ -46,7 +46,7 @@ object Names {
     }
   }
 
-  def segmentListsToName(
+  private def segmentListsToName(
     first: List[String], von: List[String], last: List[String], jr: List[String]) =
     Name(first.mkString(" "), von.mkString(" "), last.mkString(" "), jr.mkString(" "))
 
@@ -81,14 +81,14 @@ object Names {
 
   // check out http://www.tug.org/TUGboat/tb27-2/tb87hufflen.pdf
   // I should write a prose description of the rules of how it parses names, as they are extremely complicated
-  // TODO: handle hyphens as separators
+  // FIXME: should hyphens make it to the later phase? what makes them different from plain old spaces?
   object NameLexer extends Parser.BibtexParser {
 
     def nameLexer =
       WS ~> ((fragment_comma_or_ws | initial) <~ WS).? ~
-      ((and_ws | initial | fragment_comma_or_ws) <~ WS).* ~
+      ((and_ws | initial | hyphen | fragment_comma_or_ws) <~ WS).* ~
       (fragment | initial).? ^^ {
-        case pre ~ xs ~ post => flattenTokenLists(pre.toList ++ xs ++ post.toList)
+        case pre ~ xs ~ post => flattenTokenLists(pre.toList ++ xs ++ post.toList).filterNot(HYPHEN ==)
       }
 
     def fragment_comma_or_ws =

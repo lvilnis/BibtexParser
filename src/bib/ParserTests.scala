@@ -4,6 +4,8 @@ object ParserTests {
 
   import Parser.ParserImpl
 
+  // check out this site for test data: http://ftp.math.utah.edu/pub/bibnet/subjects/
+  // (BibNet is public domain)
   def main(args: Array[String]): Unit = {
 
     // I know, I know - these aren't real unit tests. Soon!
@@ -255,5 +257,11 @@ object ParserTests {
     println(Names.stringToNames("{\\e'}col{\\e'}"))
 
     println(Names.NameLexer.parseAll(Names.NameLexer.fragment, "{\\e'}col{\\e'}"))
+
+    println(Names.stringToNames("{hey ho lotsa stu\\}ff}"))
+
+    val fileText = scala.io.Source.fromFile("inputs/case-based-reasoning.bib.txt").mkString
+
+    println(Dom.stringToDom(fileText, false))
   }
 }

@@ -32,10 +32,11 @@ object Parser {
 
   trait BibtexParser extends RegexParsers {
     override val skipWhitespace = false
-
+    // FIXME: this should be '+' not '*' - go find places that rely on it being '+' and add a '?'
     def WS = r("\\s*")
     def BRACE_DELIMITED_STRING: Parser[String] =
-      '{' ~> (BRACE_DELIMITED_STRING ^^ ("{" + _ + "}") | "[^}{]+").* <~ '}' ^^ (_.mkString)
+      '{' ~> (BRACE_DELIMITED_STRING ^^ ("{" + _ + "}") | """[^}{\\]+""" | """\\.""").* <~ '}' ^^
+      (_.mkString)
 
     implicit def c(x: Char): Parser[Char] = accept(x)
     implicit def r(reg: String): Parser[String] = regex(reg.r)
@@ -47,6 +48,7 @@ object Parser {
       (freeComment ~! anyEntry ~! freeComment).+ ^^
       (_ flatMap { case x ~ y ~ z => List(x, y, z): List[Entry] })
 
+    // fixme: lines starting with %%% are comments
     def freeComment = "[^@]*" ^^ (CommentEntry(_))
 
     def anyEntry = AT ~> (commentEntry | stringEntry | preambleEntry | regularEntry)
@@ -84,7 +86,7 @@ object Parser {
     def literal = (numericLiteral | braceDelimitedStringLiteral | quoteDelimitedStringLiteral)
 
     def numericLiteral = "\\d+(\\.\\d+)?" ^^ (Literal(_))
-    def quoteDelimitedStringLiteral = '"' ~> "[^\"]*" <~ '"' ^^ (Literal(_))
+    def quoteDelimitedStringLiteral = '"' ~> """[^"\\]*(?:\\.[^"\\]*)*""" <~ '"' ^^ (Literal(_))
     def braceDelimitedStringLiteral = BRACE_DELIMITED_STRING ^^ (Literal(_))
 
     def AT = c('@')

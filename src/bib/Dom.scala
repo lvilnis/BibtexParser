@@ -17,22 +17,21 @@ object Dom {
 
   import annotation.tailrec
 
-  def stringToDom(str: String): Option[Document] = Parser.parseString(str).map(astToDom(_))
+  def stringToDom(str: String, expandAbbreviations: Boolean = true): Option[Document] =
+    Parser.parseString(str).map(astToDom(_, expandAbbreviations))
 
-  def astToDom(astDoc: AST.Document): Document = {
+  def astToDom(astDoc: AST.Document, expandAbbreviations: Boolean = true): Document = {
 
-    // NOTE: could make this a map with a default entry that passes things through unchanged
-    // if we want it to give something useful for missing stuff?
-    val standardEnvironment =
-      Map("jan" -> "jan", "feb" -> "feb", "mar" -> "mar", "apr" -> "apr",
-        "may" -> "may", "jun" -> "jun", "jul" -> "jul", "aug" -> "aug", "sep" -> "sep",
-        "oct" -> "oct", "nov" -> "nov", "dec" -> "dec")
+    // NOTE: map has a default entry that passes things through unchanged
+    // many fields (acknowledgement, etc) don't quote their string inputs so we should just pass thru
+    // month abbreviations also are not really useful to expand
+    val standardEnvironment = Map.empty[String, String].withDefault(identity)
 
     val emptyDocument = Document(Nil, Nil, Map.empty)
 
     def evalValue(value: AST.Value, env: Map[String, String]): String = value match {
       case AST.Literal(str) => str
-      case AST.Abbrev(id) => env(id)
+      case AST.Abbrev(id) => if (expandAbbreviations) env(id) else id
       case AST.Concat(l, r) => evalValue(l, env) + evalValue(r, env)
     }
     // can crossref reference entries that haven't been created yet?
