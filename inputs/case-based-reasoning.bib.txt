@@ -1,0 +1,5075 @@
+%%% -*-BibTeX-*-
+%%% ====================================================================
+%%%  BibTeX-file{
+%%%     author          = "Friedrich Gebhardt",
+%%%     version         = "1.06",
+%%%     date            = "27 November 2011",
+%%%     time            = "17:42:56 MST",
+%%%     filename        = "case-based-reasoning.bib",
+%%%     address         = "GMD German National Research Center for
+%%%                        Information Technology,
+%%%                        GMD, D-53754 Sankt Augustin,
+%%%                        Germany",
+%%%     telephone       = "02241-14-2660",
+%%%     FAX             = "02241-14-2384",
+%%%     URL             = "http://www-fit-ki.gmd.de/persons/friedrich.gebhardt.html",
+%%%     checksum        = "14506 5075 18257 191738",
+%%%     email           = "friedrich.gebhardt at gmd.de (Internet)",
+%%%     codetable       = "ISO/ASCII",
+%%%     keywords        = "bibliography, BibTeX, case-based reasoning,
+%%%                        CBR, Project FABEL",
+%%%     license         = "public domain",
+%%%     supported       = "yes",
+%%%     docstring       = "This is a bibliography of publications on
+%%%                        case-based reasoning (CBR) and related
+%%%                        fields, in particular publications from
+%%%                        project FABEL of GMD German National Research
+%%%                        Center for Information Technology (main
+%%%                        contractor),
+%%%
+%%%                            http://www-fit-ki.gmd.de/projects/fabel/fabel.html
+%%%
+%%%                        Publications already available elsewhere have
+%%%                        been omitted, in particular: FABEL reports
+%%%                        (Bibliography on FABEL), my own publications
+%%%                        (Bibliography for Friedrich Gebhardt), various
+%%%                        bibliographies of journals, book series and
+%%%                        conference proceedings.
+%%%
+%%%                        The companion LaTeX file,
+%%%                        case-based-reasoning.ltx, can be used to
+%%%                        typeset this bibliography.
+%%%
+%%%                        At version 1.06, the year coverage looked
+%%%                        like this:
+%%%
+%%%                             1801 (  1)     1867 (  0)     1933 (  0)
+%%%                             1802 (  1)     1868 (  0)     1934 (  0)
+%%%                             1803 (  0)     1869 (  0)     1935 (  1)
+%%%                             1828 (  0)     1894 (  0)     1960 (  1)
+%%%                             1831 (  0)     1897 (  0)     1963 (  1)
+%%%                             1832 (  0)     1898 (  0)     1964 (  1)
+%%%                             1834 (  0)     1900 (  0)     1966 (  2)
+%%%                             1838 (  0)     1904 (  0)     1970 (  1)
+%%%                             1841 (  0)     1907 (  0)     1973 (  1)
+%%%                             1842 (  0)     1908 (  0)     1974 (  1)
+%%%                             1843 (  0)     1909 (  0)     1975 (  2)
+%%%                             1844 (  0)     1910 (  0)     1976 (  1)
+%%%                             1846 (  0)     1912 (  0)     1978 (  1)
+%%%                             1847 (  0)     1913 (  0)     1979 (  2)
+%%%                             1848 (  0)     1914 (  0)     1980 (  1)
+%%%                             1849 (  0)     1915 (  0)     1981 (  4)
+%%%                             1850 (  0)     1916 (  0)     1982 (  6)
+%%%                             1851 (  0)     1917 (  0)     1983 (  5)
+%%%                             1852 (  0)     1918 (  0)     1984 (  1)
+%%%                             1853 (  0)     1919 (  0)     1985 (  2)
+%%%                             1854 (  0)     1920 (  0)     1986 (  6)
+%%%                             1855 (  0)     1921 (  0)     1987 (  9)
+%%%                             1856 (  0)     1922 (  0)     1988 (  2)
+%%%                             1857 (  0)     1923 (  0)     1989 (  9)
+%%%                             1858 (  0)     1924 (  0)     1990 ( 14)
+%%%                             1859 (  0)     1925 (  0)     1991 ( 16)
+%%%                             1860 (  0)     1926 (  0)     1992 ( 41)
+%%%                             1861 (  0)     1927 (  0)     1993 ( 39)
+%%%                             1862 (  0)     1928 (  0)     1994 ( 64)
+%%%                             1863 (  0)     1929 (  1)     1995 ( 53)
+%%%                             1864 (  0)     1930 (  0)     1996 ( 31)
+%%%                             1865 (  0)     1931 (  0)     1997 (  3)
+%%%
+%%%                             Article:         73
+%%%                             Book:            54
+%%%                             Booklet:          1
+%%%                             InCollection:    76
+%%%                             InProceedings:   79
+%%%                             MastersThesis:    8
+%%%                             PhdThesis:        7
+%%%                             Proceedings:     10
+%%%                             TechReport:      16
+%%%
+%%%                             Total entries:  324
+%%%
+%%%                        This file is available as part of the BibNet
+%%%                        Project.  The master copy is available for
+%%%                        public access on ftp.math.utah.edu in the
+%%%                        directory tree /pub/bibnet/authors.  It is
+%%%                        mirrored to netlib.bell-labs.com in the directory
+%%%                        tree /netlib/bibnet/authors, from which it is
+%%%                        available via anonymous ftp and the Netlib
+%%%                        service.
+%%%
+%%%                        The checksum field above contains a CRC-16
+%%%                        checksum as the first value, followed by the
+%%%                        equivalent of the standard UNIX wc (word
+%%%                        count) utility output of lines, words, and
+%%%                        characters.  This is produced by Robert
+%%%                        Solovay's checksum utility.",
+%%%  }
+%%% ====================================================================
+
+%%% ====================================================================
+%%% Acknowledgement abbreviations:
+
+@String{ack-fg =   "Friedrich Gebhardt,
+                  GMD German National Research Center for Information Technology,
+                  GMD, D-53754 Sankt Augustin,
+                  Germany,
+                  Tel:02241-14-2660,
+                  FAX: 02241-14-2384,
+                  e-mail: \path|friedrich.gebhardt@gmd.de|,
+                  URL: \path|http://www-fit-ki.gmd.de/persons/friedrich.gebhardt.html|"}
+
+%%% ====================================================================
+%%% Journal abbreviations:
+
+@String{inst-U-MARYLAND         = "University of Maryland"}
+
+@String{inst-U-MARYLAND:adr     = "College Park, MD, USA"}
+
+@String{j-AI-MAGAZINE           = "The AI Magazine"}
+
+@String{j-COGNITION             = "Cognition"}
+
+@String{j-INFO-PROC-MAN         = "Information Processing and Management"}
+
+@String{j-J-AM-SOC-INF-SCI      = "Journal of the American Society for Information Science"}
+
+@String{j-J-CHEM-INFO-COMP-SCI  = "Journal of Chemical Information and Computer Sciences"}
+
+@String{j-J-DOC                 = "Journal of Documentation"}
+
+@String{j-J-EXP-PSYCH-GEN       = "Journal of Experimental Psychology: General"}
+
+@String{j-J-GRAPH-TH            = "J. Graph Theory"}
+
+@String{j-J-INFO-SCI-PRINCIPLES-PRACTICE = "Journal of Information Science, Principles and Practice"}
+
+@String{j-J-MATH-BEHAV          = "Journal of Mathematical Behavior"}
+
+@String{j-KNOWL-ENG-REV         = "The Knowledge Engineering Review"}
+
+@String{j-MEM-COG               = "Memory and Cognition"}
+
+@String{j-PATTERN-RECOGN        = "Pattern Recognition"}
+
+@String{j-PROC-IEEE             = "Proceedings of the IEEE"}
+
+@String{j-WIRTSCHAFTSINFORMATIK = "Wirtschaftsinformatik"}
+
+@String{j-ZOR-MATH-METHODS-OR   = "ZOR --- Mathematical Methods of Operations Research"}
+
+%%% ====================================================================
+%%% Publishers and their addresses:
+
+@String{pub-ACM                 = "ACM Press"}
+
+@String{pub-ACM:adr             = "New York, NY 10036, USA"}
+
+@String{pub-AP                  = "Academic Press"}
+
+@String{pub-AP:adr              = "New York, USA"}
+
+@String{pub-AW                  = "Ad{\-d}i{\-s}on-Wes{\-l}ey"}
+
+@String{pub-AW:adr              = "Reading, MA, USA"}
+
+@String{pub-BI-WISS             = "BI-Wissenschaftsverlag"}
+
+@String{pub-BI-WISS:adr         = "Mannheim, Germany; Wien, Austria;
+                                    Z{\"u}rich, Switzerland"}
+
+@String{pub-BUTTERWORTHS        = "Butterworths"}
+
+@String{pub-BUTTERWORTHS:adr    = "London, UK"}
+
+@String{pub-CUP                 = "Cambridge University Press"}
+
+@String{pub-CUP:adr             = "Cambridge, UK"}
+
+@String{pub-DP                  = "Digital Press"}
+
+@String{pub-DP:adr              = "12 Crosby Drive, Bedford, MA 01730, USA"}
+
+@String{pub-ELS                 = "Elsevier"}
+
+@String{pub-ELS:adr             = "Amsterdam, The Netherlands"}
+
+@String{pub-ESP                 = "Elsevier Science Publishers B.V."}
+
+@String{pub-ESP:adr             = "Amsterdam, The Netherlands"}
+
+@String{pub-GMD                 = "GMD"}
+
+@String{pub-GMD:adr             = "Bonn, Germany"}
+
+@String{pub-IEEE                = "IEEE Computer Society Press"}
+
+@String{pub-IEEE:adr            = "1109 Spring Street, Suite 300, Silver
+                                    Spring, MD 20910, USA"}
+
+@String{pub-IOS                 = "IOS Press"}
+
+@String{pub-IOS:adr             = "Amsterdam, The Netherlands"}
+
+@String{pub-KLUWER              = "Kluwer Academic Publishers"}
+
+@String{pub-KLUWER:adr          = "Dordrecht, The Netherlands"}
+
+@String{pub-MCGRAW-HILL         = "Mc{\-}Graw-Hill"}
+
+@String{pub-MCGRAW-HILL:adr     = "New York, NY, USA"}
+
+@String{pub-NH                  = "North-Holland Publishing Co."}
+
+@String{pub-NH:adr              = "Amsterdam, The Netherlands"}
+
+@String{pub-OLDENBOURG          = "R. Oldenbourg"}
+
+@String{pub-OLDENBOURG:adr      = "M{\"u}nchen, Germany"}
+
+@String{pub-OXFORD              = "Oxford University Press"}
+
+@String{pub-OXFORD:adr          = "Walton Street, Oxford OX2 6DP, UK"}
+
+@String{pub-PH                  = "Pren{\-}tice-Hall"}
+
+@String{pub-PH:adr              = "Englewood Cliffs, NJ 07632, USA"}
+
+@String{pub-PITMAN              = "Pitman Publishing Ltd."}
+
+@String{pub-PITMAN:adr          = "London, UK"}
+
+@String{pub-PLENUM              = "Plenum Press"}
+
+@String{pub-PLENUM:adr          = "New York, NY, USA; London, UK"}
+
+@String{pub-SRI                 = "SRI International"}
+
+@String{pub-SRI:adr             = "333 Ravenswood Avenue, Menlo Park, CA
+                                    94025-3493, USA, Tel: +1 415 859 6387, FAX:
+                                    +1 415 859-6028"}
+
+@String{pub-SV                  = "Springer-Verlag"}
+
+@String{pub-SV:adr              = "Berlin, Germany~/ Heidelberg, Germany~/
+                                    London, UK~/ etc."}
+
+@String{pub-TEUBNER             = "Teubner"}
+
+@String{pub-TEUBNER:adr         = "Stuttgart, Germany; Leipzig, Germany"}
+
+@String{pub-VIEWEG              = "Friedrich Vieweg und Sohn"}
+
+@String{pub-VIEWEG:adr          = "Braunschweig, Germany"}
+
+@String{pub-WILEY               = "John Wiley and Sons"}
+
+@String{pub-WILEY:adr           = "New York, NY, USA; London, UK; Sydney,
+                                    Australia"}
+
+%%% ====================================================================
+%%% Series abbreviations:
+
+@String{ser-LNAI                = "Lecture Notes in Artificial Intelligence"}
+
+@String{ser-LNCS                = "Lecture Notes in Computer Science"}
+
+%%% ====================================================================
+%%% Bibliography entries:
+
+@Book{Durand:1801:RPE,
+  author =       "J. N. L. Durand",
+  title =        "Recueil et Parall{\`e}le des Edifices de tout genre
+                 Anciens et Modernes",
+  publisher =    "????",
+  address =      "????",
+  year =         "1801",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Paris An IX, dit ``le grand Durand''",
+  acknowledgement = ack-fg,
+}
+
+@Book{Durand:1802:PLA,
+  author =       "J. N. L. Durand",
+  title =        "Precis des Le{\c{c}}ons d'Architecture donn{\'e}es
+                 {\`a} l'{Ecole Polytechnique}",
+  publisher =    "????",
+  address =      "????",
+  year =         "1802",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Paris An X",
+  acknowledgement = ack-fg,
+}
+
+@Book{Kohler:1929:GP,
+  author =       "W. K{\"o}hler",
+  title =        "Gestalt {Psychology}",
+  publisher =    "Liveright",
+  address =      "New York",
+  year =         "1929",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Kofka:1935:PGP,
+  author =       "K. Kofka",
+  title =        "Principles of {Gestalt} Psychology",
+  publisher =    "Harcourt Brace",
+  address =      "New York",
+  year =         "1935",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Banham:1960:TDF,
+  author =       "Peter Reyner Banham",
+  title =        "Theory and Design in the {First Machine Age}",
+  publisher =    "????",
+  address =      "????",
+  pages =        "338",
+  year =         "1960",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Reprinted 1980 by MIT Press, Cambridge, MA",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Feigenbaum:1963:SNL,
+  author =       "Edward A. Feigenbaum",
+  editor =       "E. A. Feigenbaum and J. Feldman",
+  booktitle =    "Computers and Thought",
+  title =        "The simulation of natural learning behaviour",
+  publisher =    pub-MCGRAW-HILL,
+  address =      pub-MCGRAW-HILL:adr,
+  pages =        "297--309",
+  year =         "1963",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{McLuhan:1964:UME,
+  author =       "Marshall McLuhan",
+  title =        "Understanding Media: the Extensions of Man",
+  publisher =    pub-MCGRAW-HILL,
+  address =      pub-MCGRAW-HILL:adr,
+  pages =        "xxiii + 365",
+  year =         "1964",
+  ISBN =         "0-262-63159-8",
+  ISBN-13 =      "978-0-262-63159-4",
+  LCCN =         "P90 .M26 1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Reprinted by MIT Press, Cambridge, MA, 1994.",
+  acknowledgement = ack-fg,
+}
+
+@Book{Cleverdon:1966:FDP,
+  author =       "Cyril Cleverdon and Jack Mills and Michael Keen",
+  title =        "Factors Determining the Performance of Indexing
+                 Systems: {ASLIB Cranfield Research Project}. Volume 1:
+                 Design",
+  publisher =    "ASLIB Cranfield Research Project",
+  address =      "Cranfield",
+  pages =        "377",
+  year =         "1966",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Metzger:1966:FW,
+  author =       "W. Metzger",
+  editor =       "W. Metzger",
+  booktitle =    "Handbuch der {Psychologie}, {Bd}. 1 {Allgemeine
+                 Psychologie}, 1.1. {Der Aufbau} des {Erkennens}",
+  title =        "{Figural-Wahrnehmung}",
+  publisher =    "Hogrefe, G{\"o}ttingen",
+  pages =        "693--744",
+  year =         "1966",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Zusne:1970:VPF,
+  author =       "L. Zusne",
+  title =        "Visual Perception of Form",
+  publisher =    pub-AP,
+  address =      pub-AP:adr,
+  year =         "1970",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Biederman:1973:SOR,
+  author =       "I. Biederman and A. L. Glass and E. W. Stacy",
+  title =        "Searching for objects in real world scenes",
+  journal =      j-J-EXP-PSYCH-GEN,
+  volume =       "91",
+  pages =        "22--27",
+  year =         "1973",
+  CODEN =        "JPGEDD",
+  ISSN =         "0096-3445",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Haller:1974:MOS,
+  author =       "Fritz Haller",
+  title =        "{MIDI} --- ein offenes system f{\"u}r mehrgeschossige
+                 bauten mit integrierter medieninstallation",
+  publisher =    "USM bausysteme haller",
+  address =      "M{\"u}nsingen",
+  pages =        "",
+  year =         "1974",
+  ISBN =         "????",
+  ISBN-13 =      "????",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Ertel:1975:GMP,
+  editor =       "Suitbert Ertel and Lilly Kemmler and Michael Stadler",
+  title =        "{Gestalttheorie in der modernen Psychologie: Wolfgang
+                 Metzger zum 75. Geburtstag}",
+  publisher =    "Dr. Dietrich Steinkopff Verlag",
+  address =      "Darmstadt, Germany",
+  pages =        "ix + 319",
+  year =         "1975",
+  ISBN =         "3-7985-0400-8",
+  ISBN-13 =      "978-3-7985-0400-4",
+  LCCN =         "BF203.G47",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Gregson:1975:PS,
+  author =       "Robert A. M. Gregson",
+  title =        "Psychometrics of Similarity",
+  publisher =    pub-AP,
+  address =      pub-AP:adr,
+  pages =        "ix + 262",
+  year =         "1975",
+  ISBN =         "0-12-301550-2",
+  ISBN-13 =      "978-0-12-301550-1",
+  LCCN =         "BF39 .G73",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Rosenfeld:1976:DPA,
+  author =       "Azriel Rosenfeld",
+  title =        "Digital Picture Analysis",
+  volume =       "11",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "xi + 351",
+  year =         "1976",
+  ISBN =         "0-387-07579-8",
+  ISBN-13 =      "978-0-387-07579-2",
+  LCCN =         "TA1630 .D53",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Topics in Applied Physics",
+  acknowledgement = ack-fg,
+}
+
+@Book{Gonzalez:1978:SPR,
+  author =       "Rafael C. Gonzalez and Michael G. Thomason",
+  title =        "Syntactic Pattern Recognition: an Introduction",
+  publisher =    pub-AW,
+  address =      pub-AW:adr,
+  pages =        "283",
+  year =         "1978",
+  ISBN =         "0-201-02931-6",
+  ISBN-13 =      "978-0-201-02931-4",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Gati:1979:FAB,
+  author =       "Georg Gati",
+  title =        "Further annotated bibliography on the isomorphism
+                 disease",
+  journal =      j-J-GRAPH-TH,
+  volume =       "3",
+  pages =        "95--109",
+  year =         "1979",
+  CODEN =        "JGTHDO",
+  ISSN =         "0364-9024",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Ortony:1979:BLS,
+  author =       "Andrew Ortony",
+  title =        "Beyond literal similarity",
+  journal =      "Psychological Review",
+  volume =       "86",
+  pages =        "161--180",
+  year =         "1979",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Konolige:1980:FOF,
+  author =       "Kurt Konolige",
+  title =        "A first-order formalization on knowledge and action
+                 for a multi-agent planning system",
+  type =         "Technical {Report}",
+  number =       "232",
+  institution =  pub-SRI,
+  address =      pub-SRI:adr,
+  year =         "1980",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Banham:1981:DCI,
+  author =       "Peter Reyner Banham and Penny Sparke",
+  title =        "Design by Choice: Ideas in Architecture",
+  publisher =    "Academy Editions",
+  address =      "London",
+  pages =        "152",
+  year =         "1981",
+  ISBN =         "????",
+  ISBN-13 =      "????",
+  LCCN =         "NA680.B316 1981",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Chi:1981:CRP,
+  author =       "M. T. H. Chi and P. Feltovich and R. Glaser",
+  title =        "Categorization and representation of physics problems
+                 by experts and novices",
+  journal =      "Cognitive Science",
+  volume =       "5",
+  pages =        "121--152",
+  year =         "1981",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Jones:1981:RST,
+  author =       "Karen Sparck Jones",
+  editor =       "Karen Sparck Jones",
+  booktitle =    "Information Retrieval Experiment",
+  title =        "Retrieval system tests 1958 --- 1978",
+  publisher =    pub-BUTTERWORTHS,
+  address =      pub-BUTTERWORTHS:adr,
+  pages =        "213--255",
+  year =         "1981",
+  ISBN =         "0-408-10648-4",
+  ISBN-13 =      "978-0-408-10648-1",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Robertson:1981:MIR,
+  author =       "Stephen E. Robertson",
+  editor =       "Karen Sparck Jones",
+  booktitle =    "Information Retrieval Experiment",
+  title =        "The methodology of information retrieval experiment",
+  publisher =    pub-BUTTERWORTHS,
+  address =      pub-BUTTERWORTHS:adr,
+  pages =        "9--31",
+  year =         "1981",
+  ISBN =         "0-408-10648-4",
+  ISBN-13 =      "978-0-408-10648-1",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Belkin:1982:AIR,
+  author =       "Nicklas J. Belkin and Robert Oddy and Helen M.
+                 Brooks",
+  title =        "{ASK} for information retrieval. {Part} 1:
+                 {Background} and theory. {Part} 2: {Results} of a
+                 design study",
+  journal =      j-J-DOC,
+  volume =       "38",
+  pages =        "61--71, 145--164",
+  year =         "1982",
+  CODEN =        "JDOCAS",
+  ISSN =         "0022-0418 (print), 1758-7379 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Biederman:1982:SPD,
+  author =       "I. Biederman and R. J. Mezzanotte and J. C.
+                 Rabinowitz",
+  title =        "Scene perception: detecting and judging objects
+                 undergrouping relational violations",
+  journal =      "Cognitive Psychology",
+  volume =       "14",
+  pages =        "143--177",
+  year =         "1982",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Hartmann:1982:RCL,
+  author =       "Georg Hartmann",
+  booktitle =    "Proc. 6th {Internat}. {Conf}. on {Pattern Recognition}
+                 ({ICPR})",
+  title =        "Recognition of continuous line structures by a
+                 hierarchical system",
+  publisher =    "IEEE Computer Society, New York",
+  address =      "M{\"u}nchen",
+  pages =        "195--200",
+  month =        oct,
+  year =         "1982",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Schank:1982:RMO,
+  author =       "Roger C. Schank",
+  editor =       "Wendy G. Lehnert and Martin H. Ringle",
+  booktitle =    "Strategies for Natural Language Processing",
+  title =        "Reminding and memory organization: an introduction to
+                 {MOPs}",
+  publisher =    "Erlbaum",
+  address =      "Hillsdale, NJ",
+  pages =        "455--493",
+  year =         "1982",
+  ISBN =         "0-89859-266-6",
+  ISBN-13 =      "978-0-89859-266-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Silver:1982:PPP,
+  author =       "E. A. Silver",
+  title =        "Problem perception, problem schemata and problem
+                 solving",
+  journal =      j-J-MATH-BEHAV,
+  volume =       "Sum 3",
+  number =       "2",
+  pages =        "169--181",
+  year =         "1982",
+  ISSN =         "0732-3123",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Treisman:1982:PGA,
+  author =       "A. Treisman",
+  title =        "Perceptual grouping and attention in visual search for
+                 features and for objects",
+  journal =      "Journal of Experimental Psychology: Human Perception
+                 and Performance",
+  volume =       "8",
+  number =       "2",
+  pages =        "194--214",
+  year =         "1982",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Brown:1983:MHS,
+  author =       "A. L. Brown",
+  editor =       "F. E. Weinert and R. H. Kluwe",
+  booktitle =    "{Metakognition, Motivation und Lernen}",
+  title =        "{Metakognition, Handlungskontrolle, Selbststeuerung
+                 und andere noch geheimnisvollere Mechanismen}",
+  publisher =    "Kohlhammer",
+  address =      "Stuttgart",
+  pages =        "60--80",
+  year =         "1983",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Ehrig:1983:GGT,
+  editor =       "Hartmut Ehrig and Manfred Nagl and Grzegorz
+                 Rozenberg",
+  title =        "Graph Grammars and their Application to Computer
+                 Science: 2nd International Workshop, Osnabr{\"u}ck,
+                 1982",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "452",
+  year =         "1983",
+  ISBN =         "3-540-12310-5",
+  ISBN-13 =      "978-3-540-12310-1",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Jones:1983:IR,
+  author =       "Karen Sparck Jones",
+  editor =       "Kevin P. Jones",
+  booktitle =    "Intelligent Information Retrieval: {Informatics} 7",
+  title =        "Intelligent retrieval",
+  publisher =    "Aslib, London",
+  address =      "Cambridge",
+  pages =        "136--142",
+  month =        mar,
+  year =         "1983",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Kluwe:1983:EEP,
+  author =       "R. H. Kluwe and K. Schiebler",
+  editor =       "F. E. Weinert and R. H. Kluwe",
+  booktitle =    "{Metakognition, Motivation und Lernen}",
+  title =        "{Entwicklung exekutiver Prozesse und kognitiver
+                 Leistungen}",
+  publisher =    "Kohlhammer",
+  address =      "Stuttgart",
+  pages =        "31--59",
+  year =         "1983",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Bortz:1984:LEF,
+  author =       "J. Bortz",
+  title =        "Lehrbuch der empirischen {Forschung}",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "649",
+  year =         "1984",
+  ISBN =         "3-540-12852-2",
+  ISBN-13 =      "978-3-540-12852-6",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Booklet{Haller:1985:AI,
+  author =       "Fritz Haller",
+  title =        "{ARMILLA} --- ein installationsmodell",
+  howpublished = "Institut f{\"u}r Baugestaltung, Universit{\"a}t
+                 Karlsruhe",
+  address =      "Karlsruhe, Germany",
+  pages =        "141",
+  year =         "1985",
+  ISBN =         "????",
+  ISBN-13 =      "????",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Vincent:1985:AB,
+  author =       "Gordon S. Vincent and John Peacock",
+  title =        "The Automated Building",
+  publisher =    "Architectural Press",
+  address =      "London",
+  pages =        "211",
+  year =         "1985",
+  ISBN =         "0-85139-737-9",
+  ISBN-13 =      "978-0-85139-737-5",
+  LCCN =         "TH6012.V56 1985",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Additional material by Alec Robertson.",
+  acknowledgement = ack-fg,
+}
+
+@Article{Bunke:1986:ISC,
+  author =       "Horst Bunke and Alberto Sanfeliu",
+  title =        "Introduction [to a special copy on syntactic pattern
+                 recognition]",
+  journal =      j-PATTERN-RECOGN,
+  volume =       "19",
+  pages =        "249--253",
+  year =         "1986",
+  CODEN =        "PTNRA8",
+  ISSN =         "0031-3203 (print), 1873-5142 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Ceci:1986:DRS,
+  author =       "S. J. Ceci and J. K. Liker",
+  title =        "A day at the races: a study of {IQ}, experise and
+                 cognitive complexity",
+  journal =      j-J-EXP-PSYCH-GEN,
+  volume =       "115",
+  pages =        "255--266",
+  year =         "1986",
+  CODEN =        "JPGEDD",
+  ISSN =         "0096-3445",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Gentner:1986:SSS,
+  author =       "Dedre Gentner and C. Toupin",
+  title =        "Systematicity and surface similarity in the
+                 development of analogy",
+  journal =      "Cognitive Science",
+  volume =       "10",
+  pages =        "277--300",
+  year =         "1986",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Gick:1986:PSS,
+  author =       "Mary L. Gick",
+  title =        "Problem-solving strategies",
+  journal =      "Educational Psychologist",
+  volume =       "21",
+  number =       "1 \& 2",
+  pages =        "99--120",
+  year =         "1986",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Malfroy:1986:KGM,
+  author =       "S. Malfroy",
+  title =        "{Kleines Glossar zu Muratoris Stadtmorphologie}",
+  journal =      "ARCH+, Zeitschrift f{\"u}r Architektur und
+                 St{\"a}dtebau",
+  volume =       "??",
+  pages =        "66--73",
+  month =        jun,
+  year =         "1986",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Suter:1986:HIP,
+  author =       "P. Suter and R. Geller and N. Kohler and J. van
+                 Gilst",
+  title =        "{Haustechnik in der Integralen Planung}",
+  type =         "Impulsprogramm {Haustechnik}",
+  institution =  "Bundesamt f{\"u}r Konjunkturfragen",
+  address =      "Bern, Schweiz",
+  year =         "1986",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Bartsch-Sporl:1987:ABF,
+  author =       "Brigitte Bartsch-Sp{\"o}rl",
+  title =        "{Ans{\"a}tze zur Behandlung von fallorientiertem
+                 Erfahrungs\-wissen in Expertensystemen}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "1",
+  number =       "4",
+  pages =        "32--36",
+  year =         "1987",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Belkin:1987:RT,
+  author =       "Nicholas J. Belkin and W. Bruce Croft",
+  editor =       "Martha E. Williams",
+  booktitle =    "Annual Review of Information Science and Technology",
+  title =        "Retrieval techniques",
+  volume =       "22",
+  publisher =    pub-ELS,
+  address =      pub-ELS:adr,
+  pages =        "109--145",
+  year =         "1987",
+  ISBN =         "0-444-70302-0",
+  ISBN-13 =      "978-0-444-70302-6",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{David:1987:MES,
+  author =       "B. T. David",
+  editor =       "tenHagen and others",
+  booktitle =    "Intelligent CAD Systems",
+  title =        "Multi-expert systems for {CAD}",
+  publisher =    "Springer, Berlin",
+  address =      "Noordwijkerhout",
+  year =         "1987",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Dorner:1987:PI,
+  editor =       "Dietrich D{\"o}rner",
+  title =        "{Probleml{\"o}sen als Informationsverarbeitung}",
+  publisher =    "Kohlhammer",
+  address =      "Stuttgart",
+  pages =        "151",
+  year =         "1987",
+  ISBN =         "3-17-001353-X",
+  ISBN-13 =      "978-3-17-001353-7",
+  LCCN =         "BF441.D63",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Holyoak:1987:SSS,
+  author =       "K. J. Holyoak and K. Koh",
+  title =        "Surface and structural similarity in analogical
+                 transfer",
+  journal =      j-MEM-COG,
+  volume =       "115",
+  pages =        "332--340",
+  year =         "1987",
+  CODEN =        "MYCGAO",
+  ISSN =         "0090-502X",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Luer:1987:AEP,
+  author =       "Gerd L{\"u}er",
+  title =        "{Allgemeine experimentelle Psychologie: eine
+                 Einf{\"u}hrung in die methodischen Grundlagen mit
+                 praktischen Ubungen f{\"u}r das experimentelle
+                 Praktikum}",
+  publisher =    "Fischer",
+  address =      "Stuttgart",
+  pages =        "xiii + 478",
+  year =         "1987",
+  ISBN =         "3-437-00477-8",
+  ISBN-13 =      "978-3-437-00477-3",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Sprigg:1987:SLW,
+  author =       "June Sprigg",
+  title =        "{Shaker} --- Life, Work, and Art",
+  publisher =    "Stewart, Tabori \& Chang",
+  address =      "New York",
+  pages =        "272",
+  year =         "1987",
+  ISBN =         "1-55670-011-3",
+  ISBN-13 =      "978-1-55670-011-8",
+  LCCN =         "BX9771.S68 1987",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Voss:1987:EUB,
+  author =       "Angi Vo{\ss} and Bernd S. M{\"u}ller and J{\"u}rgen
+                 Walther",
+  editor =       "W. Brauer and W. Wahlster",
+  booktitle =    "Wissensbasierte Systeme: 2. Internationaler
+                 GI-Kongre{\ss}",
+  title =        "{\"Uber ein Experiment zur Umsetzung einer
+                 BABYLON-Wissensbasis in Modell-Konstrukte: Erste
+                 Schritte zur Model\-lierung wissensbasierter Systeme}",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "358--368",
+  year =         "1987",
+  ISBN =         "3-540-18494-5",
+  ISBN-13 =      "978-3-540-18494-2",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Wielinga:1987:ME,
+  author =       "Bob J. Wielinga and Joost A. Breuker",
+  editor =       "Ben du Boulay and David Hogg and Luc Steels",
+  booktitle =    "Advances in Artificial Intelligence --- II, ECAI-86,
+                 Brighton",
+  title =        "Models of expertise",
+  publisher =    pub-NH,
+  address =      pub-NH:adr,
+  pages =        "306--318",
+  year =         "1987",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Garijo:1988:KBS,
+  author =       "F. J. Garijo and L. A. de Garrido",
+  booktitle =    "Proceedings of the 1988 IEEE International Conference
+                 on Systems, Man, and Cybernetics",
+  title =        "A knowledge-based system for house design",
+  organization = pub-IEEE,
+  publisher =    "International Academic Publishers, Beijing",
+  address =      pub-IEEE:adr,
+  pages =        "806--809",
+  month =        aug,
+  year =         "1988",
+  ISBN =         "7-80003-039-3",
+  ISBN-13 =      "978-7-80003-039-0",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@PhdThesis{Richter:1988:EII,
+  author =       "P. Richter",
+  title =        "{Entwicklung einer integrierten Informationsstruktur
+                 f{\"u}r relationale Datenbanken im Bauwesen}",
+  school =       "Gesamthochschule Kassel",
+  address =      "Kassel, Germany",
+  year =         "1988",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Bareiss:1989:EBK,
+  author =       "R. Bareiss",
+  title =        "Exemplar-Based Knowledge Acquisition: a Unified
+                 Approach to Concept Representation, Classification and
+                 Learning",
+  publisher =    pub-AP,
+  address =      pub-AP:adr,
+  pages =        "169",
+  year =         "1989",
+  ISBN =         "0-12-078268-X (??invalid ISBN checksum??)",
+  ISBN-13 =      "978-0-12-078268-0 (??invalid ISBN-13 checksum??)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Brown:1989:DPS,
+  author =       "David C. Brown and B. Chandrasekaran",
+  title =        "Design Problem Solving: Knowledge Structures and
+                 Control Strategies",
+  publisher =    pub-PITMAN,
+  address =      pub-PITMAN:adr,
+  pages =        "199",
+  year =         "1989",
+  ISBN =         "0-273-08766-5",
+  ISBN-13 =      "978-0-273-08766-3",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Long:1989:MDU,
+  author =       "William J. Long",
+  title =        "Medical diagnosis using a probabilistic causal
+                 network",
+  journal =      "Applied Artificial Intelligence",
+  volume =       "3",
+  pages =        "367--383",
+  year =         "1989",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{McLuhan:1989:GV,
+  author =       "Marshall McLuhan and Bruce R. Powers",
+  title =        "The Global Village: transformations in world life and
+                 media in the 21st century",
+  publisher =    pub-OXFORD,
+  address =      pub-OXFORD:adr,
+  pages =        "xiii + 220",
+  year =         "1989",
+  ISBN =         "0-19-507910-8",
+  ISBN-13 =      "978-0-19-507910-4",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Muller:1989:GM,
+  author =       "H. Muller",
+  editor =       "J. Gauchel",
+  booktitle =    "KI-Forschung im Baubereich",
+  title =        "{Die Geb{\"a}udeh{\"u}lle von morgen}",
+  publisher =    "Universit{\"a}t Karlsruhe",
+  year =         "1989",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Payne:1989:SEE,
+  author =       "F. William Payne",
+  title =        "Strategies for Energy Efficient Plants \& Intelligent
+                 Buildings",
+  publisher =    "Fairmont Press",
+  address =      "Lilburn, GA",
+  pages =        "xv + 603",
+  year =         "1989",
+  ISBN =         "0-88173-020-3, 0-13-850686-8 (Prentice-Hall)",
+  ISBN-13 =      "978-0-88173-020-3, 978-0-13-850686-5 (Prentice-Hall)",
+  LCCN =         "TJ163.5.P68 S77 1987",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Based on papers presented at the 9th World Energy
+                 Engineering Congress, Oct. 21--24, 1986 in Atlanta,
+                 GA",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Reimann:1989:HE,
+  author =       "P. Reimann and M. T. H. Chi",
+  editor =       "K. J. Gilhooly",
+  booktitle =    "Human and Machine Problem Solving",
+  title =        "Human expertise",
+  publisher =    pub-PLENUM,
+  address =      pub-PLENUM:adr,
+  pages =        "161--191",
+  year =         "1989",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Vosniadou:1989:SAR,
+  author =       "Stella Vosniadou and Andrew Ortony",
+  title =        "Similarity and Analogical Reasoning",
+  publisher =    pub-CUP,
+  address =      pub-CUP:adr,
+  pages =        "592",
+  year =         "1989",
+  ISBN =         "0-521-38935-6",
+  ISBN-13 =      "978-0-521-38935-8",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Aamodt:1990:KIC,
+  author =       "Agnar Aamodt",
+  editor =       "L. C. Aiello",
+  booktitle =    "Proceedings of ECAI-90",
+  title =        "Knowledge-intensive case-based reasoning and sustained
+                 reasoning",
+  publisher =    "Pitman, London",
+  address =      "Stockholm",
+  pages =        "1--6",
+  year =         "1990",
+  ISBN =         "0-273-08822-X",
+  ISBN-13 =      "978-0-273-08822-6",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Babel:1990:BBA,
+  author =       "Luitpold Babel and Gottfried Tinhofer",
+  title =        "A branch and bound algorithm for the maximum clique
+                 problem",
+  journal =      j-ZOR-MATH-METHODS-OR,
+  volume =       "34",
+  pages =        "207--217",
+  year =         "1990",
+  CODEN =        "ZMRREP",
+  ISSN =         "0340-9422",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@PhdThesis{Babel:1990:BBV,
+  author =       "Luitpold Babel",
+  title =        "{Ein Branch and Bound-Verfahren zur L{\"o}sung des
+                 Maximum-Clique-Problems}",
+  type =         "Diss.",
+  school =       "Technische Universit{\"a}t M{\"u}nchen",
+  address =      "M{\"u}nchen, Germany",
+  pages =        "114",
+  month =        dec,
+  year =         "1990",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Baumgarten:1990:PN,
+  author =       "Bernd Baumgarten",
+  title =        "Petri-{Netze}",
+  publisher =    pub-BI-WISS,
+  address =      pub-BI-WISS:adr,
+  pages =        "369",
+  year =         "1990",
+  ISBN =         "3-411-14291-X",
+  ISBN-13 =      "978-3-411-14291-0",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Blair:1990:FTI,
+  author =       "David C. Blair and M. E. Maron",
+  title =        "Full-text information retrieval: further analysis and
+                 clarification",
+  journal =      j-INFO-PROC-MAN,
+  volume =       "26",
+  pages =        "437--447",
+  year =         "1990",
+  CODEN =        "IPMADK",
+  ISSN =         "0306-4573 (print), 1873-5371 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Budde:1990:SWP,
+  author =       "Reinhard Budde and Heinz Z{\"u}llighoven",
+  title =        "{Software-Werkzeuge in einer Programmierwerkstatt:
+                 Ans{\"a}tze eines hermeneutisch fundierten Werkzeug-
+                 und Maschinenbegriffs}",
+  number =       "182",
+  publisher =    pub-OLDENBOURG,
+  address =      pub-OLDENBOURG:adr,
+  pages =        "288",
+  year =         "1990",
+  ISBN =         "3-486-21629-5",
+  ISBN-13 =      "978-3-486-21629-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Also: Berlin, Techn. Univ., Diss., 1989",
+  series =       "GMD-Bericht",
+  acknowledgement = ack-fg,
+}
+
+@Article{Karbach:1990:MMR,
+  author =       "Werner Karbach and Marc Linster and Angi Vo{\ss}",
+  title =        "Models, methods, roles and tasks: many labels --- one
+                 idea?",
+  journal =      "Knowledge Acquisition",
+  volume =       "2",
+  pages =        "279--299",
+  year =         "1990",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Kratzer:1990:NNG,
+  author =       "Klaus Peter Kratzer",
+  title =        "{Neuronale Netze: Grundlagen und Anwendungen}",
+  publisher =    "Carl Hanser Verlag",
+  address =      "M{\"u}nchen; Wien",
+  pages =        "211",
+  year =         "1990",
+  ISBN =         "3-466-16026-4 (??invalid ISBN checksum??)",
+  ISBN-13 =      "978-3-466-16026-6 (??invalid ISBN-13 checksum??)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Kuh:1990:RAV,
+  author =       "Ernest S. Kuh and Tatsuo Ohtsuki",
+  title =        "Recent advances in {VLSI} layout",
+  journal =      j-PROC-IEEE,
+  volume =       "78",
+  pages =        "237--263",
+  year =         "1990",
+  CODEN =        "IEEPAD",
+  ISSN =         "0018-9219",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Niemann:1990:PAU,
+  author =       "H. Niemann",
+  title =        "Pattern {Analysis} and {Understanding}, 2nd edition",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  edition =      "2",
+  pages =        "371",
+  year =         "1990",
+  ISBN =         "3-540-51378-7",
+  ISBN-13 =      "978-3-540-51378-0",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Pawley:1990:TDS,
+  author =       "Martin Pawley",
+  title =        "Theory and Design in the Second Machine Age",
+  publisher =    "Blackwell",
+  address =      "Oxford",
+  pages =        "xii + 189",
+  year =         "1990",
+  ISBN =         "0-631-15828-6",
+  ISBN-13 =      "978-0-631-15828-8",
+  LCCN =         "NA2500 .P385 1990",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Steele:1990:CLL,
+  author =       "Guy L. {Steele, Jr.}",
+  title =        "{COMMON LISP}: the language",
+  publisher =    pub-DP,
+  address =      pub-DP:adr,
+  edition =      "Second",
+  pages =        "xxiii + 1029",
+  year =         "1990",
+  ISBN =         "1-55558-041-6 (Digital Press paperback), 1-55558-042-4
+                 (Digital Press hardcover), 0-13-152414-3 (Prentice
+                 Hall)",
+  ISBN-13 =      "978-1-55558-041-4 (Digital Press paperback),
+                 978-1-55558-042-1 (Digital Press hardcover),
+                 978-0-13-152414-9 (Prentice Hall)",
+  LCCN =         "QA76.73.L23S73 1990",
+  bibdate =      "Mon Nov 18 14:18:28 MST 1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-nhfb,
+  keywords =     "COMMON LISP (Computer program language); Lisp (langage
+                 de programmation).",
+}
+
+@Article{Strube:1990:EWF,
+  author =       "Gerhard Strube and Dietmar Janetzko",
+  title =        "{Episodisches Wissen und fallbasiertes
+                 Schlie{\ss}en}",
+  journal =      "Schweizerische Zeitschrift f{\"u}r Psychologie",
+  volume =       "49",
+  pages =        "211--221",
+  year =         "1990",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Yokoyama:1990:OOC,
+  author =       "Tankanori Yokoyama",
+  booktitle =    "Proceedings of the Sixth Conference on Artificial
+                 Intelligence Applications",
+  title =        "An object-oriented and constraint-based knowledge
+                 representation system for design object modeling",
+  publisher =    "IEEE, Los Alamitos, CA",
+  pages =        "146--150",
+  year =         "1990",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{chandra:1991:EID,
+  author =       "D. Navin chandra",
+  title =        "Exploration and Innovation in Design: towards a
+                 Computational Model",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "194",
+  year =         "1991",
+  ISBN =         "3-540-97481-4",
+  ISBN-13 =      "978-3-540-97481-9",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Symbolic Computation --- Artificial Intelligence",
+  acknowledgement = ack-fg,
+}
+
+@Book{Cunis:1991:PB,
+  editor =       "Roman Cunis and Andreas G{\"u}nther and H. Strecker",
+  title =        "{Das PLAKON-Buch: ein Expertensystemkern f{\"u}r
+                 Planungs- und Konfigurierungsaufgaben in technischen
+                 Dom{\"a}nen}",
+  number =       "266",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "viii + 279",
+  year =         "1991",
+  ISBN =         "0-387-53683-3",
+  ISBN-13 =      "978-0-387-53683-5",
+  LCCN =         "T57.6.P5 1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Informatik Fachberichte",
+  acknowledgement = ack-fg,
+}
+
+@Article{Domeshek:1991:TCB,
+  author =       "Eric A. Domeshek and Janet L. Kolodner",
+  title =        "Toward a case-based aid for conceptual design",
+  journal =      "International Journal of Expert Systems",
+  volume =       "4",
+  pages =        "201--220",
+  year =         "1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Fensel:1991:KKA,
+  author =       "Dieter Fensel and J{\"u}rgen Angele and Dieter
+                 Landes",
+  editor =       "J. C. Rault",
+  booktitle =    "Proceedings of the 11th International Conference
+                 Expert Systems and their Applications",
+  title =        "{KARL}: a knowledge acquisition and representation
+                 language",
+  volume =       "1 (Tools, Techniques \& Methods)",
+  publisher =    "EC2, Nanterre",
+  address =      "Avignon",
+  pages =        "513--528",
+  year =         "1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Frei:1991:PIR,
+  author =       "H. P. Frei and S. Meienberg and P. Sch{\"a}uble",
+  editor =       "Norbert Fuhr",
+  booktitle =    "Information Retrieval: GI/GMD-Workshop Darmstadt",
+  title =        "The perils of interpreting recall and precision
+                 values",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "1--10",
+  year =         "1991",
+  ISBN =         "3-540-54618-9",
+  ISBN-13 =      "978-3-540-54618-4",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Gentner:1991:MFM,
+  author =       "Dedre Gentner and Kenneth D. Forbus",
+  booktitle =    "Proceedings of the 13th Cognitive Science Conference",
+  title =        "{MAC/FAC}: a model of similarity-based retrieval",
+  publisher =    "Erlbaum, Hillsdale",
+  address =      "Chicago",
+  pages =        "504--509",
+  month =        aug,
+  year =         "1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Harmelen:1991:FLK,
+  author =       "Frank van Harmelen and John Balder",
+  title =        "{$(ML)^2$}: a formal language for {KADS} models of
+                 expertise",
+  type =         "E{SPRIT Project P5248 KADS-II}",
+  number =       "KADS-II/T1.2/PP/UvA/17/1.0",
+  institution =  "University of Amsterdam",
+  address =      "Amsterdam, The Netherlands",
+  month =        nov,
+  year =         "1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Karbach:1991:WET,
+  author =       "Werner Karbach and Marc Linster",
+  title =        "{Wissensakquisition f{\"u}r Expertensysteme.
+                 Techniken, Modelle und Softwarewerkzeuge}",
+  publisher =    "Hanser",
+  address =      "M{\"u}nchen",
+  pages =        "196",
+  year =         "1991",
+  ISBN =         "3-446-15979-7",
+  ISBN-13 =      "978-3-446-15979-2",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Mandl:1991:KE,
+  author =       "Heinz Mandl and H. Gruber and A. Renkl",
+  title =        "{Kontextualisierung von Expertise}",
+  type =         "Forschungsbericht",
+  number =       "2",
+  institution =  "Ludwig-Maximilians-Universit{\"a}t. Lehrstuhl f{\"u}r
+                 Empirische P{\"a}dagogik und P{\"a}dagogische
+                 Psychologie",
+  address =      "M{\"u}nchen",
+  year =         "1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Meinecke:1991:AKB,
+  author =       "Christoph Meinecke and Raimar G. Scherer",
+  editor =       "Gerhard N. Schmitt",
+  booktitle =    "CAAD Futures '91: Computer Aided Architectural Design
+                 Futures",
+  title =        "Architecture of a knowledge-based system for the
+                 detailing of reenforced concrete columns",
+  publisher =    pub-VIEWEG,
+  address =      pub-VIEWEG:adr,
+  pages =        "451--464",
+  year =         "1991",
+  ISBN =         "3-528-08821-4",
+  ISBN-13 =      "978-3-528-08821-7",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Oess:1991:TQM,
+  author =       "Attila Oess",
+  title =        "Total Quality Management: die ganzheitliche
+                 {Qualit{\"a}tsstrategie}",
+  publisher =    "Gabler Verlag",
+  address =      "Wiesbaden",
+  edition =      "2., erweiterte Aufl.",
+  pages =        "344",
+  year =         "1991",
+  ISBN =         "3-409-23622-8",
+  ISBN-13 =      "978-3-409-23622-5",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@PhdThesis{Pepperrell:1991:IMS,
+  author =       "Catherine A. Pepperrell",
+  title =        "An Investigation of Methods for Similarity Searching
+                 in Databases of Three-Dimensional Chemical Structures",
+  school =       "University of Sheffield",
+  address =      "Sheffield, UK",
+  pages =        "320",
+  year =         "1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "University Microfilms Order Number ADGDX-96527",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Richter:1991:SUC,
+  author =       "Michael M. Richter and Stefan We{\ss}",
+  editor =       "Robert S. Boyer",
+  booktitle =    "Automated Reasoning",
+  title =        "Similarity, uncertainty and case-based reasoning in
+                 {P}{\sc atdex}",
+  publisher =    "Kluwer Academic Publishing",
+  address =      "Dordrecht",
+  pages =        "249--265",
+  year =         "1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "{Also appeared as SEKI-Report SR-91-01 (SFB),
+                 University of Kaiserslautern}",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Wess:1991:PSA,
+  author =       "Stefan We{\ss}",
+  title =        "{\sc {Patdex}}/2, ein {System} zum adaptiven,
+                 fallfokussierenden {Lernen} in technischen
+                 {Diagnosesituationen}",
+  type =         "SEKI Working Paper",
+  number =       "SWP-91-01",
+  institution =  "Fach\-bereich Informatik, Universit{\"a}t
+                 Kaiserslautern",
+  address =      "Kaiserslautern, Germany",
+  pages =        "162",
+  month =        dec,
+  year =         "1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Althoff:1992:FSE,
+  author =       "Klaus-Dieter Althoff and Stefan We{\ss} and Brigitte
+                 Bartsch-Sp{\"o}rl and Frank Maurer and Dietmar Janetzko
+                 and Angi Vo{\ss}",
+  title =        "{Fallbasiertes Schlie{\ss}en in Expertensystemen}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "6",
+  number =       "4",
+  pages =        "14--21",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Balder:1992:FMK,
+  author =       "John Balder and Hans Akkermans",
+  title =        "Formal Methods for Knowledge Modelling in the
+                 {CommonKADS} Methodology: a Compilation",
+  publisher =    "Netherlands Enery Research Foundation",
+  address =      "Petten",
+  pages =        "300",
+  year =         "1992",
+  ISBN =         "????",
+  ISBN-13 =      "????",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bartsch-Sporl:1992:SIM,
+  author =       "Brigitte Bartsch-Sp{\"o}rl",
+  editor =       "Ch. Bauer and W. Karbach",
+  booktitle =    "Interpretation models for KADS: Proceedings of 2nd
+                 KADS User Meeting, M{\"u}nchen",
+  title =        "A simple interpretation model for case-based
+                 reasoning",
+  number =       "212",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "GMD-Studien",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Branskat:1992:FW,
+  author =       "Sonja Branskat",
+  title =        "Fallbasierte {Wissensakquisition}",
+  type =         "Arbeitspapiere",
+  number =       "606",
+  institution =  pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "127",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Bromme:1992:LEP,
+  author =       "Rainer Bromme",
+  title =        "{Der Lehrer als Experte: zur Psychologie des
+                 professionellen Wissens}",
+  publisher =    "Huber",
+  address =      "Bern",
+  pages =        "185",
+  year =         "1992",
+  ISBN =         "3-456-81991-9",
+  ISBN-13 =      "978-3-456-81991-4",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Christaller:1992:AWB,
+  author =       "Thomas Christaller and Franco di Primio and Uwe
+                 Schnepf and Angi Vo{\ss}",
+  title =        "The {AI-Workbench BABYLON} --- an Open and Portable
+                 Development Environment for Expert Systems",
+  publisher =    pub-AP,
+  address =      pub-AP:adr,
+  pages =        "474",
+  year =         "1992",
+  ISBN =         "0-12-174235-0",
+  ISBN-13 =      "978-0-12-174235-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Domeshek:1992:CBD,
+  author =       "Eric A. Domeshek and Janet L. Kolodner",
+  editor =       "John S. Gero",
+  booktitle =    "Artificial Intelligence in Design '92",
+  title =        "A case-based design aid for architecture",
+  organization = "AID",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Pittsburgh",
+  pages =        "497--516",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Durschke:1992:SBA,
+  author =       "Helge D{\"u}rschke and Wolfgang Oertel",
+  editor =       "K. D. Althoff and S. Wess and B. Bartsch-Sp{\"o}rl and
+                 D. Janetzko",
+  booktitle =    "{Proceedings: {\"A}hnlichkeit von F{\"a}llen beim
+                 fallbasierten Schlie{\ss}en, Workshop}",
+  title =        "{Strukturierte Behandlung von {\"A}hnlichkeiten bei
+                 der Nutzung gro{\ss}er Fallbibliotheken}",
+  publisher =    "Universit{\"a}t Kaiserslautern, FB Informatik, SEKI
+                 Working Paper SWP-92-11",
+  pages =        "42--46",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Esposito:1992:SDP,
+  author =       "Floriana Esposito and Giovanni Semeraro and Donato
+                 Malerba",
+  title =        "A syntactic distance for partially matching learned
+                 concepts against noisy structural object descriptions",
+  journal =      "International Journal of Expert Systems",
+  volume =       "4",
+  pages =        "409--451",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Gauchel:1992:BMB,
+  author =       "J. Gauchel and S. van Wyk and R. R. Bhat and Ludger
+                 Hovestadt",
+  editor =       "J. Gero",
+  booktitle =    "Artificial Intelligence in Design",
+  title =        "Building modeling based on concepts of autonomy",
+  publisher =    pub-KLUWER,
+  address =      pub-KLUWER:adr,
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Gero:1992:AID,
+  editor =       "John S. Gero",
+  title =        "Artificial Intelligence in Design: Papers from the 2nd
+                 Internat. Conf. on Artificial Intelligence in Design",
+  publisher =    pub-KLUWER,
+  address =      pub-KLUWER:adr,
+  pages =        "926",
+  year =         "1992",
+  ISBN =         "0-7923-1799-8",
+  ISBN-13 =      "978-0-7923-1799-9",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Grather:1992:AFS,
+  author =       "Wolfgang Gr{\"a}ther and Bernd Linowski and Michael
+                 Nowak and Angi Vo{\ss}",
+  editor =       "K. D. Althoff and S. Wess and B. Bartsch-Sp{\"o}rl and
+                 D. Janetzko",
+  booktitle =    "Proceedings: {\"A}hnlichkeit von F{\"a}llen beim
+                 fallbasierten Schlie{\ss}en, Workshop",
+  title =        "{{\"A}hnlichkeit von F{\"a}llen in Systemen des
+                 fallbasierten Schlie{\ss}ens}",
+  publisher =    "Universit{\"a}t Kaiserslautern, FB Informatik, SEKI
+                 Working Paper SWP-92-11",
+  pages =        "51--56",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Greef:1992:ASU,
+  author =       "H. P. de Greef and Joost A. Breuker",
+  title =        "Analysing system-user cooperation in {KADS}",
+  journal =      "Knowledge Acquisition",
+  volume =       "4",
+  pages =        "89--108",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Harmelen:1992:FLK,
+  author =       "Frank van Harmelen and John Balder",
+  title =        "{$(ML)^2$}: a formal language for {KADS} models of
+                 expertise",
+  journal =      "Knowledge Acquisition",
+  volume =       "4",
+  pages =        "127--161",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Harmelen:1992:KLR,
+  author =       "Frank van Harmelen and Bob Wielinga and Bert Bredeweg
+                 and Guus Schreiber and Werner Karbach and Martin
+                 Reinders and Angi Vo{\ss} and Hans Akkermans and
+                 Brigitte Bartsch-Sp{\"o}rl and Erik Vinkhuyzen",
+  editor =       "Le Pate and L. Steels",
+  booktitle =    "Enhancing the Knowledge Engineering Process ---
+                 Contributions from ESPRIT",
+  title =        "Knowledge level reflection",
+  publisher =    "Elsevier Publishing Company",
+  address =      "Amsterdam",
+  pages =        "175--204",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Hinrichs:1992:PSO,
+  author =       "Thomas R. Hinrichs",
+  title =        "Problem Solving in {Open Worlds}: a Case Study in
+                 Design",
+  publisher =    "Lawrence Erlbaum Associates",
+  address =      "Hillsdale, NJ",
+  pages =        "ix + 228",
+  year =         "1992",
+  ISBN =         "0-8058-1228-8",
+  ISBN-13 =      "978-0-8058-1228-2",
+  LCCN =         "BF449 .H56 1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Hovestadt:1992:ADB,
+  author =       "Ludger Hovestadt",
+  booktitle =    "CAD im Architekturb{\"u}ro: ACS-Kompendium '92",
+  title =        "{A4 --- digitales bauen: Ein Modell f{\"u}r die
+                 weitgehende Computerunterst{\"u}tzung von Entwurf,
+                 Konstruktion und Betrieb von Geb{\"a}uden}",
+  publisher =    "Architektenkammer Hessen, Wiesbaden",
+  address =      "Wiesbaden",
+  pages =        "97--111",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Indurkhya:1992:MCI,
+  author =       "Bipin Indurkhya",
+  title =        "Metaphor and Cognition: an Interactionist Approach",
+  publisher =    pub-KLUWER,
+  address =      pub-KLUWER:adr,
+  pages =        "456",
+  year =         "1992",
+  ISBN =         "0-7923-1687-8",
+  ISBN-13 =      "978-0-7923-1687-9",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Jantke:1992:FCB,
+  author =       "Klaus P. Jantke",
+  editor =       "K. D. Althoff and S. Wess and B. Bartsch-Sp{\"o}rl and
+                 D. Janetzko",
+  booktitle =    "Proceedings: {\"A}hnlichkeit von F{\"a}llen beim
+                 fallbasierten Schlie{\ss}en, Workshop",
+  title =        "Formalizations in case-based reasoning",
+  publisher =    "Universit{\"a}t Kaiserslautern, FB Informatik, SEKI
+                 Working Paper SWP-92-11",
+  pages =        "9--14",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Karbach:1992:ISA,
+  author =       "Werner Karbach and Angi Vo{\ss}",
+  editor =       "Bauer and W. Karbach",
+  booktitle =    "Interpretation Models for KADS --- Proc. 2nd KADS User
+                 Meeting",
+  title =        "An inference structure for assignment problems",
+  volume =       "212",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "323--332",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "GMD-Studien",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Kawamura:1992:LRF,
+  author =       "A. Kawamura and T. Minamikawa and K. Yura and A.
+                 Tanaka and T. Hayama and S. Masuda and Y. Hidai",
+  booktitle =    "11th IAPR International Conference on Pattern
+                 Recognition",
+  title =        "On-line recognition of freely handwritten {Japanese}
+                 characters using directional feature densities",
+  volume =       "II",
+  publisher =    "Los Alamos, CA, IEEE Computer Society Press",
+  address =      "The Hague",
+  pages =        "183--186",
+  month =        sep,
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Knauff:1992:KAU,
+  author =       "Markus Knauff and R. H{\"o}rnig and Reinhold Rauh and
+                 Gerhard Strube",
+  editor =       "K. D. Althoff and S. Wess and B. Bartsch-Sp{\"o}rl and
+                 D. Janetzko",
+  booktitle =    "Proceedings: {\"A}hnlichkeit von F{\"a}llen beim
+                 fallbasierten Schlie{\ss}en, Workshop",
+  title =        "{Kontextsensitivit{\"a}t von
+                 {\"A}hnlichkeits\-urteilen: Empirie und Modellierung}",
+  publisher =    "Universit{\"a}t Kaiserslautern, FB Informatik, SEKI
+                 Working Paper SWP-92-11",
+  pages =        "75--78",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Komatsu:1992:RVC,
+  author =       "L. K. Komatsu",
+  title =        "Recent views of conceptual structure",
+  journal =      "Psychological Bulletin",
+  volume =       "112",
+  pages =        "500--528",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Lee:1992:SRS,
+  author =       "S.-Y. Lee and F.-J. Hsu",
+  title =        "Spatial reasoning and similarity retrieval of images
+                 using {2D C-string} knowledge representation",
+  journal =      j-PATTERN-RECOGN,
+  volume =       "25",
+  pages =        "305--318",
+  year =         "1992",
+  CODEN =        "PTNRA8",
+  ISSN =         "0031-3203 (print), 1873-5142 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Linster:1992:ARO,
+  author =       "Marc Linster and Werner Karbach and Angi Vo{\ss} and
+                 J{\"u}rgen Walther",
+  editor =       "Mizoguchi and Motoda and Boose and Gaines and
+                 Quinlan",
+  booktitle =    "Proc. JKAW'92",
+  title =        "An analysis of the role of operational modeling
+                 languages in the development of knowledge-based
+                 systems",
+  organization = "Hitachi Advanced Research Laboratories",
+  publisher =    "????",
+  address =      "????",
+  pages =        "65--88",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  confaddress =  "Hatoyama",
+}
+
+@PhdThesis{Linster:1992:KAB,
+  author =       "Marc Linster",
+  title =        "Knowledge Acquisition Based on Explicit Methods of
+                 Problem-Solving",
+  type =         "Diss.",
+  school =       "Universit{\"a}t Kaisers\-lautern",
+  address =      "Kaiserslautern, Germany",
+  pages =        "219",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Minkoff:1992:FME,
+  author =       "M. Minkoff",
+  title =        "The {FERN} model: an explanation with examples",
+  type =         "Technical {Report}",
+  institution =  "Human Interface Technology Laboratory of the
+                 Washington Technology Center, University of
+                 Washington",
+  address =      "Seattle, WA, USA",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Nemeth:1992:IAP,
+  author =       "Tibor N{\'e}meth and Andreas Oberweis and Frank
+                 Sch{\"o}nthaler and Wolffried Stucky",
+  title =        "{INCOME: Arbeitsplatz f{\"u}r den Programmentwurf
+                 interaktiver betrieblicher Informationssysteme}",
+  type =         "Bericht",
+  number =       "251",
+  institution =  "Universit{\"a}t Karlsruhe (TH), Institut f{\"u}r
+                 angewandte Informatik und formale
+                 Beschreibungsverfahren",
+  address =      "Karlsruhe, Germany",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Neubert:1992:CMC,
+  author =       "Susanne Neubert and Frank Maurer",
+  booktitle =    "Proceedings of the Second European Conference on
+                 HyperText and Hypermedia",
+  title =        "The conceptual model construction kit",
+  publisher =    pub-ACM,
+  address =      pub-ACM:adr,
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Oberweis:1992:SCO,
+  author =       "Andreas Oberweis and Peter Sander",
+  title =        "The specification of complex object behaviour by high
+                 level {Petri} nets",
+  type =         "Bericht",
+  number =       "254",
+  institution =  "Universit{\"a}t Karlsruhe (TH), Institut f{\"u}r
+                 angewandte Informatik und formale
+                 Beschreibungsverfahren",
+  address =      "Karlsruhe, Germany",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Rome:1992:WBG,
+  author =       "Erich Rome",
+  title =        "{Wahrnehmungspsychologie, Bilderkennung und der
+                 Grafikdesigner}",
+  type =         "T{ASSO-Report}",
+  number =       "36",
+  institution =  pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "34",
+  month =        feb,
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Schult:1992:FEM,
+  author =       "Th. J. Schult",
+  title =        "{Fallbasierte Expertensystemshells, Methoden und
+                 Werkzeuge}",
+  type =         "For\-schungs\-bericht",
+  number =       "89",
+  institution =  "Psychologisches {Institut}",
+  address =      "Albert-{Ludwigs-Universit}{\"a}t {Freiburg}",
+  month =        dec,
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Shepherd:1992:MSR,
+  author =       "Thomas S. Shepherd and William Uttal and Sriram
+                 Dayanand and Robb Lovell",
+  title =        "A method for shift, rotation, and scale invariant
+                 pattern recognition using the form and arrangement of
+                 pattern-specific features",
+  journal =      j-PATTERN-RECOGN,
+  volume =       "25",
+  pages =        "343--356",
+  year =         "1992",
+  CODEN =        "PTNRA8",
+  ISSN =         "0031-3203 (print), 1873-5142 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Sycara:1992:CCB,
+  author =       "K. Sycara and D. Navin chandra and R. Guttal and J.
+                 Koning and S. Narasimhan",
+  title =        "{CADET}: a case-based synthesis tool for engineering
+                 design",
+  journal =      "International Journal of Expert Systems",
+  volume =       "4",
+  pages =        "157--188",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Tuceryan:1992:SCE,
+  author =       "M. Tuceryan and A. K. Jain and N. Ahuja",
+  booktitle =    "11th IAPR International Conference on Pattern
+                 Recognition",
+  title =        "Supervised classification of early perceptual
+                 structure in dot patterns",
+  volume =       "II",
+  publisher =    "IEEE Computer Society Press, Los Alamitos, CA,",
+  address =      "The Hague",
+  pages =        "88--91",
+  month =        sep,
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Voss:1992:AKM,
+  author =       "Angi Vo{\ss} and Werner Karbach",
+  editor =       "R. Studer",
+  booktitle =    "{Informationssysteme und k{\"u}nstliche Intelligenz:
+                 Modellierung; 2. Workshop}",
+  title =        "{Ausf{\"u}hrbare konzeptuelle Modelle}",
+  publisher =    "Springer, Berlin",
+  address =      "Ulm",
+  pages =        "158--168",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Informatik-Fachberichte",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Voss:1992:BCR,
+  author =       "Angi Vo{\ss} and Werner Karbach",
+  editor =       "A. Yonezawa and B. C. Smith",
+  booktitle =    "Proc. IMSA '92 of the International Workshop on
+                 Reflection and Meta\-level Architecture",
+  title =        "Building competent reflective systems",
+  organization = "Research Institute of Software Engineering ({RISE})
+                 and Information-Technology Promotion Agency, Japan
+                 ({IPA})",
+  publisher =    "????",
+  address =      "????",
+  pages =        "154--158",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  confaddress =  "Tokyo",
+}
+
+@InCollection{Voss:1992:MKM,
+  author =       "Angi Vo{\ss} and Werner Karbach",
+  editor =       "G. Schreiber and B. Wielinga and J. Breuker",
+  booktitle =    "KADS: a Principled Approach to Knowledge-Based System
+                 Development",
+  title =        "{MODEL-K: making KADS run}",
+  publisher =    pub-AP,
+  address =      pub-AP:adr,
+  pages =        "201--218",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Walther:1992:M,
+  author =       "J{\"u}rgen Walther and Angi Vo{\ss} and Marc Linster
+                 and Thomas Hemmann and Hans Vo{\ss} and Werner
+                 Karbach",
+  title =        "{MoMo}",
+  type =         "Arbeitspapiere der GMD",
+  number =       "658",
+  institution =  pub-GMD,
+  address =      pub-GMD:adr,
+  month =        jun,
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Wess:1992:FSU,
+  editor =       "Stefan We{\ss} and J{\"u}rgen Paulokat and
+                 Klaus-Dieter Althoff",
+  title =        "{Fallbasiertes Schlie{\ss}en --- Ein {\"U}berblick --,
+                 Band I: Grundlagen}",
+  publisher =    "Universit{\"a}t Kaisers\-lautern, Fachbereich
+                 Informatik",
+  address =      "Kaiserslautern, Germany",
+  pages =        "346",
+  year =         "1992",
+  ISBN =         "????",
+  ISBN-13 =      "????",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Wielinga:1992:KMA,
+  author =       "Bob J. Wielinga and A. Th. Schreiber and Joost A.
+                 Breuker",
+  title =        "{KADS}: a modelling approach to knowledge
+                 engineering",
+  journal =      "Knowledge Acquisition",
+  volume =       "4",
+  pages =        "5--53",
+  year =         "1992",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Bardasz:1993:DCB,
+  author =       "Theodore Bardasz and Ibrahim Zeid",
+  title =        "{DEJAVU}: case-based reasoning for mechanical design",
+  journal =      "Artificial Intelligence for Engineering Design,
+                 Analysis and Manufacturing (AI EDAM)",
+  volume =       "72",
+  pages =        "111--124",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bhat:1993:CCB,
+  author =       "R. R. Bhat and J. Gauchel and S. van Wyk",
+  booktitle =    "CAAD Futures 93: Proceedings of the Fifth
+                 International Conference on Computer-Aided
+                 Architectural Design Futures",
+  title =        "Communication in Cooperative Building Design",
+  publisher =    "North-Holland, Amsterdam",
+  address =      "Pittsburgh",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  editors =      "U. Flemming and S. van Wyk",
+}
+
+@InProceedings{Borner:1993:SSG,
+  author =       "Katy B{\"o}rner",
+  editor =       "S. Wess and K.-D. Althoff and M. M. Richter",
+  booktitle =    "Topics in Case-Based Reasoning: First European
+                 Workshop, EWCBR'93",
+  title =        "Structural similarity as guidance in case-based
+                 design",
+  publisher =    "Springer, Berlin",
+  address =      "Kaiserslautern",
+  pages =        "197--208",
+  month =        nov,
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Buehrer:1993:ARC,
+  author =       "Daniel J. Buehrer and C. C. Chang",
+  editor =       "D. Abel and B. C. Ooi",
+  booktitle =    "Advances in {Spatial Databases}: Proc., Third
+                 International Symposium SSD '93",
+  title =        "Application of a reciprocal confluence tree unit to
+                 similar-picture retrieval",
+  publisher =    "Berlin: Springer",
+  address =      "Singapur",
+  pages =        "437--442",
+  month =        jun,
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Burkle:1993:PEO,
+  author =       "Ute B{\"u}rkle and Volker Weimer and Heinz
+                 Z{\"u}llighoven",
+  editor =       "H. Z{\"u}llighoven and W. Altmann and E.-E. Doberkat",
+  booktitle =    "Requirements Engineering '93",
+  title =        "Prototyping in einem objekt\-orientierten
+                 {Bankprojekt}",
+  publisher =    "Teubner, Stuttgart",
+  pages =        "11--32",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Berichte des German Chapter of the ACM",
+  acknowledgement = ack-fg,
+}
+
+@Article{Cawkell:1993:PQP,
+  author =       "A. E. Cawkell",
+  title =        "Picture-queries and picture databases",
+  journal =      j-J-INFO-SCI-PRINCIPLES-PRACTICE,
+  volume =       "19",
+  pages =        "409--423",
+  year =         "1993",
+  CODEN =        "JISCDI",
+  ISSN =         "0165-5515, 1352-7460",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Coulon:1993:IRR,
+  author =       "Carl-Helmut Coulon",
+  editor =       "M. M. Richter and S. Wess and K.-D. Althoff and F.
+                 Maurer",
+  booktitle =    "First European Workshop on Case-Based Reasoning
+                 (EWCBR'93), Posters and Presentations",
+  title =        "Image retrieval without recognition",
+  volume =       "2",
+  publisher =    "Universit{\"a}t Kaiserslautern",
+  address =      "Kaiserslautern, Germany",
+  pages =        "399--402",
+  month =        nov,
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "SEKI-Report 93-12-2",
+  acknowledgement = ack-fg,
+}
+
+@Article{Domeshek:1993:FPL,
+  author =       "Eric A. Domeshek and Janet L. Kolodner",
+  title =        "Finding the points of large cases",
+  journal =      "Artificial Intelligence for Engineering Design,
+                 Analysis and Manufacturing (AI EDAM)",
+  volume =       "7",
+  number =       "2",
+  pages =        "87--96",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Fensel:1993:GSA,
+  author =       "Dieter Fensel and J{\"u}rgen Angele and Dieter Landes
+                 and Rudi Studer",
+  editor =       "H. Z{\"u}llighoven and W. Altmann and E.-E. Doberkat",
+  booktitle =    "Requirements Engineering '93",
+  title =        "Giving structured analysis techniques a formal and
+                 operational semantics with {KARL}",
+  publisher =    "Teubner, Stuttgart",
+  pages =        "267--285",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Berichte des German Chapter of the ACM",
+  acknowledgement = ack-fg,
+}
+
+@PhdThesis{Fidelak:1993:IPN,
+  author =       "Manfred Fidelak",
+  title =        "Integrit{\"a}tsbedingungen in {Petri-Netzen}",
+  school =       "Universit{\"a}t Koblenz-Landau",
+  address =      "Koblenz",
+  pages =        "181",
+  month =        dec,
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Franke:1993:PMP,
+  author =       "W. Franke and U. Gutenbeil and W. Hasselbring and C.
+                 Pahl and H.-G. Sobottka and B. Sucrow",
+  editor =       "H. Z{\"u}llighoven and W. Altmann and E.-E. Doberkat",
+  booktitle =    "Requirements Engineering '93: Prototyping",
+  title =        "{Prototyping mit Mengen --- der PROSET-Ansatz}",
+  publisher =    "Stuttgart: Teubner",
+  pages =        "165--174",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Berichte des German Chapter of the ACM",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Gramberg:1993:PFP,
+  author =       "Bernhard Gramberg",
+  editor =       "H. Z{\"u}llighoven and W. Altmann and E.-E. Doberkat",
+  booktitle =    "Requirements Engineering '93",
+  title =        "{Der Prototyp als fertiges Produkt (oder Der Weg ist
+                 das Ziel)}",
+  publisher =    "Teubner, Stuttgart",
+  pages =        "33--39",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Berichte des German Chapter of the ACM",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Hoernig:1993:EIM,
+  author =       "R. Hoernig and R. Rauh and Gerhard Strube",
+  editor =       "G. Strube and K. F. Wender",
+  booktitle =    "The Cognitive Psychology of Knowledge",
+  title =        "{EVENTS-II}: modeling event recognition",
+  publisher =    pub-ESP,
+  address =      pub-ESP:adr,
+  pages =        "113--138",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@PhdThesis{Hovestadt:1993:ADBa,
+  author =       "Ludger Hovestadt",
+  title =        "{A4 --- digitales bauen: Ein Modell f{\"u}r die
+                 weitgehende Computerunterst{\"u}tzung von Entwurf,
+                 Konstruktion und Betrieb von Geb{\"a}uden}",
+  school =       "Institut f{\"u}r industrielle Bauproduktion der
+                 Universit{\"a}t Karlsruhe",
+  address =      "Karlsruhe, Germany",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Hovestadt:1993:ADBb,
+  author =       "Ludger Hovestadt",
+  booktitle =    "CAAD Futures '93, Proceedings of the Fifth
+                 International Conference on Computer-Aided
+                 Architectural Design Futures",
+  title =        "{A4} --- digital building --- extensive computer
+                 support for the design, construction, and management of
+                 buildings",
+  publisher =    "North-Holland, Amsterdam",
+  address =      "Pittsburgh",
+  pages =        "405--422",
+  month =        jun,
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Hua:1993:ECB,
+  author =       "K. Hua and Ian Smith and Boi Faltings",
+  title =        "Exploring case-based design: {CADRE}",
+  journal =      "Artificial Intelligence for Engineering Design,
+                 Analysis and Manufacturing (AI EDAM)",
+  volume =       "7",
+  number =       "2",
+  pages =        "135--144",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Karbach:1993:MKP,
+  author =       "Werner Karbach and Angi Vo{\ss}",
+  editor =       "Jean-Mark David and Jean-Paul Krivine and Reid
+                 Simmons",
+  booktitle =    "Second Generation Expert Systems",
+  title =        "{MODEL-K} for prototyping and strategic reasoning at
+                 the knowledge level",
+  publisher =    "Springer, Berlin",
+  address =      "Berlin",
+  pages =        "721--745",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Knauff:1993:SAC,
+  author =       "Markus Knauff and Christoph Schlieder",
+  editor =       "M. M. Richter and S. Wess and K.-D. Althoff and F.
+                 Maurer",
+  booktitle =    "First European Workshop on Case-Based Reasoning
+                 (EWCBR'93), Posters and Presentations",
+  title =        "Similarity assessment and case representation in
+                 case-based design",
+  volume =       "1",
+  publisher =    "Universit{\"a}t Kaiserslautern",
+  pages =        "37--42",
+  month =        nov,
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "SEKI-Report 93-12-1",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Luo:1993:HSD,
+  author =       "Qiangyi Luo and P. G. Hendry and J. T. Buchanan",
+  title =        "Heuristic search for distributed constraint
+                 satisfaction problem",
+  type =         "Technical {Report}",
+  number =       "KEG-6-93",
+  institution =  "Dept. of Computer Science, Univ. of Strathclyde",
+  address =      "Strathclyde, Scotland",
+  pages =        "28",
+  month =        feb,
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Maiden:1993:CBR,
+  author =       "N. A. M. Maiden",
+  editor =       "M. M. Richter and S. Wess and K.-D. Althoff and F.
+                 Maurer",
+  booktitle =    "EWCBR preprints",
+  title =        "Case-based reasoning in complex design tasks",
+  publisher =    "Universit{\"a}t Kaisers\-lautern",
+  address =      "Kaisers\-lautern",
+  pages =        "252--257",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Manago:1993:IRC,
+  author =       "Michel Manago and Klaus-Dieter Althoff and Eric Auriol
+                 and R. Traph{\"o}ner and Stefan Wess and N. Conruyt and
+                 Frank Maurer",
+  editor =       "Michael M. Richter and others",
+  booktitle =    "EWCBR-93 (preprints)",
+  title =        "Induction and reasoning from cases",
+  number =       "SR-93-12",
+  publisher =    "Fachbereich Informatik, Universit{\"a}t
+                 Kaiserslautern",
+  pages =        "313--318",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "SEKI-Report",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Montazeri:1993:ACB,
+  author =       "M. Montazeri and A. E. Adam",
+  editor =       "M. M. Richter and S. Wess and K.-D. Althoff and F.
+                 Maurer",
+  booktitle =    "EWCBR preprints",
+  title =        "Applications of case-based reasoning to the law, the
+                 problems of multiple case reasoning, and indexing",
+  publisher =    "Universit{\"a}t Kaisers\-lautern",
+  address =      "Kaisers\-lautern",
+  pages =        "43--47",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@MastersThesis{Morgenstern:1993:AIB,
+  author =       "Karina Morgenstern",
+  title =        "{Anpassung im Bauentwurf mittels aktiver autonomer
+                 Objekte}",
+  school =       "Universit{\"a}t Bonn",
+  address =      "Bonn, Germany",
+  pages =        "184",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Niblack:1993:QPQ,
+  author =       "Wayne Niblack and R. Barber and W. Equitz and Myron
+                 Flickner and E. Glasman and Dragutin Petkovic and Peter
+                 Yanker and Christos Faloutsos and G. Taubin",
+  title =        "The {QBIC} project: querying images by content using
+                 color, texture and shape",
+  type =         "Research {Report}",
+  institution =  "IBM Research Division",
+  address =      "Almaden Research Center, San Jose, California",
+  month =        feb,
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Nowak:1993:KRR,
+  author =       "Michael Nowak and Angi Vo{\ss} and Wolfgang
+                 Gr{\"a}ther",
+  editor =       "D. Hernandez",
+  booktitle =    "{Forschungsberichte KI, Proc. Workshop Hybride und
+                 integrierte Ans{\"a}tze zur Raumrepr{\"a}sentation und
+                 ihre Anwendung}",
+  title =        "{Komplexe r{\"a}umliche Relationen im
+                 Bauentwurfs\-proze{\ss}}",
+  publisher =    "????",
+  address =      "????",
+  pages =        "44--49",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Report FKI-185-93",
+  acknowledgement = ack-fg,
+  confaddress =  "TU M{\"u}nchen",
+}
+
+@Book{Ousterhout:1993:ITT,
+  author =       "John K. Ousterhout",
+  title =        "An Introduction to {Tcl and Tk}",
+  publisher =    pub-AW,
+  address =      pub-AW:adr,
+  pages =        "",
+  year =         "1993",
+  ISBN =         "????",
+  ISBN-13 =      "????",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Perner:1993:CBR,
+  author =       "P. Perner",
+  editor =       "M. M. Richter and S. Wess and K.-D. Althoff and F.
+                 Maurer",
+  booktitle =    "EWCBR preprints",
+  title =        "Case-based reasoning for image interpretation in
+                 non-destructive testing",
+  publisher =    "Univ. of Kaisers\-lautern",
+  address =      "Kaisers\-lautern",
+  pages =        "403--409",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Pu:1993:IIC,
+  author =       "Pearl Pu",
+  title =        "Introduction: Issues in case-based design systems",
+  journal =      "Artificial Intelligence for Engineering Design,
+                 Analysis and Manufacturing (AI EDAM)",
+  volume =       "7",
+  pages =        "79--85",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Reitbock:1993:MMI,
+  author =       "H. J. Reitb{\"o}ck",
+  editor =       "O. Herzog and Th. Christaller and D. Sch{\"u}tt",
+  booktitle =    "{Grundlagen und Anwendungen der K{\"u}nstlichen
+                 Intelligenz}",
+  title =        "{Mechanismen der Mustererkennung im Sehsystem}",
+  organization = "17. Fachtagung f{\"u}r K{\"u}nstliche Intelligenz",
+  publisher =    "Berlin, Springer",
+  pages =        "90--106",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Rome:1993:MMG,
+  author =       "Erich Rome",
+  title =        "{MAX}, ein maschinelles {Gestalt-Erkennungssystem}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "7",
+  number =       "Sonderheft",
+  pages =        "70--71",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Schreiber:1993:KPA,
+  author =       "Guus Schreiber and Bob J. Wielinga and Joost A.
+                 Breuker",
+  title =        "{KADS}: a Principled Approach to Knowledge-Based
+                 System Development",
+  publisher =    pub-AP,
+  address =      pub-AP:adr,
+  pages =        "457",
+  year =         "1993",
+  ISBN =         "0-12-629040-7",
+  ISBN-13 =      "978-0-12-629040-0",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Silverman:1993:EEC,
+  author =       "B. G. Silverman and G. Wenig",
+  title =        "Engineering expert critics for cooperative systems",
+  journal =      j-KNOWL-ENG-REV,
+  volume =       "8",
+  pages =        "309--328",
+  year =         "1993",
+  CODEN =        "KEREE3",
+  ISSN =         "0269-8889",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@MastersThesis{Steinert:1993:EZA,
+  author =       "Dagmar Steinert",
+  title =        "{Effiziente Zugriffsstrukturen f{\"u}r die
+                 {\"a}hnlichkeitsbasierte Vorauswahl von F{\"a}llen}",
+  type =         "Diplomarbeit",
+  school =       "Lehrstuhl f{\"u}r Informatik VI (KI) der
+                 Universit{\"a}t W{\"u}rzburg",
+  address =      "W{\"u}rzburg, Germany",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Voss:1993:MDP,
+  author =       "Angi Vo{\ss} and Hans Vo{\ss} and J{\"u}rgen Walther
+                 and Thomas Hemmann",
+  editor =       "Z{\"u}llighoven and Altmann and Doberkat",
+  booktitle =    "Proc. RE'93",
+  title =        "Model-driven prototyping --- prototype-driven modeling
+                 for knowledge-based systems",
+  publisher =    "Teubner, Stuttgart",
+  address =      "Bonn",
+  pages =        "303--316",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Wess:1993:IRS,
+  author =       "Stefan Wess and Klaus-Dieter Althoff and G. Derwand",
+  editor =       "Michael M. Richter and others",
+  booktitle =    "EWCBR-93 (preprints)",
+  title =        "Improving the retrieval step in case-based reasoning",
+  number =       "SR-93-12",
+  publisher =    "Fachbereich Informatik, Universit{\"a}t
+                 Kaiserslautern",
+  pages =        "83--88",
+  year =         "1993",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "SEKI-Report",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Yang:1993:KKI,
+  author =       "Soon-Ae Yang and Dave Robertson and John Lee",
+  booktitle =    "The Fourth International Conference on Artificial
+                 Intelligence and Law: Proceedings of the Conference,
+                 June 1993, Amsterdam",
+  title =        "{KICS}: a knowledge-intensive case-based reasoning
+                 system for statutory building regulations and case
+                 histories",
+  publisher =    pub-ACM,
+  address =      pub-ACM:adr,
+  pages =        "254--263",
+  year =         "1993",
+  ISBN =         "0-89791-606-9",
+  ISBN-13 =      "978-0-89791-606-6",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Aamodt:1994:CBR,
+  author =       "Agnar Aamodt and Enric Plaza",
+  title =        "Case-based reasoning: foundational issues,
+                 methodological variations, and system approaches",
+  journal =      "AI Communications",
+  volume =       "7",
+  number =       "1",
+  pages =        "39--59",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bakhtari:1994:ATA,
+  author =       "Shirin Bakhtari",
+  editor =       "Pearl Pu and Mary Lou Maher",
+  booktitle =    "AID-94 Workshop Case-Based Design Systems",
+  title =        "An aptitude test for the application of case-based
+                 methods in open world domains",
+  publisher =    "????",
+  address =      "????",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  confaddress =  "Lausanne",
+}
+
+@InProceedings{Bakhtari:1994:BGB,
+  author =       "Shirin Bakhtari and Brigitte Bartsch-Sp{\"o}rl",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design'94",
+  title =        "Bridging the gap between {AI} technology and design
+                 requirements",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Lausanne",
+  pages =        "753--768",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Barletta:1994:HIR,
+  author =       "Ralph Barletta",
+  editor =       "Mark Keane and Jean-Paul Haton and Michel Manago",
+  booktitle =    "EWCBR-94: Second European Workshop on Case-Based
+                 Reasoning",
+  title =        "A hybrid indexing and retrieval strategy for advisory
+                 {CBR} systems built with {ReMind}",
+  publisher =    "AcknoSoft Press",
+  address =      "Paris",
+  pages =        "49--58",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bartsch-Sporl:1994:GBA,
+  author =       "Brigitte Bartsch-Sp{\"o}rl and Elisabeth-Ch. Tammer",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "Graph-based approach to structural similarity",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "45--58",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bartsch-Sporl:1994:MIP,
+  author =       "Brigitte Bartsch-Sp{\"o}rl and Shirin Bakhtari and
+                 Angi Vo{\ss} and J{\"o}rg W. Schaaf",
+  editor =       "Mert Alberts",
+  booktitle =    "AID-94 Workshop A Semantic Basis for Sharing of
+                 Knowledge and Data in Design",
+  title =        "The most important prerequisite for sharing knowledge
+                 and data in design is having achieved a common
+                 understanding",
+  publisher =    "ETH Z{\"u}rich",
+  address =      "Lausanne",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bartsch-Sporl:1994:RUC,
+  author =       "Brigitte Bartsch-Sp{\"o}rl",
+  editor =       "Mark Keane and Jean-Paul Haton and Michel Manago",
+  booktitle =    "EWCBR-94: Second European Workshop on Case-Based
+                 Reasoning",
+  title =        "Representing and using cases in visualisation-oriented
+                 design domains",
+  publisher =    "AcknoSoft Press, Paris",
+  address =      "Chantilly",
+  pages =        "253--261",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bartsch-Sporl:1994:WND,
+  author =       "Brigitte Bartsch-Sp{\"o}rl",
+  editor =       "Pearl Pu and Mary Lou Maher",
+  booktitle =    "AID-94 Workshop Case-Based Design Systems",
+  title =        "We need design cases which support the visual
+                 imagination of the designer",
+  publisher =    "????",
+  address =      "????",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  confaddress =  "Lausanne",
+}
+
+@Article{Bath:1994:SSF,
+  author =       "Peter A. Bath and Andrew R. Poirrette and Peter
+                 Willett and Frank H. Allen",
+  title =        "Similarity searching in files of three-dimensional
+                 chemical structures: comparison of fragment-based
+                 measures of shape similarity",
+  journal =      j-J-CHEM-INFO-COMP-SCI,
+  volume =       "34",
+  pages =        "141--147",
+  year =         "1994",
+  CODEN =        "JCISD8",
+  ISSN =         "0095-2338",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bhatta:1994:IAD,
+  author =       "S. Bhatta and Ashok K. Goel and S. Prabhakar",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design '94",
+  title =        "Innovation in analogical design: a model-based
+                 approach",
+  organization = "AID",
+  publisher =    pub-KLUWER,
+  address =      pub-KLUWER:adr,
+  pages =        "57--74",
+  year =         "1994",
+  ISBN =         "0-7923-2994-5",
+  ISBN-13 =      "978-0-7923-2994-7",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Borner:1994:CBLa,
+  author =       "Katy B{\"o}rner and Dietmar Janetzko",
+  editor =       "Mark Keane and Jean-Paul Haton and Michel Manago",
+  booktitle =    "EWCBR-94: Second European Workshop on Case-Based
+                 Reasoning",
+  title =        "Case-based learning for design",
+  publisher =    "AcknoSoft Press, Paris",
+  address =      "Chantilly",
+  pages =        "273--281",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Borner:1994:CBLb,
+  author =       "Katy B{\"o}rner and Dietmar Janetzko",
+  editor =       "C. Nedellec and Y. Kodratoff",
+  booktitle =    "Proceedings of the ECAI-94 Workshop on Integration of
+                 ML and KA",
+  title =        "Case-based learning for knowledge-based design
+                 support",
+  publisher =    "Wiley, Chichester",
+  address =      "Amsterdam, The Netherlands",
+  pages =        "13--17",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Borner:1994:TBA,
+  author =       "Katy B{\"o}rner",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity concepts and retrieval methods",
+  title =        "Term-based approach to structural similarity as
+                 guidance for adaptation",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "59--72",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Borner:1994:TFC,
+  author =       "Katy B{\"o}rner",
+  editor =       "David W. Aha",
+  booktitle =    "AAAI-94 Workshop on Case-Based Reasoning",
+  title =        "Towards formalizations in case-based reasoning for
+                 synthesis",
+  publisher =    "AAAI Press, Menlo Park",
+  address =      "Seattle, Washington",
+  pages =        "177--181",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Technical Report WS-94-01",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bredeweg:1994:MBD,
+  author =       "Bert Bredeweg",
+  editor =       "Joost Breuker and Walter {Van de Velde}",
+  booktitle =    "CommonKADS Library for Expertise Modelling",
+  title =        "Model-based diagnosis and prediction of behaviour",
+  chapter =      "6",
+  publisher =    pub-IOS,
+  address =      pub-IOS:adr,
+  pages =        "121--153",
+  year =         "1994",
+  ISBN =         "90-5199-164-9",
+  ISBN-13 =      "978-90-5199-164-2",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Breuker:1994:CLE,
+  author =       "Joost A. Breuker and Walter {Van de Velde}",
+  title =        "{CommonKADS} Library for Expertise Modelling: Reusable
+                 Problem Solving Components",
+  publisher =    pub-IOS,
+  address =      pub-IOS:adr,
+  pages =        "359",
+  year =         "1994",
+  ISBN =         "90-5199-164-9",
+  ISBN-13 =      "978-90-5199-164-2",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bures:1994:STD,
+  author =       "Mark G. Bures and Yvonne C. Martin and Peter Willett",
+  editor =       "Ernest L. Eliel and Samuel H. Wilen",
+  booktitle =    "Topics in Stereochemistry, vol. 21",
+  title =        "Searching techniques for databases of
+                 three-dimensional chemical structures",
+  publisher =    pub-WILEY,
+  address =      pub-WILEY:adr,
+  pages =        "467--511",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Clayton:1994:IOM,
+  author =       "M. J. Clayton and R. Fruchter and H. Krawinkler and P.
+                 Teicholz",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design '94",
+  title =        "Interpretation objects for multi-disciplinary design",
+  organization = "AID",
+  publisher =    pub-KLUWER,
+  address =      pub-KLUWER:adr,
+  pages =        "573--590",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Coulon:1994:CFT,
+  author =       "Carl-Helmut Coulon and Ralf Steffens",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "Comparing fragments by their images",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "36--44",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@Article{Cross:1994:FIR,
+  author =       "Valerie Cross",
+  title =        "Fuzzy information retrieval",
+  journal =      "Journal of Intelligent Information Systems",
+  volume =       "??",
+  pages =        "29--56",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Dave:1994:CBD,
+  author =       "B. Dave and G. Schmitt and Boi Faltings and Ian
+                 Smith",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design '94",
+  title =        "Case based design in architecture",
+  organization = "AID",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Lausanne",
+  pages =        "145--162",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Domeshek:1994:DTK,
+  author =       "Eric A. Domeshek and Janet L. Kolodner and C. M.
+                 Zimring",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design '94",
+  title =        "The design of a tool kit for case-based design aids",
+  organization = "AID",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Lausanne",
+  pages =        "109--126",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Durschke:1994:HID,
+  author =       "Helge D{\"u}rschke",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "How to integrate different similarity concepts --- a
+                 formal approach",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "105--108",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@MastersThesis{Eltz:1994:SMI,
+  author =       "U. Eltz",
+  title =        "System zum {Monitoring} von {Inferenzprozessen}",
+  type =         "Diplom\-arbeit",
+  school =       "Fakult{\"a}t f{\"u}r Informatik, TU Dresden",
+  address =      "Dresden, Germany",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Enzinger:1994:PS,
+  author =       "Andrea Enzinger and Frank Puppe and Gerhard Strube",
+  title =        "{Probleml{\"o}sen ohne Suchen?}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "8",
+  number =       "1",
+  pages =        "73--81",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Faloutsos:1994:EEQ,
+  author =       "Christos Faloutsos and R. Barber and Myron Flickner
+                 and Jim Hafner and Wayne Niblack and Dragutin Petkovic
+                 and W. Equitz",
+  title =        "Efficient and effective querying by image content",
+  journal =      "Journal of Intelligent Information Systems",
+  volume =       "3",
+  pages =        "231--262",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Fensel:1994:CLW,
+  author =       "Dieter Fensel and Frank van Harmelen",
+  title =        "A comparison of languages which operationalize and
+                 formalize {KADS} models of expertise",
+  journal =      j-KNOWL-ENG-REV,
+  volume =       "9",
+  pages =        "105--146",
+  year =         "1994",
+  CODEN =        "KEREE3",
+  ISSN =         "0269-8889",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Frank:1994:CDG,
+  author =       "Steven Frank",
+  title =        "Cataloging digital geographic data in the information
+                 infrastructure: a literature and technology review",
+  journal =      j-INFO-PROC-MAN,
+  volume =       "30",
+  pages =        "587--606",
+  year =         "1994",
+  CODEN =        "IPMADK",
+  ISSN =         "0306-4573 (print), 1873-5371 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Giretti:1994:IAA,
+  author =       "A. Giretti and L. Spalazzi and M. Lemma",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design '94",
+  title =        "{A.S.A.} an interactive assistant to architectural
+                 design",
+  organization = "AID",
+  publisher =    pub-KLUWER,
+  address =      pub-KLUWER:adr,
+  pages =        "93--108",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Goldstone:1994:RSC,
+  author =       "Robert L. Goldstone",
+  title =        "The role of similarity in categorization: providing a
+                 groundwork",
+  journal =      j-COGNITION,
+  volume =       "52",
+  pages =        "125--157",
+  year =         "1994",
+  CODEN =        "CGTNAU",
+  ISSN =         "0010-0277 (print), 1873-7838 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Grather:1994:CDB,
+  author =       "Wolfgang Gr{\"a}ther",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "Computing distances between attribute-value
+                 representations in an associative memory",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "12--25",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Gross:1994:UDA,
+  author =       "M. Gross and C. M. Zimring and E. Do",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design '94",
+  title =        "Using diagrams to access a case base of architectural
+                 designs",
+  organization = "AID",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Lausanne",
+  pages =        "129--144",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Haigh:1994:GSM,
+  author =       "Karen Z. Haigh and Jonathan R. Shewchuk",
+  booktitle =    "Case-Based Reasoning: Papers from the 1994 AAAI
+                 Workshop, Seattle, Aug. 1994",
+  title =        "Geometric similarity metrics for case-based
+                 reasoning",
+  publisher =    "AAAI Press",
+  address =      "Menlo Park, CA",
+  pages =        "157--163",
+  year =         "1994",
+  ISBN =         "0-929280-71-7",
+  ISBN-13 =      "978-0-929280-71-4",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Hemmann:1994:HSD,
+  author =       "Thomas Hemmann",
+  editor =       "Hans Vo{\ss} and Rudi Studer",
+  booktitle =    "Proceedings 4th {KADS} Meeting",
+  title =        "The home stereo diagnosis revisited",
+  volume =       "832",
+  publisher =    "GMD, Sankt Augustin",
+  address =      "Sankt Augustin",
+  month =        mar,
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Arbeitspapiere der GMD",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Hovestadt:1994:DFB,
+  author =       "Ludger Hovestadt and Barbara Schmidt-Belz",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "The domain of {FABEL}: building design",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "6--11",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@Article{Hunt:1994:HCB,
+  author =       "John Hunt and Roger Miles",
+  title =        "Hybrid case-based reasoning",
+  journal =      j-KNOWL-ENG-REV,
+  volume =       "9",
+  pages =        "383--397",
+  year =         "1994",
+  CODEN =        "KEREE3",
+  ISSN =         "0269-8889",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Jaczynski:1994:FLR,
+  author =       "Michel Jaczynski and Brigitte Trousse",
+  editor =       "Mark Keane and Jean-Paul Haton and Michel Manago",
+  booktitle =    "EWCBR-94: Second {European} Workshop on Case-Based
+                 Reasoning",
+  title =        "Fuzzy logic for the retrieval step of a case-based
+                 reasoner",
+  publisher =    "AcknoSoft Press",
+  address =      "Paris",
+  pages =        "313--321",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Janetzko:1994:MIS,
+  author =       "Dietmar Janetzko",
+  title =        "{Metaphorische Invention und semantische Innovation}",
+  journal =      "Sprache \& Kognition",
+  volume =       "2",
+  pages =        "75--89",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Jantke:1994:NCS,
+  author =       "Klaus P. Jantke",
+  editor =       "Hans-Hermann Bock and Wolfgang Lenski and Michael M.
+                 Richter",
+  booktitle =    "Information Systems and Data Analysis: Prospects ---
+                 Foundations --- Applications, Proceedings of the 17th
+                 Annual Conference of the GfKl, Univ. of Kaiserslautern,
+                 1993",
+  title =        "Nonstandard concepts of similarity in case-based
+                 reasoning",
+  publisher =    "Springer, Berlin",
+  address =      "Kaiserslautern",
+  pages =        "28--43",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Kettler:1994:ECB,
+  author =       "Brian P. Kettler and James A. Hendler",
+  booktitle =    "Case-Based Reasoning: Papers from the 1994 AAAI
+                 Workshop, Seattle, Aug. 1994",
+  title =        "Evaluating a case-based planning system",
+  publisher =    "AAAI Press",
+  address =      "Menlo Park, CA",
+  pages =        "157--163",
+  year =         "1994",
+  ISBN =         "0-929280-71-7",
+  ISBN-13 =      "978-0-929280-71-4",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@MastersThesis{Kindelberger:1994:EFS,
+  author =       "A. Kindelberger",
+  title =        "{Entwicklung eines fallbasierten Systems f{\"u}r die
+                 GO-Dom{\"a}ne}",
+  type =         "Diplom\-arbeit",
+  school =       "Fakult{\"a}t f{\"u}r Informatik, TU Dresden",
+  address =      "Dresden, Germany",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Knauff:1994:DGC,
+  author =       "Markus Knauff and Christoph Schlieder",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "Dynamic grouping: case reinterpretation as a
+                 foundation of knowledge-intensive similarity
+                 assessment",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "85--104",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Knauff:1994:I,
+  author =       "Markus Knauff",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "Introduction",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "1--5",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Knauff:1994:MGP,
+  author =       "Markus Knauff",
+  booktitle =    "Proceedings of the First Workshop on Visual
+                 Computing",
+  title =        "Modeling gestalt principles as guidance for dynamic
+                 grouping",
+  publisher =    "Fraunhofer-IGD",
+  address =      "Darmstadt",
+  pages =        "113--121",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Layne:1994:SII,
+  author =       "Sara Shatford Layne",
+  title =        "Some issues in the indexing of images",
+  journal =      j-J-AM-SOC-INF-SCI,
+  volume =       "45",
+  pages =        "583--588",
+  year =         "1994",
+  CODEN =        "AISJB6",
+  ISSN =         "0002-8231 (print), 1097-4571 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Linowski:1994:CDB,
+  author =       "Bernd Linowski",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "Computing distances between attribute-value
+                 representations in a flat memory",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "26--35",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Luo:1994:MUI,
+  author =       "Qiangyi Luo and P. G. Hendry and J. T. Buchanan",
+  editor =       "S. M. Deen",
+  booktitle =    "Proceedings of the CKBS-SIG Workshop, Sept. 1993",
+  title =        "Methods used to implement an integrated distributed
+                 scheduler",
+  publisher =    "DAKE Centre, University of Keele",
+  address =      "Keele, UK",
+  pages =        "47--60",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Marir:1994:CBR,
+  author =       "Farhi Marir and Ian Watson",
+  title =        "Case-based reasoning: a categorized bibliography",
+  journal =      j-KNOWL-ENG-REV,
+  volume =       "9",
+  pages =        "355--381",
+  year =         "1994",
+  CODEN =        "KEREE3",
+  ISSN =         "0269-8889",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Oxman:1994:PDC,
+  author =       "Rivka E. Oxman",
+  title =        "Precedents in design: a computational model for the
+                 organisation of precedent knowledge",
+  journal =      "Design Studies",
+  volume =       "17",
+  number =       "2",
+  pages =        "117--134",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Petrakis:1994:SSL,
+  author =       "Euripides G. M. Petrakis and Christos Faloutsos",
+  title =        "Similarity searching in large image databases",
+  number =       "CS-TR-3388",
+  institution =  inst-U-MARYLAND,
+  address =      inst-U-MARYLAND:adr,
+  pages =        "33",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Pu:1994:FCA,
+  author =       "Pearl Pu and Lisa Purvis",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design '94",
+  title =        "Formalizing case adaptation in a case-based design
+                 system",
+  organization = "AID",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Lausanne",
+  pages =        "77--91",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Puppe:1994:WBK,
+  author =       "Frank Puppe and Karsten Poeck and Ute Gappa and Stefan
+                 Bamberger and Klaus Goos",
+  title =        "{Wiederverwendbare Bausteine f{\"u}r eine
+                 konfigurierbare Diagnostik-Shell}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "8",
+  number =       "2",
+  pages =        "13--18",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@TechReport{Ricci:1994:CPE,
+  author =       "Francesco Ricci and S. Mam and P. Marti and V. Normand
+                 and P. Olmo",
+  title =        "{CHARADE}: a platform for emergencies management
+                 systems",
+  type =         "Technical Report",
+  number =       "9404-07",
+  institution =  "Istituto per la Ricerca Scientifica e Tecnologica",
+  address =      "Povo",
+  pages =        "14",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Schaaf:1994:DGC,
+  author =       "J{\"o}rg W. Schaaf",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "Detecting gestalts in {CAD}-plans to be used as
+                 indices",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "73--84",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Schaaf:1994:GCP,
+  author =       "J{\"o}rg W. Schaaf",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design'94",
+  title =        "Gestalts in {CAD}-plans, analysis of a similarity
+                 concept",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Lausanne",
+  pages =        "437--446",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Schult:1994:CBE,
+  author =       "Thomas Josef Schult and Dietmar Janetzko",
+  editor =       "Jay Liebowitz",
+  booktitle =    "Moving Towards Expert Systems Globally in the 21st
+                 Century",
+  title =        "Case-based expert system shells: first and second
+                 generation",
+  publisher =    "Cognizant Communication Corporation, Elmsford, NY",
+  address =      "Ney York",
+  pages =        "306--310",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Voss:1994:RSLa,
+  author =       "Angi Vo{\ss}",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "Similarity Concepts and Retrieval Methods",
+  title =        "Retrieval of similar layouts",
+  volume =       "13",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "109--124",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Reports",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Voss:1994:RSLb,
+  author =       "Angi Vo{\ss} and Carl-Helmut Coulon and Wolfgang
+                 Gr{\"a}ther and Bernd Linowski and J{\"o}rg W. Schaaf
+                 and Brigitte Bartsch-Sp{\"o}rl and Katy B{\"o}rner and
+                 Elisabeth-Ch. Tammer and Helge D{\"u}rschke and Markus
+                 Knauff",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design'94",
+  title =        "Retrieval of similar layouts --- about a very hybrid
+                 approach in {FABEL}",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Lausanne",
+  pages =        "625--640",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Voss:1994:RSLc,
+  author =       "Angi Vo{\ss}",
+  booktitle =    "{ikm: Internationales Kolloquium {\"u}ber Anwendungen
+                 der Informatik und der Mathematik in Architektur und
+                 Bauwesen, Abstracts}",
+  title =        "Retrieval of similar layouts in {FABEL}",
+  publisher =    "Hochschule f{\"u}r Architektur und Bauwesen, Weimar",
+  address =      "Weimar",
+  pages =        "163--168",
+  month =        mar,
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Walther:1994:OAM,
+  author =       "J{\"u}rgen Walther and Wolfgang Gr{\"a}ther and
+                 Wolfgang Oertel and Barbara Schmidt-Belz and Angi
+                 Vo{\ss}",
+  editor =       "Mark Keane and Jean-Paul Haton and Michel Manago",
+  booktitle =    "EWCBR-94: Second European Workshop on Case-Based
+                 Reasoning",
+  title =        "An open architecture for multiple case retrieval
+                 methods",
+  publisher =    "AcknoSoft Press, Paris",
+  address =      "Chantilly",
+  pages =        "373--380",
+  month =        nov,
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@MastersThesis{Wolf:1994:EAB,
+  author =       "T. Wolf",
+  title =        "{Entwicklung allgemeiner Bausteine zur Erstellung
+                 fallbasierter Systeme}",
+  type =         "Diplom\-arbeit",
+  school =       "Fakult{\"a}t f{\"u}r Informatik, TU Dresden",
+  address =      "Dresden, Germany",
+  year =         "1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Adami:1995:AAA,
+  author =       "Parivash Adami",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Adaptation by active autonomous objects {(AAAO)}",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "46--50",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@Book{Althoff:1995:RIC,
+  author =       "Klaus-Dieter Althoff and Eric Auriol and Ralph
+                 Barletta and Michel Manago",
+  title =        "A Review of Industrial Case-Based Reasoning Tools",
+  publisher =    "AI Intelligence",
+  address =      "Oxford",
+  pages =        "148",
+  year =         "1995",
+  ISBN =         "1-898804-01-X",
+  ISBN-13 =      "978-1-898804-01-7",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Angele:1995:MIK,
+  author =       "J{\"u}rgen Angele and Dieter Fensel and Dieter Landes
+                 and Susanne Neubert",
+  title =        "Modellbasiertes und inkrementelles {Knowledge
+                 Engineering}: der {MIKE-Ansatz}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "9",
+  number =       "1",
+  pages =        "16--21",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bakhtari:1995:DAA,
+  author =       "Shirin Bakhtari and Wolfgang Oertel",
+  editor =       "Milton Tan and Robert Teh",
+  booktitle =    "The Global Design Studio --- Proceedings of the 6th
+                 International Conference on Computer-Aided
+                 Architectural Design Futures",
+  title =        "{DOM}: an active assistance system for architectural
+                 and engineering design",
+  publisher =    "Centre for Advanced Studies in Architecture, National
+                 University of Singapore",
+  address =      "Singapore",
+  pages =        "153--162",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bakhtari:1995:QAD,
+  author =       "Shirin Bakhtari and Wolfgang Oertel",
+  editor =       "Brigitte Bartsch-Sp{\"o}rl and Dietmar Janetzko and
+                 Stefan Wess",
+  booktitle =    "Proceedings of the {3rd German CBR Workshop}",
+  title =        "Quality assessment of design cases within the {DOM}
+                 environment",
+  publisher =    "LSA-95-02 University of Kaiserslautern",
+  address =      "Kaiserslautern",
+  pages =        "106--113",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bartsch-Sporl:1995:ASD,
+  author =       "Brigitte Bartsch-Sp{\"o}rl and Shirin Bakhtari and
+                 Wolfgang Oertel",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Assessment supported by a domain ontology {(DOM)}",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "23--30",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bartsch-Sporl:1995:KMI,
+  author =       "Brigitte Bartsch-Sp{\"o}rl",
+  editor =       "Michael Richter and Frank Maurer",
+  booktitle =    "Expertensysteme 95",
+  title =        "{KI-Methoden f{\"u}r innovative Design-Dom{\"a}nen}",
+  publisher =    "infix, Sankt Augustin",
+  address =      "Kaiserslautern",
+  pages =        "137--151",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Bergmann:1995:BRA,
+  author =       "Ralph Bergmann and Wolfgang Wilke",
+  title =        "Building and refining abstract planning cases by
+                 change of representation language",
+  journal =      "Journal of Artificial Intelligence Research",
+  volume =       "3",
+  pages =        "53--118",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bhat:1995:CAU,
+  author =       "Raghu R. Bhat",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Case adaptation using agents {(AgentEx)}",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "51--56",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Borner:1995:ALD,
+  author =       "Katy B{\"o}rner and Roland Fa{\ss}auer",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Analogical layout design {(Syn*)}",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "59--68",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Borner:1995:CA,
+  author =       "Katy B{\"o}rner",
+  editor =       "D. W. Aha and A. Ram",
+  booktitle =    "AAAI 1995 Fall Symposium Series: Adaptation of
+                 Knowledge for Reuse",
+  title =        "Conceptual analogy",
+  publisher =    "AAAI Press, Menlo Park",
+  address =      "Boston, MA",
+  pages =        "5--11",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Technical Report FS-95-04",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Borner:1995:CM,
+  author =       "Katy B{\"o}rner and Gerhard Strube",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Comparison of the modules",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "83--89",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Borner:1995:DSI,
+  author =       "Katy B{\"o}rner",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Design support in industrial building design",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "3--12",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Borner:1995:IAC,
+  author =       "Katy B{\"o}rner",
+  editor =       "Milton Tan and Robert Teh",
+  booktitle =    "The Global Design Studio --- Proceedings of the 6th
+                 International Conference on Computer-Aided
+                 Architectural Design Futures",
+  title =        "Interactive, adaptive, computer aided design",
+  publisher =    "Centre for Advanced Studies in Architecture, National
+                 University of Singapore",
+  address =      "Singapore",
+  pages =        "627--634",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Borner:1995:MTO,
+  author =       "Katy B{\"o}rner and Dietmar Janetzko",
+  editor =       "Barbara Schmidt-Belz",
+  booktitle =    "Scenario of FABEL Prototype 3 Supporting Architectural
+                 Design",
+  title =        "A methodology to task-oriented knowledge acquisition
+                 and system design",
+  volume =       "40",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Borner:1995:SAC,
+  author =       "Katy B{\"o}rner and Dietmar Janetzko",
+  editor =       "Peter Jan Pahl and Heinrich Werner",
+  booktitle =    "6th International Conference on Computing in Civil and
+                 Building Engineering",
+  title =        "System architecture for computer-aided building
+                 engineering",
+  publisher =    "Balkema, Rotterdam",
+  address =      "Berlin",
+  pages =        "385--390",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Branting:1995:SCB,
+  author =       "L. Karl Branting and David W. Aha",
+  booktitle =    "IJCAI-95: Proceedings of the 14th International Joint
+                 Conference on Artificial Intelligence",
+  title =        "Stratified case-based reasoning: reusing hierarchical
+                 problem solving episodes",
+  publisher =    "Morgan Kaufmann, San Mateo, CA",
+  address =      "Montreal",
+  pages =        "384--390",
+  month =        aug,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Christaller:1995:PIK,
+  author =       "Thomas Christaller",
+  title =        "{Programmierstil im Klassenformat}",
+  journal =      "Schweizerische Technische Zeitschrift",
+  volume =       "9",
+  pages =        "26--29",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Coulon:1995:AIRa,
+  author =       "Carl-Helmut Coulon",
+  editor =       "Milton Tan and Robert Teh",
+  booktitle =    "The Global Design Studio --- Proceedings of the 6th
+                 International Conference on Computer-Aided
+                 Architectural Design Futures",
+  title =        "Automatic indexing, retrieval and reuse of topologies
+                 in architectural layouts",
+  publisher =    "Centre for Advanced Studies in Architecture, National
+                 University of Singapore",
+  address =      "Singapore",
+  pages =        "577--586",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Coulon:1995:AIRb,
+  author =       "Carl-Helmut Coulon",
+  editor =       "Peter Jan Pahl and Heinrich Werner",
+  booktitle =    "Proceeding of the Sixth International Conference on
+                 Computing in Civil and Building Engineering",
+  title =        "Automatic indexing, retrieval and reuse of topologies
+                 in complex designs",
+  publisher =    "Balkema, Rotterdam",
+  address =      "Berlin",
+  pages =        "749--754",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Coulon:1995:BDL,
+  author =       "Carl-Helmut Coulon",
+  editor =       "Michael Richter and Frank Maurer",
+  booktitle =    "Expertensysteme 95",
+  title =        "Benutzung von {Datensammlungen} zum {Layout}",
+  publisher =    "infix, Sankt Augustin",
+  address =      "Kaiserslautern",
+  pages =        "170--186",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Proceedings of the German Conference on Expert
+                 Systems",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Coulon:1995:GGT,
+  author =       "Carl-Helmut Coulon",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "General geometric and topologic retrieval and
+                 adaptation {(TOPO)}",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "33--45",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Deters:1995:MSC,
+  author =       "Ralph Deters",
+  editor =       "Brigitte Bartsch-Sp{\"o}rl and Dietmar Janetzko and
+                 Stefan Wess",
+  booktitle =    "{Fallbasiertes Schlie{\ss}en --- Grundlagen und
+                 Anwendungen}",
+  title =        "Multidimensional structuring of a case-memory",
+  organization = "Zentrum f{\"u}r Lernende Systeme und Anwendungen",
+  publisher =    "Fachbereich Informatik",
+  address =      "Universit{\"a}t Kaiserslautern",
+  pages =        "21--29",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "LSA-Report 95-02",
+  acknowledgement = ack-fg,
+}
+
+@Article{Enser:1995:PIR,
+  author =       "P. G. B. Enser",
+  title =        "Pictorial information retrieval",
+  journal =      j-J-DOC,
+  volume =       "51",
+  pages =        "126--170",
+  year =         "1995",
+  CODEN =        "JDOCAS",
+  ISSN =         "0022-0418 (print), 1758-7379 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Grather:1995:ECP,
+  author =       "Wolfgang Gr{\"a}ther",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Exact and correct placement of pipes {(ANOPLA)}",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "69--77",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@MastersThesis{Heene:1995:AGL,
+  author =       "S. Heene",
+  title =        "{Automatische Generierung von Lagepl{\"a}nen}",
+  type =         "Diplom\-arbeit",
+  school =       "Fakult{\"a}t f{\"u}r Informatik, TU Dresden",
+  address =      "Dresden, Germany",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Hinkle:1995:ACB,
+  author =       "David Hinkle and C. Toomey",
+  title =        "Applying case-based reasoning to manufacturing",
+  journal =      j-AI-MAGAZINE,
+  volume =       "16",
+  number =       "1",
+  pages =        "65--73",
+  year =         "1995",
+  CODEN =        "AIMAEK",
+  ISSN =         "0738-4602",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Hovestadt:1995:PMB,
+  author =       "Ludger Hovestadt and Barbara Schmidt-Belz",
+  editor =       "Barbara Schmidt-Belz",
+  booktitle =    "Scenario of FABEL Prototype 3 Supporting Architectural
+                 Design",
+  title =        "{PM5} --- a model of building design",
+  volume =       "40",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@Article{Hunt:1995:TIA,
+  author =       "John Hunt and Roger Miles",
+  title =        "Toward an intelligent architectural design aid",
+  journal =      "Expert Systems",
+  volume =       "12",
+  pages =        "209--218",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Janetzko:1995:ARD,
+  author =       "Dietmar Janetzko and Oliver J{\"a}schke",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Assessing realizations of design tasks {(CheckL \&
+                 CheckUp)}",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "15--22",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Janetzko:1995:LHT,
+  author =       "Dietmar Janetzko and Thomas Josef Schult",
+  editor =       "Brigitte Bartsch-Sp{\"o}rl and Dietmar Janetzko and
+                 Stefan We{\ss}",
+  booktitle =    "{Fallbasiertes Schlie{\ss}en --- Grundlagen und
+                 Anwendungen}",
+  title =        "{LanPlan}: a hypermedia tutor using multiple
+                 representations",
+  publisher =    "Zentrum f{\"u}r Lernende Systeme und Anwendungen,
+                 Fachbereich Informatik",
+  address =      "Universit{\"a}t Kaiserslautern",
+  pages =        "81--86",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "LSA-Report 95-02",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Janetzko:1995:UCA,
+  author =       "Dietmar Janetzko and Oliver J{\"a}schke",
+  editor =       "Brigitte Bartsch-Sp{\"o}rl and Dietmar Janetzko and
+                 Stefan We{\ss}",
+  booktitle =    "{Fallbasiertes Schlie{\ss}en --- Grundlagen und
+                 Anwendungen}",
+  title =        "Using cases to acquire knowledge for quality control
+                 in design",
+  publisher =    "Zentrum f{\"u}r Lernende Systeme und Anwendungen,
+                 Fachbereich Informatik",
+  address =      "Universit{\"a}t Kaiserslautern",
+  pages =        "114--122",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "LSA-Report 95-02",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Janetzko:1995:UCQ,
+  author =       "Dietmar Janetzko and Oliver J{\"a}schke",
+  editor =       "Peter Jan Pahl and Heinrich Werner",
+  booktitle =    "Proceeding of the Sixth International Conference on
+                 Computing in Civil and Building Engineering",
+  title =        "Using cases for quality control in design",
+  publisher =    "Balkema, Rotterdam",
+  address =      "Berlin",
+  pages =        "187--192",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Jaschke:1995:OUR,
+  author =       "Oliver J{\"a}schke and Dietmar Janetzko",
+  editor =       "Katy B{\"o}rner",
+  booktitle =    "Modules for Design Support",
+  title =        "Operators used in routine design {(Roude)}",
+  volume =       "35",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  pages =        "78--80",
+  month =        jun,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@Book{Jensen:1995:CPN,
+  author =       "Kurt Jensen",
+  title =        "Coloured {Petri} Nets: Basic Concepts, Analysis
+                 Methods and Practical Use, vol. 2",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "174",
+  year =         "1995",
+  ISBN =         "3-540-58276-2",
+  ISBN-13 =      "978-3-540-58276-2",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "EATCS Monographs on Theoretical Computer Science",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Lenz:1995:RS,
+  author =       "Mario Lenz and Hans-Dieter Burkhard",
+  editor =       "Brigitte Bartsch-Sp{\"o}rl and Dietmar Janetzko and
+                 Stefan Wess",
+  booktitle =    "{Fallbasiertes Schlie{\ss}en --- Grundlagen und
+                 Anwendungen}",
+  title =        "{Retrieval ohne Suche}",
+  organization = "Zentrum f{\"u}r Lernende Systeme und Anwendungen",
+  publisher =    "Fachbereich Informatik",
+  address =      "Universit{\"a}t Kaiserslautern, Germany",
+  pages =        "1--10",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "LSA-Report 95-02",
+  acknowledgement = ack-fg,
+}
+
+@Book{Loftus:1995:DSE,
+  author =       "C. W. Loftus and E. M. Sherratt and R. J. Gautier and
+                 P. A. M. Grandi and D. E. Price and M. D. Tedd",
+  title =        "Distributed Software Engineering",
+  publisher =    pub-PH,
+  address =      pub-PH:adr,
+  pages =        "260",
+  year =         "1995",
+  ISBN =         "0-13-342676-9",
+  ISBN-13 =      "978-0-13-342676-2",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@MastersThesis{Maser:1995:WAS,
+  author =       "M. M{\"a}ser",
+  title =        "{Wissensbasierte automatische Steuerung und Regelung
+                 hochautomatisierter Geb{\"a}ude}",
+  type =         "Diplom\-arbeit",
+  school =       "Fakult{\"a}t f{\"u}r Informatik, TU Dresden",
+  address =      "Dresden, Germany",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Netten:1995:EAC,
+  author =       "Bart D. Netten and R. A. Vingerhoeds and H.
+                 Koppelaar",
+  editor =       "R. Oxman and M. Bax and H. Achten",
+  booktitle =    "Design Research in the {Netherlands}",
+  title =        "Expert assisted conceptual design: an application to
+                 fibre reinforced composite panels",
+  publisher =    "Faculty of Architecture, Planning, and Building Design
+                 Science, Eindhoven University",
+  address =      "Eindhoven",
+  pages =        "125--139",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Petzoldt:1995:PPD,
+  author =       "Th. Petzoldt and P. Kielb and Uwe Petersohn and N.
+                 Sch{\"u}tze",
+  editor =       "M. Hilty and A. J{\"a}schke",
+  booktitle =    "{Informatik f{\"u}r den Umweltschutz}",
+  title =        "{Prognose der Phytoplankton-Dynamik: Anwendung
+                 fallbasierter Methoden auf einen dynamischen
+                 \"okologischen Proze{\ss}}",
+  publisher =    "Metropolis-Verlag",
+  address =      "Marburg",
+  pages =        "259--267",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Schaaf:1995:MSN,
+  author =       "J{\"o}rg W. Schaaf and Angi Vo{\ss}",
+  editor =       "Brigitte Bartsch-Sp{\"o}rl and Dietmar Janetzko and
+                 Stefan We{\ss}",
+  booktitle =    "{Fallbasiertes Schlie{\ss}en --- Grundlagen und
+                 Anwendungen}",
+  title =        "{Ein Modell zur Suche n{\"u}tzlicher F{\"a}lle im
+                 fallbasierten Schlie{\ss}en}",
+  publisher =    "Zentrum f{\"u}r Lernende Systeme und Anwendungen,
+                 Fachbereich Informatik",
+  address =      "Universit{\"a}t Kaiserslautern",
+  pages =        "11--20",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "LSA-Report 95-02",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Schaaf:1995:RSL,
+  author =       "J{\"o}rg W. Schaaf and Angi Vo{\ss}",
+  editor =       "Milton Tan and Robert Teh",
+  booktitle =    "The Global Design Studio --- Proceedings of the 6th
+                 International Conference on Computer-Aided
+                 Architectural Design Futures",
+  title =        "Retrieval of similar layouts in {FABEL} using
+                 {AspecT}",
+  publisher =    "Centre for Advanced Studies in Architecture, National
+                 University of Singapore",
+  pages =        "617--626",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Schaaf:1995:WAW,
+  author =       "J{\"o}rg W. Schaaf",
+  editor =       "Brigitte Bartsch-Sp{\"o}rl and Dietmar Janetzko and
+                 Stefan We{\ss}",
+  booktitle =    "{Fallbasiertes Schlie{\ss}en --- Grundlagen und
+                 Anwendungen}",
+  title =        "{Wechselnde Aspekte oder: Wie strukturiert man eine
+                 Fallbasis, ohne zu wissen wonach?}",
+  publisher =    "Zentrum f{\"u}r Lernende Systeme und Anwendungen,
+                 Fachbereich Informatik",
+  address =      "Universit{\"a}t Kaiserslautern",
+  pages =        "11--20",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "LSA-Report 95-02",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Schmidt-Belz:1995:PFI,
+  author =       "Barbara Schmidt-Belz",
+  editor =       "Barbara Schmidt-Belz",
+  booktitle =    "Scenario of FABEL Prototype 3 Supporting Architectural
+                 Design",
+  title =        "Profiles of the {FABEL IDEA} 3 tools",
+  volume =       "40",
+  publisher =    pub-GMD,
+  address =      pub-GMD:adr,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fabel-Report",
+  acknowledgement = ack-fg,
+}
+
+@MastersThesis{Schutze:1995:EIS,
+  author =       "N. Sch{\"u}tze",
+  title =        "{Entwurf und Implementierung eines Systems zum
+                 fallbasierten Schlie{\ss}en f{\"u}r die Prognose von
+                 Algenmassenentwicklungen in Standgew{\"a}ssern}",
+  type =         "Diplom\-arbeit",
+  school =       "Fakult{\"a}t f{\"u}r Informatik, TU Dresden",
+  address =      "Dresden, Germany",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Veloso:1995:CBR,
+  editor =       "Manuela M. Veloso and Agnar Aamodt",
+  title =        "Case Based Reasoning Research and Development: First
+                 International Conference, {ICCBR-95}",
+  number =       "1010",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "576",
+  year =         "1995",
+  ISBN =         "3-540-60598-3",
+  ISBN-13 =      "978-3-540-60598-0",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Lecture Notes in Artificial Intelligence",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Voss:1995:CA,
+  author =       "Angi Vo{\ss} and Werner Karbach",
+  editor =       "Peter Hoschka",
+  booktitle =    "Computers as Assistants --- a New Generation of
+                 Support Systems",
+  title =        "Competence assessment",
+  chapter =      "2.1",
+  publisher =    "Lawrence Erlbaum Associates, Hillsdale",
+  address =      "Cambridge MA",
+  pages =        "17--28",
+  year =         "1995",
+  ISBN =         "0-8058-2188-0",
+  ISBN-13 =      "978-0-8058-2188-8",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Voss:1995:CBR,
+  author =       "Angi Vo{\ss}",
+  title =        "Case-based reasoning in building design: problems of
+                 case elicitation and retrieval",
+  journal =      "International Journal of Construction Information
+                 Technology",
+  volume =       "28",
+  number =       "4",
+  pages =        "49--62",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Voss:1995:IDA,
+  author =       "Angi Vo{\ss} and Wolfgang Gr{\"a}ther and J{\"o}rg W.
+                 Schaaf",
+  editor =       "Peter Hoschka",
+  booktitle =    "Computers as Assistants --- A New Generation of
+                 Support Systems",
+  title =        "Intelligent design assistant",
+  chapter =      "3.5",
+  publisher =    "Lawrence Erlbaum Associates, Hillsdale",
+  address =      "Cambridge MA",
+  pages =        "142--155",
+  year =         "1995",
+  ISBN =         "0-8058-2188-0",
+  ISBN-13 =      "978-0-8058-2188-8",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Voss:1995:RTD,
+  author =       "Angi Vo{\ss} and Brigitte Bartsch-Sp{\"o}rl",
+  editor =       "Peter Pahl and Heinrich Werners",
+  booktitle =    "Computing in Civil and Building Engineering",
+  title =        "Retrieval of technical design documents for reuse",
+  publisher =    "Balkema, Rotterdam",
+  address =      "Berlin",
+  pages =        "923--929",
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Voss:1995:TMA,
+  author =       "Angi Vo{\ss}",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Fourth Workshop on Research Directions for Artificial
+                 Intelligence in Design",
+  title =        "Towards mindful artifacts",
+  publisher =    "University of Sydney",
+  address =      "University of Twente, Enschede The Netherlands",
+  pages =        "87--90",
+  month =        jan,
+  year =         "1995",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Yang:1995:UCB,
+  author =       "Soon-Ae Yang and Dave Robertson and John Lee",
+  editor =       "J.-P. Haton and M. Keane and M. Manago",
+  booktitle =    "Advances in Case-Based Reasoning: Second European
+                 Workshop, EWCBR-94",
+  title =        "Use of case-based reasoning in the domain of building
+                 regulations",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "292--306",
+  year =         "1995",
+  ISBN =         "3-540-60364-6",
+  ISBN-13 =      "978-3-540-60364-1",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Althoff:1996:DSC,
+  author =       "Klaus-Dieter Althoff and Brigitte Bartsch-Sp{\"o}rl",
+  title =        "Decision support for case-based applications",
+  journal =      j-WIRTSCHAFTSINFORMATIK,
+  volume =       "38",
+  pages =        "8--16",
+  year =         "1996",
+  CODEN =        "WIINE9",
+  ISSN =         "0937-6429",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Althoff:1996:RCB,
+  author =       "Klaus-Dieter Althoff and Agnar Aamodt",
+  title =        "Relating case-based problem solving and learning
+                 methods to task and domain characteristics: towards an
+                 analytic framework",
+  journal =      "AI Communications",
+  volume =       "9",
+  pages =        "109--116",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Auriol:1996:CFC,
+  author =       "Eric Auriol and Michel Manago and J{\'e}r{\^o}me
+                 Guiot-Dorel",
+  title =        "{CASSIOP{\'E}E: Fehlerdiagnose von CFM 56-3
+                 Triebwerken f{\"u}r Boeing 737 Flugzeuge}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "10",
+  number =       "1",
+  pages =        "47--53",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Bakhtari:1996:DAA,
+  author =       "Shirin Bakhtari and Brigitte Bartsch-Sp{\"o}rl and
+                 Wolfgang Oertel",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in {Design'96}",
+  title =        "{DOM-ARCADE}: assistance services for construction,
+                 evaluation, and adaptation of design layouts",
+  publisher =    pub-KLUWER,
+  address =      pub-KLUWER:adr,
+  pages =        "681--699",
+  year =         "1996",
+  ISBN =         "0-7923-4080-9",
+  ISBN-13 =      "978-0-7923-4080-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bartsch-Sporl:1996:HMC,
+  author =       "Brigitte Bartsch-Sp{\"o}rl",
+  editor =       "H.-D. Burkhard and M. Lenz",
+  booktitle =    "Fourth German Workshop on Case-Based Reasoning: System
+                 Development and Evaluation",
+  title =        "How to make {CBR} systems work in practice",
+  number =       "55",
+  publisher =    "Humboldt-Universit{\"a}t",
+  address =      "Berlin",
+  pages =        "36--42",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Informatik-Berichte",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Bartsch-Sporl:1996:SSB,
+  author =       "Brigitte Bartsch-Sp{\"o}rl and Shirin Bakhtari",
+  editor =       "John Sharpe",
+  booktitle =    "AI System Support for Conceptual Design: Proceedings
+                 of the 1995 Lancaster International Workshop on
+                 Engineering Design",
+  title =        "A support system for building design --- experiences
+                 and convictions from the {FABEL} project",
+  publisher =    "Springer, Berlin",
+  address =      "London",
+  pages =        "279--297",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Borner:1996:CAC,
+  author =       "Katy B{\"o}rner and Heiko Wode and Roland
+                 Fa{\ss}auer",
+  editor =       "H.-D. Burkhard and M. Lenz",
+  booktitle =    "Fourth German Workshop on Case-Based Reasoning: System
+                 Development and Evaluation",
+  title =        "Conceptual analogy: conceptual clustering for informed
+                 and efficient analogical reasoning",
+  number =       "55",
+  publisher =    "Humboldt-Universit{\"a}t",
+  address =      "Berlin",
+  pages =        "78--86",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Informatik-Berichte",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Burkhard:1996:CRN,
+  author =       "Hans-Dieter Burkhard and Mario Lenz",
+  editor =       "H.-D. Burkhard and M. Lenz",
+  booktitle =    "Fourth German Workshop on Case-Based Reasoning: System
+                 Development and Evaluation",
+  title =        "Case retrieval nets: basic ideas and extensions",
+  number =       "55",
+  publisher =    "Humboldt-Universit{\"a}t",
+  address =      "Berlin",
+  pages =        "103--110",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Informatik-Berichte",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Coulon:1996:RAI,
+  author =       "Carl-Helmut Coulon",
+  editor =       "H. Czap and P. Jaenecke and H. P. Ohly",
+  booktitle =    "{Analogie in der Wissensrepr{\"a}sentation: Case-Based
+                 Reasoning und r{\"a}umliche Modelle, 4. Tagung der
+                 deutschen Sektion der Internationalen Gesellschaft
+                 f{\"u}r Wissensrepr{\"a}sentation, Okt. 1995, Trier}",
+  title =        "{Die Rolle des Anpassungswissens im CBR}",
+  publisher =    "Indeks Verlag",
+  address =      "Frankfurt",
+  pages =        "34--41",
+  year =         "1996",
+  ISBN =         "3-88672-405-0",
+  ISBN-13 =      "978-3-88672-405-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Goos:1996:FKM,
+  author =       "Klaus Goos",
+  title =        "{Fallbasiertes Klassifizieren: Methoden, Integration
+                 und Evaluation}",
+  number =       "127",
+  publisher =    "infix",
+  address =      "Sankt Augustin",
+  pages =        "180",
+  year =         "1996",
+  ISBN =         "3-89601-127-8",
+  ISBN-13 =      "978-3-89601-127-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Also: W{\"u}rzburg, Universit{\"a}t, Diss. 1995",
+  series =       "Dissertationen zur K{\"u}nstlichen Intelligenz",
+  acknowledgement = ack-fg,
+}
+
+@PhdThesis{Hemmann:1996:ROK,
+  author =       "Thomas Hemmann",
+  title =        "Reuse-Oriented Knowledge Engineering with {MoMo}: an
+                 Inquiry",
+  school =       "Universit{\"a}t Bielefeld",
+  address =      "Bielefeld",
+  month =        jun,
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Also: R. Oldenbourg, M{\"u}nchen (Berichte der GMD,
+                 267), ISBN 3-486-24002-1",
+  acknowledgement = ack-fg,
+}
+
+@Book{Leake:1996:CBR,
+  editor =       "David B. Leake",
+  title =        "Case-Based Reasoning: Experiences, Lessons, and Future
+                 Directions",
+  publisher =    "AAAI Press",
+  address =      "Menlo Park, CA",
+  pages =        "420",
+  year =         "1996",
+  ISBN =         "0-262-62110-X",
+  ISBN-13 =      "978-0-262-62110-6",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Lenz:1996:FDE,
+  author =       "Mario Lenz and Eric Auriol and Hans-Dieter Burkhard
+                 and Michel Manago and Petra Pirk",
+  title =        "{Fallbasierte Diagnostik und
+                 Entscheidungs\-unter\-st{\"u}tzung}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "10",
+  number =       "1",
+  pages =        "16--21",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Maher:1996:CBR,
+  author =       "Mary Lou Maher and M. Bala Balachandran and Dong Mei
+                 Zhang",
+  title =        "Case-Based Reasoning in Design",
+  publisher =    "Lawrence Erlbaum Associates",
+  address =      "Mahwah, NJ",
+  pages =        "246",
+  year =         "1996",
+  ISBN =         "0-8058-1832-4",
+  ISBN-13 =      "978-0-8058-1832-1",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Milosavljevic:1996:RA,
+  author =       "Aleksandar Milosavljevi{\'c}",
+  editor =       "Nigel Spurr",
+  booktitle =    "ICRF Handbook of Genome Analysis",
+  title =        "Repeat Analysis",
+  chapter =      "13.4",
+  publisher =    "Blackwell Science",
+  address =      "Oxford",
+  year =         "1996",
+  ISBN =         "0-632-03728-8",
+  ISBN-13 =      "978-0-632-03728-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  xxnote =       "Check chapter: was ``13, 4''.",
+}
+
+@InCollection{Oertel:1996:IFR,
+  author =       "Wolfgang Oertel",
+  editor =       "H.-D. Burkhard and M. Lenz",
+  booktitle =    "Fourth German Workshop on Case-Based Reasoning: System
+                 Development and Evaluation",
+  title =        "{Zur Integration von fall- und regelbasierten
+                 Verfahren im Entwicklungssystem FAENSY}",
+  number =       "55",
+  publisher =    "Humboldt-Universit{\"a}t",
+  address =      "Berlin",
+  pages =        "128--135",
+  month =        mar,
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Informatik-Berichte",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Oertel:1996:IGK,
+  author =       "Wolfgang Oertel and Shirin Bakhtari",
+  booktitle =    "Computing in Civil Engineering: Proceedings of the
+                 Third Congress",
+  title =        "Interaction of generic knowledge and cases in {DOM}",
+  publisher =    "American Society of Civil Engineers, New York",
+  address =      "Anaheim, USA",
+  month =        jun,
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Oxman:1996:CBD,
+  author =       "Rivka Oxman and Angi Vo{\ss}",
+  title =        "Case-based design",
+  journal =      "AI Communications",
+  volume =       "9",
+  pages =        "117--127",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  note =         "Also published in AID'96, Workshop Notes New
+                 Directions in Case-Based Design Systems, Stanford, June
+                 1996, pp. 32-36.",
+  acknowledgement = ack-fg,
+}
+
+@Article{Oxman:1996:FE,
+  author =       "Rivka Oxman and Angi Vo{\ss}",
+  title =        "{Fallgest{\"u}tztes Entwerfen}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "10",
+  number =       "1",
+  pages =        "29--35",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Rissland:1996:BSL,
+  author =       "Edwina L. Rissland and David B. Skalak and M. Timur
+                 Friedman",
+  title =        "{BankXX}: supporting legal arguments through heuristic
+                 retrieval",
+  journal =      "Artificial Intelligence and Law",
+  volume =       "4",
+  pages =        "1--71",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Schaaf:1996:FV,
+  author =       "J{\"o}rg W. Schaaf",
+  editor =       "H. Czap and P. Jaenecke and H. P. Ohly",
+  booktitle =    "{Analogie in der Wissensrepr{\"a}sentation: Case-Based
+                 Reasoning und r{\"a}umliche Modelle, 4. Tagung der
+                 deutschen Sektion der Internationalen Gesellschaft
+                 f{\"u}r Wissensrepr{\"a}sentation, Okt. 1995, Trier}",
+  title =        "Fischen und {Versenken}",
+  publisher =    "Indeks Verlag",
+  address =      "Frankfurt",
+  pages =        "42--49",
+  year =         "1996",
+  ISBN =         "3-88672-405-0",
+  ISBN-13 =      "978-3-88672-405-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Schmidt-Belz:1996:HSC,
+  author =       "Barbara Schmidt-Belz and Angi Vo{\ss} and Lars Emkes
+                 and Carl-Helmut Coulon",
+  editor =       "Harry Timmermans",
+  booktitle =    "3rd Design \& Decision Support Systems in Architecture
+                 \& Urban Planning Conference, Spa, Belgium, August
+                 1996",
+  title =        "How to support city planning using map interpretation
+                 techniques",
+  volume =       "2",
+  publisher =    "Eindhoven University of Technology",
+  address =      "Eindhoven",
+  pages =        "228--245",
+  year =         "1996",
+  ISBN =         "90-681-065-5 (??invalid ISBN checksum??)",
+  ISBN-13 =      "90-681-065-5 (??invalid ISBN-13 checksum??)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Schmidt-Belz:1996:SID,
+  author =       "Barbara Schmidt-Belz and Ludger Hovestadt",
+  title =        "Scenario of an integrated design support for
+                 architects",
+  journal =      "Design Studies",
+  volume =       "17",
+  pages =        "498--509",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Strube:1996:CCE,
+  author =       "Gerhard Strube and Dietmar Janetzko and Markus
+                 Knauff",
+  editor =       "P. B. Baltes and U. M. Staudinger",
+  booktitle =    "Interactive Minds",
+  title =        "Cooperative construction of experts knowledge: The
+                 case of knowledge engineering",
+  publisher =    pub-CUP,
+  address =      pub-CUP:adr,
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Tague-Sutcliffe:1996:SPE,
+  author =       "Jean M. Tague-Sutcliffe",
+  title =        "Some perspectives on the evaluation of information
+                 retrieval systems",
+  journal =      j-J-AM-SOC-INF-SCI,
+  volume =       "47",
+  pages =        "1--3",
+  year =         "1996",
+  CODEN =        "AISJB6",
+  ISSN =         "0002-8231 (print), 1097-4571 (electronic)",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Voss:1996:F,
+  author =       "Angi Vo{\ss} and Brigitte Bartsch-Sp{\"o}rl and Ludger
+                 Hovestadt and Klaus P. Jantke and Uwe Petersohn and
+                 Gerhard Strube",
+  title =        "{FABEL}",
+  journal =      "KI --- K{\"u}nstliche Intelligenz",
+  volume =       "10",
+  number =       "3",
+  pages =        "70--76",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Voss:1996:HSC,
+  author =       "Angi Vo{\ss}",
+  title =        "How to solve complex problems with cases",
+  journal =      "Engineering Applications of Artificial Intelligence",
+  volume =       "9",
+  pages =        "377--384",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InProceedings{Voss:1996:SAT,
+  author =       "Angi Vo{\ss} and Carl-Helmut Coulon",
+  editor =       "Angi Vo{\ss}",
+  booktitle =    "ECAI 96, W[orkshop] 6, Adaptation in Case-Based
+                 Reasoning",
+  title =        "Structural adaptation with {TOPO}",
+  publisher =    "ECAI 96",
+  pages =        "52--54",
+  year =         "1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  ftp =          "ftp://ftpagr.informatik.uni-kl.de/pub/ECAI96-ADAPT-WS/voss.ps",
+  place =        "Budapest",
+}
+
+@InProceedings{Voss:1996:SCA,
+  author =       "Angi Vo{\ss} and Brigitte Bartsch-Sp{\"o}rl and Rivka
+                 Oxman",
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design'96",
+  title =        "A study of case adaptation systems",
+  publisher =    "Kluwer Academic Publishers, Dordrecht",
+  address =      "Stanford",
+  pages =        "173--189",
+  year =         "1996",
+  ISBN =         "0-7923-4080-9",
+  ISBN-13 =      "978-0-7923-4080-5",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Wess:1996:ISC,
+  author =       "Stefan Wess",
+  title =        "{Intelligente Systeme f{\"u}r den Computer-Support:
+                 fallbasiertes Schlie{\ss}en in Help-Desk- und
+                 Call-Center-Anwendungen}",
+  journal =      j-WIRTSCHAFTSINFORMATIK,
+  volume =       "38",
+  pages =        "23--31",
+  year =         "1996",
+  CODEN =        "WIINE9",
+  ISSN =         "0937-6429",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Woltering:1996:ESS,
+  author =       "Ansgar Woltering and Stefan Wess",
+  title =        "{Entscheidungs\-unter\-st{\"u}tzungs\-systeme und
+                 fall\-basiertes Schlie{\ss}en: eine empirische
+                 Unter\-suchung im deutsch\-sprachigen Raum}",
+  journal =      j-WIRTSCHAFTSINFORMATIK,
+  volume =       "38",
+  pages =        "17--22",
+  year =         "1996",
+  CODEN =        "WIINE9",
+  ISSN =         "0937-6429",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Maher:1997:IAC,
+  author =       "Mary Lou Maher and Pearl Pu",
+  title =        "Issues and Applications of Case-Based Reasoning in
+                 Design",
+  publisher =    "Lawrence Erlbaum Associates",
+  address =      "Mahwah, NJ",
+  pages =        "342",
+  year =         "1997",
+  ISBN =         "0-8058-2313-1",
+  ISBN-13 =      "978-0-8058-2313-4",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@InCollection{Voss:1997:CDS,
+  author =       "Angi Vo{\ss}",
+  editor =       "Mary Lou Maher and Pearl Pu",
+  booktitle =    "Issues and Applications of Case Based Reasoning to
+                 Design",
+  title =        "Case design specialists in {FABEL}",
+  publisher =    "Lawrence Erlbaum Associates",
+  address =      "Mahwah, NJ",
+  pages =        "301--336",
+  year =         "1997",
+  ISBN =         "0-8058-2313-1",
+  ISBN-13 =      "978-0-8058-2313-4",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Article{Voss:1997:CRS,
+  author =       "Angi Vo{\ss}",
+  title =        "Case reusing systems --- survey, framework and
+                 guidelines",
+  journal =      j-KNOWL-ENG-REV,
+  volume =       "12",
+  number =       "1",
+  pages =        "59--89",
+  year =         "1997",
+  CODEN =        "KEREE3",
+  ISSN =         "0269-8889",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Proceedings{Budde:1983:APP,
+  editor =       "Reinhard Budde and K. Kuhlenkamp and L. Mathiasen and
+                 Heinz Z{\"u}llighoven",
+  title =        "Approaches to Prototyping: Proc. of the Working Conf.
+                 on Prototyping",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "458",
+  month =        oct,
+  year =         "1984",
+  ISBN =         "3-540-13490-5",
+  ISBN-13 =      "978-3-540-13490-9",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  confaddress =  "Namur",
+}
+
+@Proceedings{Hammond:1989:CBR,
+  editor =       "Kristian J. Hammond",
+  key =          "DARPA:89",
+  booktitle =    "Case-based reasoning: proceedings of a Workshop on
+                 Case-Based Reasoning: Holiday Inn, Pensacola Beach,
+                 Florida, May 31--June 2, 1989",
+  title =        "Case-based reasoning: proceedings of a Workshop on
+                 Case-Based Reasoning: Holiday Inn, Pensacola Beach,
+                 Florida, May 31--June 2, 1989",
+  organization = "DARPA",
+  publisher =    "Morgan Kaufmann",
+  address =      "San Mateo, CA, USA",
+  pages =        "iv + 363",
+  month =        may,
+  year =         "1989",
+  ISBN =         "1-55860-068-X",
+  ISBN-13 =      "978-1-55860-068-3",
+  LCCN =         "BF442 .W67 1989",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+  confaddress =  "Pensacola Beach, FL",
+}
+
+@Proceedings{DARPA:1991:CBR,
+  editor =       "{Defense Advanced Research Projects Agency}",
+  key =          "DARPA:91",
+  booktitle =    "Case-based reasoning: proceedings of a Workshop held
+                 at the Madison Hotel, Washington, DC, May 8--10, 1991",
+  title =        "Case-based reasoning: proceedings of a Workshop held
+                 at the Madison Hotel, Washington, {DC}, May 8--10,
+                 1991",
+  publisher =    "Morgan Kaufmann",
+  address =      "San Mateo, CA, USA",
+  pages =        "ix + 373",
+  month =        may,
+  year =         "1991",
+  ISBN =         "1-55860-199-6",
+  ISBN-13 =      "978-1-55860-199-4",
+  LCCN =         "BF442 .W67 1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Proceedings{Bareiss:1991:PCB,
+  editor =       "Ray Bareiss",
+  booktitle =    "Case-based reasoning: proceedings of a workshop held
+                 at the Madison Hotel, Washington, DC, May 8--10, 1991",
+  title =        "Case-based reasoning: proceedings of a workshop held
+                 at the Madison Hotel, Washington, {DC}, May 8--10,
+                 1991",
+  publisher =    "Morgan Kaufmann",
+  address =      "San Mateo",
+  pages =        "ix + 373",
+  year =         "1991",
+  ISBN =         "1-55860-199-6",
+  ISBN-13 =      "978-1-55860-199-4",
+  LCCN =         "BF442 .W67 1991",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Proceedings{Zullighoven:1993:REP,
+  editor =       "Heinz Z{\"u}llighoven and W. Altmann and E.-E.
+                 Doberkat",
+  title =        "Requirements Engineering '93: Prototyping",
+  number =       "41",
+  publisher =    pub-TEUBNER,
+  address =      pub-TEUBNER:adr,
+  pages =        "395",
+  year =         "1993",
+  ISBN =         "3-519-02682-1",
+  ISBN-13 =      "978-3-519-02682-2",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Berichte des German Chapter of the ACM",
+  acknowledgement = ack-fg,
+}
+
+@Proceedings{Leake:1993:CBR,
+  editor =       "David B. Leake",
+  booktitle =    "Case-based reasoning: papers from the 1993 workshop,
+                 July 11--12, Washington, DC",
+  title =        "Case-based reasoning: papers from the 1993 workshop,
+                 July 11--12, Washington, {DC}",
+  publisher =    "AAAI",
+  address =      "Menlo Park, CA",
+  pages =        "viii + 171",
+  month =        jul,
+  year =         "1993",
+  ISBN =         "????",
+  ISBN-13 =      "????",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Technical Report WS-93-01.",
+  acknowledgement = ack-fg,
+}
+
+@Proceedings{Visser:1993:RDI,
+  editor =       "Willemien Visser",
+  booktitle =    "Reuse of designs: an interdisciplinary cognitive
+                 approach: proceedings of the Workshop of the Thirteenth
+                 International Joint Conference on Artificial
+                 Intelligence, Chambery, France, August 29, 1993",
+  title =        "Reuse of designs: an interdisciplinary cognitive
+                 approach: proceedings of the Workshop of the Thirteenth
+                 International Joint Conference on Artificial
+                 Intelligence, Chambery, France, August 29, 1993",
+  publisher =    "INRIA",
+  address =      "Le Chesnay, France",
+  pages =        "171",
+  month =        aug,
+  year =         "1993",
+  ISBN =         "2-7261-0815-6",
+  ISBN-13 =      "978-2-7261-0815-4",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Proceedings{Wess:1994:TCR,
+  editor =       "Stefan We{\ss} and Klaus-Dieter Althoff and Michael M.
+                 Richter",
+  booktitle =    "Topics in case-based reasoning: first European
+                 workshop, {EWCBR} '93, Kaiserslautern, Germany,
+                 November 1--5, 1993: selected papers",
+  title =        "Topics in case-based reasoning: first European
+                 workshop, {EWCBR} '93, Kaiserslautern, Germany,
+                 November 1--5, 1993: selected papers",
+  volume =       "837",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "ix + 469",
+  year =         "1994",
+  CODEN =        "LNCSD9",
+  ISBN =         "3-540-58330-0 (Berlin), 0-387-58330-0 (New York)",
+  ISBN-13 =      "978-3-540-58330-1 (Berlin), 978-0-387-58330-3 (New
+                 York)",
+  ISSN =         "0302-9743 (print), 1611-3349 (electronic)",
+  LCCN =         "QA76.76.E95 E93 1993",
+  bibdate =      "Fri Apr 12 07:15:01 1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       ser-LNAI # " and " # ser-LNCS,
+  acknowledgement = ack-nhfb,
+  keywords =     "expert systems (computer science) --- congresses",
+}
+
+@Proceedings{Gero:1994:AID,
+  editor =       "John S. Gero and Fay Sudweeks",
+  booktitle =    "Artificial Intelligence in Design '94: Proceedings of
+                 the Third International Conference on Artificial
+                 Intelligence in Design, held August 1994, in Lausanne,
+                 Switzerland",
+  title =        "Artificial Intelligence in Design '94: Proceedings of
+                 the Third International Conference on Artificial
+                 Intelligence in Design, held August 1994, in Lausanne,
+                 Switzerland",
+  publisher =    pub-KLUWER,
+  address =      pub-KLUWER:adr,
+  pages =        "xi + 768",
+  year =         "1994",
+  ISBN =         "0-7923-2994-5",
+  ISBN-13 =      "978-0-7923-2994-7",
+  LCCN =         "TA174 .A7932 1994",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  acknowledgement = ack-fg,
+}
+
+@Book{Hovestadt:1994:ADB,
+  author =       "Ludger Hovestadt",
+  booktitle =    "{A4 --- Digitales Bauen: Ein Modell f{\"u}r die
+                 weitgehende Computerunterst{\"u}tzung von Entwurf,
+                 Konstruktion und Betrieb von Geb{\"a}uden}",
+  title =        "{A4 --- Digitales Bauen: Ein Modell f{\"u}r die
+                 weitgehende Computerunterst{\"u}tzung von Entwurf,
+                 Konstruktion und Betrieb von Geb{\"a}uden}",
+  number =       "120",
+  publisher =    "VDI-Verlag",
+  address =      "D{\"u}sseldorf",
+  pages =        "",
+  year =         "1994",
+  ISBN =         "????",
+  ISBN-13 =      "????",
+  LCCN =         "????",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       "Fortschrittsberichte VDI, Reihe 20,
+                 Rechnerunterst{\"u}tzte Verfahren",
+  acknowledgement = ack-fg,
+}
+
+@Proceedings{Haton:1995:ACR,
+  editor =       "Jean-Paul Haton and Mark Keane and Michel Manago",
+  booktitle =    "Advances in case-based reasoning: Second European
+                 Workshop, {EWCBR-94}, Chantilly, France, November 1994:
+                 selected papers",
+  title =        "Advances in case-based reasoning: Second European
+                 Workshop, {EWCBR-94}, Chantilly, France, November 1994:
+                 selected papers",
+  volume =       "984",
+  publisher =    pub-SV,
+  address =      pub-SV:adr,
+  pages =        "viii + 306",
+  year =         "1995",
+  CODEN =        "LNCSD9",
+  ISBN =         "3-540-60364-6",
+  ISBN-13 =      "978-3-540-60364-1",
+  ISSN =         "0302-9743 (print), 1611-3349 (electronic)",
+  LCCN =         "QA76.76.E95 E935 1994",
+  bibdate =      "Fri Apr 12 07:15:04 1996",
+  bibsource =    "http://www.math.utah.edu/pub/bibnet/subjects/case-based-reasoning.bib",
+  series =       ser-LNAI # " and " # ser-LNCS,
+  acknowledgement = ack-nhfb,
+  keywords =     "expert systems (computer science) --- congresses",
+  xxvolume =     "4005222053",
+}
