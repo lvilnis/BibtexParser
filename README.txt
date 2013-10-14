@@ -1,7 +1,7 @@
 Copyright (c) 2012, Luke Vilnis
 All rights reserved.
 
-Note: the latest and most bug-free version of this parser now live in the Factorie
+Note: the latest and most bug-free version of this parser now lives in the Factorie
 machine learning library.
 
 Redistribution and use in source and binary forms, with or without
